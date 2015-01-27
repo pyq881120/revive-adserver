@@ -17,11 +17,9 @@ $GLOBALS['strLanguageSelection']            = "Selezione lingua";
 $GLOBALS['strDatabaseSettings']             = "Impostazioni database";
 $GLOBALS['strAdminSettings']                = "Impostazioni amministratore";
 $GLOBALS['strAdminAccount']                 = "Account dell'amministratore";
-$GLOBALS['strAdministrativeSettings']       = "Administrative Settings";
 $GLOBALS['strAdvancedSettings']             = "Impostazioni avanzate";
 $GLOBALS['strOtherSettings']                = "Altre impostazioni";
 $GLOBALS['strSpecifySyncSettings']          = "Sincronizzazione delle impostazioni";
-$GLOBALS['strLicenseInformation']           = "License information";
 $GLOBALS['strWarning']                      = "Attenzione";
 $GLOBALS['strFatalError']                   = "Si è verificato un errore fatale";
 $GLOBALS['strUpdateError']                  = "Si è verificato un errore durante l'aggiornamento";
@@ -39,8 +37,6 @@ $GLOBALS['strCreateTableTestFailed']        = "L'utente specificato non ha i per
 $GLOBALS['strUpdateTableTestFailed']        = "L'utente specificato non ha i permessi necessari ad aggiornare la struttura del database, contatta l'amministratore di sistema.";
 $GLOBALS['strTablePrefixInvalid']           = "Il prefisso delle tabelle contiene caratteri non validi";
 $GLOBALS['strTableInUse']                   = "The database which you specified is already used for ".PRODUCT_NAME.", please use a different table prefix, or read the UPGRADE.txt file for upgrading instructions.";
-$GLOBALS['strNoVersionInfo']                = "Unable to select the database version";
-$GLOBALS['strInvalidVersionInfo']           = "Unable to determine the database version";
 $GLOBALS['strInvalidMySqlVersion']          = "" . PRODUCT_NAME." requires MySQL 4.0 or higher to function correctly. Please select a different database server.";
 $GLOBALS['strTableWrongType']               = "The table type you selected isn't supported by your installation of ".phpAds_dbmsname;
 $GLOBALS['strMayNotFunction']               = "Prima di continuare, correggi questi potenziali problemi:";
@@ -72,9 +68,6 @@ $GLOBALS['strProductUpToDateTitle']     =  PRODUCT_NAME . " is up to date";
 $GLOBALS['strOaUpToDate']               = "Your " . PRODUCT_NAME . " database and file structure are both using the most recent version and therefore no upgrade is required at this time. Please click Continue to proceed to the administration panel.";
 $GLOBALS['strOaUpToDateCantRemove']     = "Attenzione: il file UPGRADE è ancora presente all'interno della cartella var. Non è possibile cancellare questo file automaticamente per mancanza dei permessi necessari. Si prega di rimuovere il file manualmente.";
 $GLOBALS['strRemoveUpgradeFile']               = "Devi rimuovere il file UPGRADE dalla cartella var.";
-$GLOBALS['strInstallSuccess']               = "Clicking 'Continue' will log you in to your ad server.
-<p><strong>What next?</strong></p>
-<div class='psub'>";
 $GLOBALS['strInstallSuccess2'] ="
   <p><b>Serving your first ad campaign</b><br>
     Use our <a href='".PRODUCT_DOCSURL."/user/quickStartGuide' target='_blank'>quick start guide to start serving your first ad campaign</a>.
@@ -100,7 +93,6 @@ $GLOBALS['strDbSuccessIntro']               = "The " . MAX_PRODUCT_NAME . " data
 $GLOBALS['strDbSuccessIntroUpgrade']        = "Il tuo sistema è stato aggiornato con successo. Le rimanenti schermate ti aiuteranno per la configurazione del nuovo server ad.";
 $GLOBALS['strErrorOccured']                 = "Si è verificato il seguente errore:";
 $GLOBALS['strErrorInstallDatabase']         = "La struttura del database non pu� essere creata.";
-$GLOBALS['strErrorInstallPrefs']            = "The administrator user preferences could not be written to the database.";
 $GLOBALS['strErrorInstallVersion']          = "The " . MAX_PRODUCT_NAME . " version number could not be written to the database.";
 $GLOBALS['strErrorUpgrade']                 = 'The existing installation\'s database could not be upgraded.';
 $GLOBALS['strErrorInstallDbConnect']        = "Non è stato possibile connettersi al database.";
@@ -108,8 +100,6 @@ $GLOBALS['strErrorInstallDbConnect']        = "Non è stato possibile connetters
 $GLOBALS['strErrorWritePermissions']        = "E' stato riscontrato un errore nei permessi dei file che deve essere corretto prima procedere.<br />Per correggere l'errore su un sistema Linux, prova a digitare i seguenti comandi:";
 $GLOBALS['strErrorFixPermissionsCommand']   = "<i>chmod a+w %s</i>";
 $GLOBALS['strErrorFixPermissionsRCommand']  = "<i>chmod -R a+w %s</i>";
-$GLOBALS['strNotWriteable']                 = "NOT writeable";
-$GLOBALS['strDirNotWriteableError']         = "Directory must be writeable";
 
 $GLOBALS['strErrorWritePermissionsWin']     = "Sono stati rilevati errori nei permessi dei file, e devono essere corretti per procedere.";
 $GLOBALS['strCheckDocumentation']           = "For more help, please see the <a href=\"".PRODUCT_DOCSURL."\">" . PRODUCT_NAME . " documentation</a>.";
@@ -150,7 +140,6 @@ $GLOBALS['strConfigurationSettings']                 = "Configurazione impostazi
 
 // Administrator Settings
 $GLOBALS['strAdministratorSettings']                 = "Impostazioni amministratore";
-$GLOBALS['strAdministratorAccount']                  = "The System Administrator Account";
 $GLOBALS['strLoginCredentials']                      = "Credenziali di accesso";
 $GLOBALS['strAdminUsername']                         = "Amministratore  Nome utente";
 $GLOBALS['strAdminPassword']                         = "Amministratore  Password";
@@ -169,7 +158,6 @@ $GLOBALS['strAdminCheckMonthly']                     = "Una volta al mese";
 $GLOBALS['strAdminCheckNever']                       = "Non controllare";
 $GLOBALS['strNovice']                                = "Per sicurezza, le cancellazioni richiedono la conferma";
 $GLOBALS['strUserlogEmail']                          = "Registra tutte le email in uscita";
-$GLOBALS['strEnableDashboard']                       = "Enable dashboard";
 $GLOBALS['strEnableDashboardSyncNotice']             = "Per favore abilita <a href='account-settings-update.php'>Controllo aggiornamenti</a> se vuoi usare la bacheca.";
 $GLOBALS['strTimezone']                              = "Fuso orario";
 $GLOBALS['strTimezoneEstimated']                     = "Fuso orario stimato";
@@ -197,7 +185,6 @@ $GLOBALS['strDbNameHint']                            = "La base dati sarà creat
 $GLOBALS['strDatabaseOptimalisations']               = "Ottimizzazioni Database";
 $GLOBALS['strPersistentConnections']                 = "Utilizza connessioni persistenti";
 $GLOBALS['strCantConnectToDb']                       = "Impossibile connettersi al database";
-$GLOBALS['strCantConnectToDbDelivery']               = 'Can\'t Connect to Database for Delivery';
 $GLOBALS['strDemoDataInstall']                       = "Carica dati dimostrativi";
 $GLOBALS['strDemoDataIntro']                         = "Default setup data can be loaded into ". MAX_PRODUCT_NAME ." to help you get started serving online advertising. The most common banner types, as well as some initial campaigns can be loaded and pre-configured. This is highly recommended for new installations.";
 
@@ -209,7 +196,6 @@ $GLOBALS['strEmailAddresses']                        = "Indirizzo del mittente";
 $GLOBALS['strEmailFromName']                         = "Nome del mittente";
 $GLOBALS['strEmailFromAddress']                      = "Indirizzo del mittente";
 $GLOBALS['strEmailFromCompany']                      = "Azienda del mittente";
-$GLOBALS['strUseManagerDetails']                     = 'Use the owning account\'s Contact, Email and Name instead of the above Name, Email Address and Company when emailing reports to Advertiser or Website accounts.';
 $GLOBALS['strQmailPatch']                            = "Abilita patch per qmail";
 $GLOBALS['strEnableQmailPatch']                      = "Abilita patch qmail";
 $GLOBALS['strEmailHeader']                           = "Intestazione email";
@@ -218,7 +204,6 @@ $GLOBALS['strEmailLog']                              = "Log email";
 // Audit Trail Settings
 $GLOBALS['strAuditTrailSettings']                    = "Impostazioni Audit Trail";
 $GLOBALS['strEnableAudit']                           = "Abilita Audit Trail";
-$GLOBALS['strEnableAuditForZoneLinking']             = "Enable Audit Trail for Zone Linking screen (introduces huge performance penalty when linking large amounts of zones)";
 
 // Debug Logging Settings
 $GLOBALS['strDebug']                                 = "Impostazioni Log di Debug";
@@ -288,14 +273,9 @@ $GLOBALS['strDeliveryFilenamesXMLRPC']               = "Invocazione XML RPC";
 $GLOBALS['strDeliveryFilenamesLocal']                = "Invocazione Locale";
 $GLOBALS['strDeliveryFilenamesFrontController']      = "Controllo Front";
 $GLOBALS['strDeliveryFilenamesFlash']                = "Inclusione Flash (può essere un URL assoluto)";
-$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
-$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "Impostazioni cache per la consegna dei Banner";
 $GLOBALS['strDeliveryCacheLimit']                    = "Intervallo di tempo fra due aggiornamenti della cache (in secondi)";
-$GLOBALS['strDeliveryCacheStore']                    = "Banner Delivery Cache Store Type";
 
-$GLOBALS['strErrorInCacheStorePlugin']               = "Some errors were reported by the '%s' delivery store plugin:";
-$GLOBALS['strDeliveryCacheStorage']                  = "Delivery cache storage type";
 
 $GLOBALS['strOrigin']                                = "Utilizza il server di origine remoto";
 $GLOBALS['strOriginType']                            = "Tipo server di origine";
@@ -307,7 +287,6 @@ $GLOBALS['strOriginTimeout']                         = "Timeout origine (in seco
 $GLOBALS['strOriginProtocol']                        = "Protocollo del server di origine";
 
 $GLOBALS['strDeliveryAcls']                          = "Valuta le limitazioni nella consegna dei banner durante la consegna";
-$GLOBALS['strDeliveryAclsDirectSelection']           = "Evaluate banner delivery limitations for direct selected ads";
 $GLOBALS['strDeliveryObfuscate']                     = "Offusca il canale durante la consegna delle inserzioni";
 $GLOBALS['strDeliveryExecPhp']                       = "Permetti di eseguire codice PHP all'interno delle inserzioni<br />(Attenzione: Potrebbe introdurre rischi di sicurezza)";
 $GLOBALS['strDeliveryCtDelimiter']                   = "Delimitatore tracciamento click di terze parti";
@@ -318,9 +297,7 @@ $GLOBALS['strP3PCompactPolicy']                      = "Versione compatta della 
 $GLOBALS['strP3PPolicyLocation']                     = "Indirizzo della policy P3P completa";
 
 // General Settings
-$GLOBALS['generalSettings']                          = "Global General System Settings";
 $GLOBALS['uiEnabled']                                = "Interfaccia utente abilitata";
-$GLOBALS['defaultLanguage']                          = "Default System Language<br />(Each user can select their own language)";
 
 // Geotargeting Settings
 $GLOBALS['strGeotargetingSettings']                  = "Targeting geografico";
@@ -347,7 +324,6 @@ $GLOBALS['strGeotrackingGeoipNetspeedLocationError'] = "Il database MaxMind GeoI
 
 // Interface Settings
 $GLOBALS['strInventory']                             = "Inventario";
-$GLOBALS['strUploadConversions']                     = "Upload Conversions";
 $GLOBALS['strShowCampaignInfo']                      = "Mostra informazioni aggiuntive nella pagina <i>Campagna</i>";
 $GLOBALS['strShowBannerInfo']                        = "Mostra informazioni aggiuntive nella pagina <i>Banner</i>";
 $GLOBALS['strShowCampaignPreview']                   = "Mostra anteprima dei banner nella pagina <i>Banner</i>";
@@ -356,7 +332,6 @@ $GLOBALS['strShowBannerPreview']                     = "Mostra anteprima nella p
 $GLOBALS['strHideInactive']                          = "Nascondi inattivi";
 $GLOBALS['strGUIShowMatchingBanners']                = "Mostra banner corrispondenti nella pagina <i>Banner collegati</i>";
 $GLOBALS['strGUIShowParentCampaigns']                = "Mostra campagne nella pagina <i>Banner collegati</i>";
-$GLOBALS['strShowEntityId']                          = "Show entity identifiers";
 $GLOBALS['strGUIAnonymousCampaignsByDefault']        = "Assegna in modo predefinito le campagne a Anonymous";
 $GLOBALS['strStatisticsDefaults']                    = "Statistiche";
 $GLOBALS['strBeginOfWeek']                           = "Primo giorno della settimana";
@@ -377,19 +352,8 @@ $GLOBALS['strHasTaxID']                              = "Tax ID";
 $GLOBALS['strDefaultApproved']                       = "Check box di approvazione";
 
 // CSV Import Settings
-$GLOBALS['strChooseAdvertiser']                      = "Choose Advertiser";
-$GLOBALS['strChooseCampaign']                        = "Choose Campaign";
-$GLOBALS['strChooseCampaignBanner']                  = "Choose Banner";
-$GLOBALS['strChooseTracker']                         = "Choose Tracker";
 $GLOBALS['strDefaultConversionStatus']               = "Regole di conversione predefinite";
 $GLOBALS['strDefaultConversionType']                 = "Regole di conversione predefinite";
-$GLOBALS['strCSVTemplateSettings']                   = "CSV Template Settings";
-$GLOBALS['strIncludeCountryInfo']                    = "Include Country Info";
-$GLOBALS['strIncludeBrowserInfo']                    = "Include Browser Info";
-$GLOBALS['strIncludeOSInfo']                         = "Include OS Info";
-$GLOBALS['strIncludeSampleRow']                      = "Include Sample Row";
-$GLOBALS['strCSVTemplateAdvanced']                   = "Advanced Template";
-$GLOBALS['strCSVTemplateIncVariables']               = "Include Tracker Variables";
 
 /**
  * @todo remove strBannerSettings if banner is only configurable as a preference
@@ -420,11 +384,6 @@ $GLOBALS['strEnforceUserAgents']                     = "Logga <strong>soltanto</
 $GLOBALS['strBannerStorage']                         = "Impostazioni di memorizzazione banner";
 
 // Campaign ECPM settings
-$GLOBALS['strEnableECPM']                            = "Use eCPM optimized priorities instead of remnant-weighted priorities";
-$GLOBALS['strEnableContractECPM']                    = "Use eCPM optimized priorities instead of standard contract priorities";
-$GLOBALS['strEnableECPMfromRemnant']                 = "(If you enable this feature all your remnant campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strEnableECPMfromECPM']                    = "(If you disable this feature some of your active eCPM campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strInactivatedCampaigns']                  = "List of campaigns which became inactive due to the changes in preferences:";
 
 // Statistics & Maintenance Settings
 $GLOBALS['strMaintenanceSettings']                   = "Impostazioni di manutenzione";
@@ -439,7 +398,6 @@ $GLOBALS['strMaintenanceOI']                         = "Intervallo delle operazi
 $GLOBALS['strMaintenanceOIError']                    = "L'intervallo delle operazioni non è valido - consulta la documentazione per conoscere i valori validi";
 $GLOBALS['strPrioritySettings']                      = "Impostazioni Priorità";
 $GLOBALS['strPriorityInstantUpdate']                 = "Aggiorna immediatamente le priorità a seguito di un cambiamento effettuato da interfaccia grafica";
-$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
 $GLOBALS['strDefaultImpConWindow']                   = "Finestra di connessione Ad Impression predefinita (secondi)";
 $GLOBALS['strDefaultImpConWindowError']              = "Se impostato, il valore predefinito della Finestra di connessione Ad Impression deve essere un intero positivo";
 $GLOBALS['strDefaultCliConWindow']                   = "Valore predefinito della Finestra di connessione Ad Click (in secondi)";
@@ -477,7 +435,6 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "Colore in primo piano de
 $GLOBALS['strGuiHeaderBackgroundColor']              = "Colore di sfondo dell'intestazione";
 $GLOBALS['strGuiActiveTabColor']                     = "Colore del tab attivo";
 $GLOBALS['strGuiHeaderTextColor']                    = "Colore del testo nell'intestazione";
-$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "Inserisci i colori in un formato RGB, come '0066CC'";
 
 $GLOBALS['strGzipContentCompression']                = "Utilizza la compressione GZIP per i contenuti";
@@ -491,14 +448,8 @@ $GLOBALS['strPublisherAgreementEnabled']             = "Abilita il controllo del
 $GLOBALS['strPublisherAgreementText']                = "Testo per il login (tag HTML consentiti)";
 
 // Regenerate Platfor Hash script
-$GLOBALS['strPlatformHashRegenerate']                = "Platform Hash Regenerate";
-$GLOBALS['strNewPlatformHash']                       = "Your new Platform Hash is:";
-$GLOBALS['strPlatformHashInsertingError']            = "Error inserting Platform Hash into database";
 
 // Plugin Settings
-$GLOBALS['strPluginSettings']                        = "Plugin Settings";
-$GLOBALS['strEnableNewPlugins']                      = "Enable newly installed plugins";
-$GLOBALS['strUseMergedFunctions']                    = "Use merged delivery functions file";
 
 /*-------------------------------------------------------*/
 /* Unknown (unused?) translations                        */
@@ -511,7 +462,6 @@ $GLOBALS['strRetrieveRandom']               = "Casuale (default)";
 $GLOBALS['strRetrieveNormalSeq']            = "Sequenziale normale";
 $GLOBALS['strWeightSeq']                    = "Sequenziale pesata";
 $GLOBALS['strFullSeq']                      = "Sequenziale completa";
-$GLOBALS['strUseKeywords']                  = "Use keywords to select banners";
 $GLOBALS['strUseConditionalKeys']           = "Abilita operatori logici nella selezione diretta";
 $GLOBALS['strUseMultipleKeys']              = "Abilita parole chiave multiple nella selezione diretta";
 

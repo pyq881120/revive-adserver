@@ -72,9 +72,6 @@ $GLOBALS['strProductUpToDateTitle']     =  PRODUCT_NAME . " is up to date";
 $GLOBALS['strOaUpToDate']               = "Your " . PRODUCT_NAME . " database and file structure are both using the most recent version and therefore no upgrade is required at this time. Please click Continue to proceed to the administration panel.";
 $GLOBALS['strOaUpToDateCantRemove']     = "警告:アップデートファイルが、varディレクトリに残っています。十分な権限がないため、アップデートファイルを削除できませんでした。このファイルを自分自身の手で削除してください。";
 $GLOBALS['strRemoveUpgradeFile']               = "varディレクトリ内にあるUPGRADEファイルを削除してください。";
-$GLOBALS['strInstallSuccess']               = "Clicking 'Continue' will log you in to your ad server.
-<p><strong>What next?</strong></p>
-<div class='psub'>";
 $GLOBALS['strInstallSuccess2'] ="
   <p><b>Serving your first ad campaign</b><br>
     Use our <a href='".PRODUCT_DOCSURL."/user/quickStartGuide' target='_blank'>quick start guide to start serving your first ad campaign</a>.
@@ -106,10 +103,6 @@ $GLOBALS['strErrorUpgrade']                 = '既存のデータベースをア
 $GLOBALS['strErrorInstallDbConnect']        = "データベース接続を開始できませんでした。";
 
 $GLOBALS['strErrorWritePermissions']        = "ファイルのパーミッションエラーが検出されました。継続するには、指定ファイルのパーミッションを変更してください。<br />Linux系のシステムでは、以下のコマンドを入力してください。:";
-$GLOBALS['strErrorFixPermissionsCommand']   = "<i>chmod a+w %s</i>";
-$GLOBALS['strErrorFixPermissionsRCommand']  = "<i>chmod -R a+w %s</i>";
-$GLOBALS['strNotWriteable']                 = "NOT writeable";
-$GLOBALS['strDirNotWriteableError']         = "Directory must be writeable";
 
 $GLOBALS['strErrorWritePermissionsWin']     = "ファイルのパーミッションエラーが検出されました。継続するには、指定ファイルのパーミッションを変更してください。";
 $GLOBALS['strCheckDocumentation']           = "For more help, please see the <a href=\"".PRODUCT_DOCSURL."\">" . PRODUCT_NAME . " documentation</a>.";
@@ -197,7 +190,6 @@ $GLOBALS['strDbNameHint']                            = "もしない場合、デ
 $GLOBALS['strDatabaseOptimalisations']               = "データベース最適化設定";
 $GLOBALS['strPersistentConnections']                 = "持続的にデータベースに接続する";
 $GLOBALS['strCantConnectToDb']                       = "データベースに接続できません";
-$GLOBALS['strCantConnectToDbDelivery']               = 'Can\'t Connect to Database for Delivery';
 $GLOBALS['strDemoDataInstall']                       = "デモデータをインストールする";
 $GLOBALS['strDemoDataIntro']                         = "Default setup data can be loaded into ". MAX_PRODUCT_NAME ." to help you get started serving online advertising. The most common banner types, as well as some initial campaigns can be loaded and pre-configured. This is highly recommended for new installations.";
 
@@ -209,7 +201,6 @@ $GLOBALS['strEmailAddresses']                        = "Eメール  アドレス
 $GLOBALS['strEmailFromName']                         = "Eメール  宛先名";
 $GLOBALS['strEmailFromAddress']                      = "Eメール  Eメールアドレス";
 $GLOBALS['strEmailFromCompany']                      = "Eメール  社用";
-$GLOBALS['strUseManagerDetails']                     = 'Use the owning account\'s Contact, Email and Name instead of the above Name, Email Address and Company when emailing reports to Advertiser or Website accounts.';
 $GLOBALS['strQmailPatch']                            = "Qメールパッチ";
 $GLOBALS['strEnableQmailPatch']                      = "Qmailパッチを適用する";
 $GLOBALS['strEmailHeader']                           = "Eメールヘッダ";
@@ -218,7 +209,6 @@ $GLOBALS['strEmailLog']                              = "Eメールログ";
 // Audit Trail Settings
 $GLOBALS['strAuditTrailSettings']                    = "追跡記録ログ";
 $GLOBALS['strEnableAudit']                           = "監査の追跡を有効にする";
-$GLOBALS['strEnableAuditForZoneLinking']             = "Enable Audit Trail for Zone Linking screen (introduces huge performance penalty when linking large amounts of zones)";
 
 // Debug Logging Settings
 $GLOBALS['strDebug']                                 = "ログ検査方法の設定";
@@ -228,7 +218,6 @@ $GLOBALS['strDebugMethodNames']                      = "関数名を検査ログ
 $GLOBALS['strDebugLineNumbers']                      = "検査ログに行番号を含める";
 $GLOBALS['strDebugType']                             = "検査ログのタイプ";
 $GLOBALS['strDebugTypeFile']                         = "ファイル";
-$GLOBALS['strDebugTypeMcal']                         = "mCal";
 $GLOBALS['strDebugTypeSql']                          = "SQLデータベース";
 $GLOBALS['strDebugTypeSyslog']                       = "システムログ";
 $GLOBALS['strDebugName']                             = "ログ名、カレンダー、SQLテーブル<br />もしくはシスログを検査する";
@@ -288,14 +277,9 @@ $GLOBALS['strDeliveryFilenamesXMLRPC']               = "XML RPCで広告を生�
 $GLOBALS['strDeliveryFilenamesLocal']                = "ローカルサーバより広告を生成する";
 $GLOBALS['strDeliveryFilenamesFrontController']      = "フロントコントローラ";
 $GLOBALS['strDeliveryFilenamesFlash']                = "FlashのURL（フルURL）";
-$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
-$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "バナーキャッシュの設定";
 $GLOBALS['strDeliveryCacheLimit']                    = "バナーキャッシュの更新間隔";
-$GLOBALS['strDeliveryCacheStore']                    = "Banner Delivery Cache Store Type";
 
-$GLOBALS['strErrorInCacheStorePlugin']               = "Some errors were reported by the '%s' delivery store plugin:";
-$GLOBALS['strDeliveryCacheStorage']                  = "Delivery cache storage type";
 
 $GLOBALS['strOrigin']                                = "リモートサーバを使用";
 $GLOBALS['strOriginType']                            = "リモートサーバのタイプ";
@@ -307,11 +291,9 @@ $GLOBALS['strOriginTimeout']                         = "リモートサーバの
 $GLOBALS['strOriginProtocol']                        = "リモートサーバのプロトコル";
 
 $GLOBALS['strDeliveryAcls']                          = "バナー配送毎に配信制限を確認する";
-$GLOBALS['strDeliveryAclsDirectSelection']           = "Evaluate banner delivery limitations for direct selected ads";
 $GLOBALS['strDeliveryObfuscate']                     = "バナー配信時にチャンネルを隠す";
 $GLOBALS['strDeliveryExecPhp']                       = "バナーの内容にPHPコードを許可する<br />(Warning: セキュリティリスクとなり得る)";
 $GLOBALS['strDeliveryCtDelimiter']                   = "サードパーティー製の、クリック追跡時用区切り文字";
-$GLOBALS['strGlobalDefaultBannerUrl']                = "Global default Banner Image URL";
 $GLOBALS['strP3PSettings']                           = "P3Pプライベートポリシー";
 $GLOBALS['strUseP3P']                                = "P3Pポリシーを使う";
 $GLOBALS['strP3PCompactPolicy']                      = "P3Pコンパクトポリシー";
@@ -356,7 +338,6 @@ $GLOBALS['strShowBannerPreview']                     = "バナーが表示され
 $GLOBALS['strHideInactive']                          = "非アクティブなものを隠す";
 $GLOBALS['strGUIShowMatchingBanners']                = "マッチするバナーを<i>関連済みバナー</i>で表示する";
 $GLOBALS['strGUIShowParentCampaigns']                = "親キャンペーンを<i>関連済みバナー</i>で表示する";
-$GLOBALS['strShowEntityId']                          = "Show entity identifiers";
 $GLOBALS['strGUIAnonymousCampaignsByDefault']        = "デフォルトキャンペーンを匿名にする";
 $GLOBALS['strStatisticsDefaults']                    = "統計";
 $GLOBALS['strBeginOfWeek']                           = "週の始まり";
@@ -420,11 +401,6 @@ $GLOBALS['strEnforceUserAgents']                     = "以下の内容がUserAg
 $GLOBALS['strBannerStorage']                         = "バナーストレージ設定";
 
 // Campaign ECPM settings
-$GLOBALS['strEnableECPM']                            = "Use eCPM optimized priorities instead of remnant-weighted priorities";
-$GLOBALS['strEnableContractECPM']                    = "Use eCPM optimized priorities instead of standard contract priorities";
-$GLOBALS['strEnableECPMfromRemnant']                 = "(If you enable this feature all your remnant campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strEnableECPMfromECPM']                    = "(If you disable this feature some of your active eCPM campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strInactivatedCampaigns']                  = "List of campaigns which became inactive due to the changes in preferences:";
 
 // Statistics & Maintenance Settings
 $GLOBALS['strMaintenanceSettings']                   = "メンテナンス設定";
@@ -439,7 +415,6 @@ $GLOBALS['strMaintenanceOI']                         = "メンテナンス時間
 $GLOBALS['strMaintenanceOIError']                    = "メンテナンスの時間間隔が不正です。正しい値に関してはドキュメントを確認してください。";
 $GLOBALS['strPrioritySettings']                      = "優先度設定";
 $GLOBALS['strPriorityInstantUpdate']                 = "優先度の変更を即反映する";
-$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
 $GLOBALS['strDefaultImpConWindow']                   = "デフォルトの広告インプレッション接続ウィンドウ（秒）";
 $GLOBALS['strDefaultImpConWindowError']              = "デフォルトの広告インプレッション接続ウィンドウは、正数を入力してください";
 $GLOBALS['strDefaultCliConWindow']                   = "デフォルトの広告クリックウィンドウ（秒）";
@@ -477,7 +452,6 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "ヘッダーのフロン
 $GLOBALS['strGuiHeaderBackgroundColor']              = "ヘッダーの背景色";
 $GLOBALS['strGuiActiveTabColor']                     = "アクティブタブの色";
 $GLOBALS['strGuiHeaderTextColor']                    = "ヘッダーのテキスト色";
-$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "RGBフォーマットで色を指定してください(e.g. 0066CC)";
 
 $GLOBALS['strGzipContentCompression']                = "GZIP圧縮をする";
@@ -491,14 +465,8 @@ $GLOBALS['strPublisherAgreementEnabled']             = "Terms and Conditionsを�
 $GLOBALS['strPublisherAgreementText']                = "ログインテキスト（HTMLタグ使用可）";
 
 // Regenerate Platfor Hash script
-$GLOBALS['strPlatformHashRegenerate']                = "Platform Hash Regenerate";
-$GLOBALS['strNewPlatformHash']                       = "Your new Platform Hash is:";
-$GLOBALS['strPlatformHashInsertingError']            = "Error inserting Platform Hash into database";
 
 // Plugin Settings
-$GLOBALS['strPluginSettings']                        = "Plugin Settings";
-$GLOBALS['strEnableNewPlugins']                      = "Enable newly installed plugins";
-$GLOBALS['strUseMergedFunctions']                    = "Use merged delivery functions file";
 
 /*-------------------------------------------------------*/
 /* Unknown (unused?) translations                        */

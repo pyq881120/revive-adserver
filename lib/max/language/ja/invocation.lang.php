@@ -144,7 +144,5 @@ $GLOBALS['strImgWithAppendWarning'] = "トラッカーコードを追加しま�
 // Local Invocation
 $GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>注意</strong> ローカルバナーの生成は、広告を呼び出すサーバと、呼び出される広告のコードが、同じサーバ上にある場合にのみ、動作します。</span><br />MAX_PATHがベースディレクトリをさしているか、確認してください。<br />そして、広告を表示しているサーバの設定ファイルがMAX_PATH/varにあることを確認してください。";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

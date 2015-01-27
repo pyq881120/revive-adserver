@@ -1,30 +1,29 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Reports (Standard)\n"
+"Project-Id-Version: revive-adserver\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-17 11:37+0100\n"
-"PO-Revision-Date: 2014-04-08 11:31+0100\n"
-"Last-Translator: Matteo Beccati <matteo@beccati.com>\n"
+"PO-Revision-Date: 2015-01-27 11:09-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: (n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: translate\n"
-"Language-Team: \n"
-"Language: en_GB\n"
-"X-Generator: Poedit 1.6.4\n"
-"X-Poedit-SearchPath-0: plugins_repo/openXReports/extensions/reports/"
-"oxReportsStandard/\n"
+"Last-Translator: mbeccati <matteo@beccati.com>\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"X-Generator: crowdin.com\n"
+"X-Poedit-SearchPath-0: plugins_repo/openXReports/extensions/reports/oxReportsStandard/\n"
+"X-Crowdin-Project: revive-adserver\n"
+"X-Crowdin-File: /plugins/openXReports/oxReportsStandard/en.po\n"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//campaignAnalysisReport.class.php:120
 msgid "Campaign Analysis Report"
 msgstr "项目分析报表"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//campaignAnalysisReport.class.php:121
-msgid ""
-"This report shows a breakdown of advertising for a particular campaign, by "
-"day, banner, and zone."
+msgid "This report shows a breakdown of advertising for a particular campaign, by day, banner, and zone."
 msgstr "指定项目投放记录的明细报表，提供日期、素材及版位视图"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//campaignAnalysisReport.class.php:123
@@ -61,10 +60,7 @@ msgid "Campaign delivery"
 msgstr "项目对比"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:60
-msgid ""
-"This report shows delivery statistics for all campaigns which were live "
-"during the specified period, highlighting campaigns which are "
-"underperforming."
+msgid "This report shows delivery statistics for all campaigns which were live during the specified period, highlighting campaigns which are underperforming."
 msgstr "对比指定时间段内所有项目的投放情况，以便于发现表现欠佳的项目"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:86
@@ -93,49 +89,47 @@ msgstr "% 已完成"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:185
 msgid "Overall +/-"
-msgstr "Overall +/-"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:187
 msgid "Current +/-"
-msgstr "Current +/-"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:485
 msgid "Targeted"
-msgstr "Targeted"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:487
 msgid "Run of Site"
-msgstr "Run of Site"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:503
 msgid "Running"
-msgstr "Running"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:505
 msgid "Stopped"
-msgstr "Stopped"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:522
-msgid "1: Exclusive"
-msgstr "1: Exclusive"
+msgid "Override"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:524
-msgid "3: Low"
-msgstr "3: Low"
+msgid "Remnant"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//liveCampaignDeliveryReport.class.php:526
-msgid "2: High"
-msgstr "2: High"
+msgid "Contract"
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//advertisingAnalysisReport.class.php:93
 msgid "Advertising Analysis Report"
 msgstr "投放分析报表"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//advertisingAnalysisReport.class.php:94
-msgid ""
-"This report shows a breakdown of advertising for a particular advertiser or "
-"website, by day, campaign, and zone."
-msgstr "指定客户或媒体投放记录的明细报表，提供日期、项目及版位视图"
+msgid "This report shows a breakdown of advertising for a particular advertiser or publisher, by day, campaign, and zone."
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//advertisingAnalysisReport.class.php:120
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//advertisingAnalysisReport.class.php:334
@@ -147,9 +141,8 @@ msgid "Conversion Tracking Report"
 msgstr "数据追踪报表"
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//conversionTrackingReport.class.php:141
-msgid ""
-"A detailed breakdown of all conversion activity by advertiser or website."
-msgstr "指定客户或媒体数据追踪的明细报表"
+msgid "A detailed breakdown of all conversion activity by advertiser or publisher."
+msgstr ""
 
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//conversionTrackingReport.class.php:184
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//conversionTrackingReport.class.php:346
@@ -227,3 +220,4 @@ msgstr "时间"
 #: plugins_repo/openXReports/extensions/reports/oxReportsStandard//conversionTrackingReport.class.php:725
 msgid "IP Address"
 msgstr "IP 地址"
+

@@ -113,10 +113,10 @@ $GLOBALS['strHideTransparancy']		= "Transparenz des verborgenen Banners";
 
 
 $GLOBALS['strAdLayerStyleName']	= array(
-	'geocities'		=> "Geocities",
+	'geocities'		=> "",
 	'simple'		=> "Einfach",
-	'cursor'		=> "Cursor",
-	'floater'		=> "Floater"
+	'cursor'		=> "",
+	'floater'		=> ""
 );
 
 // Support for 3rd party server clicktracking
@@ -144,7 +144,5 @@ $GLOBALS['strImgWithAppendWarning'] = "Dieser Tracker hat angehängten Code.<br 
 // Local Invocation
 $GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Hinweis:</strong>Der Local mode Bannercode kann nur verwendet werden, wenn die Webseite die diesen Code ausführt auf der gleichen physikalischen Maschine wie der AdServer liegt.</span><br />Überprüfen Sie das MAX_PATH in dem unten stehenden Code definiert ist und das Hauptverzeichnis der MAX Installation benennt. Außerdem benötigen Sie eine Konfigurationsdatei für die Webseite, die die Werbebanner anzeigt (in MAX_PATH/var).";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

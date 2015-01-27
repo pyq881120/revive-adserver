@@ -17,12 +17,10 @@ $GLOBALS['strChooseTypeOfInvocation']               = "Пожалуйста, в�
 $GLOBALS['strChooseTypeOfBannerInvocation']         = "Пожалуйста, выберите тип вызова баннера";
 
 // Measures
-$GLOBALS['strAbbrPixels']                           = "px";
 $GLOBALS['strAbbrSeconds']                          = "сек";
 
 // Common Invocation Parameters
 $GLOBALS['strInvocationWhat']                       = "Выбор баннеров";
-$GLOBALS['strInvocationPreview']                    = "Banner preview";
 $GLOBALS['strInvocationClientID']                   = "Рекламодатель или кампания";
 $GLOBALS['strInvocationCampaignID']                 = "Кампания";
 $GLOBALS['strInvocationTarget']                     = "Фрейм назначения";
@@ -46,26 +44,16 @@ $GLOBALS['strIframeGoogleClickTracking']            = "Включить код �
 $GLOBALS['strPopUpStyle']			= "Тип Pop-up";
 $GLOBALS['strPopUpStylePopUp']			= "Выскакивает над";
 $GLOBALS['strPopUpStylePopUnder']		= "Выскакивает под";
-$GLOBALS['strPopUpCreateInstance']		= "Instance when the pop-up is created";
 $GLOBALS['strPopUpImmediately']			= "Немедленно";
 $GLOBALS['strPopUpOnClose']			= "Когда страница закрывается";
 $GLOBALS['strPopUpAfterSec']			= "Через";
 $GLOBALS['strAutoCloseAfter']			= "Автоматически закрыть через";
 $GLOBALS['strPopUpTop']				= "Начальная позиция (верх)";
 $GLOBALS['strPopUpLeft']			= "Начальная позиция (левый край)";
-$GLOBALS['strWindowOptions']		= "Window options";
-$GLOBALS['strShowToolbars']			= "Toolbars";
-$GLOBALS['strShowLocation']			= "Location";
-$GLOBALS['strShowMenubar']			= "Menubar";
-$GLOBALS['strShowStatus']			= "Status";
-$GLOBALS['strWindowResizable']		= "Resizable";
-$GLOBALS['strShowScrollbars']		= "Scrollbars";
 
 
 // XML-RPC
 $GLOBALS['strXmlRpcLanguage']       = "Язык хоста";
-$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
-$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -113,7 +101,7 @@ $GLOBALS['strHideTransparancy']		= "Прозрачность спрятанно�
 
 
 $GLOBALS['strAdLayerStyleName']	= array(
-	'geocities'		=> "Geocities",
+	'geocities'		=> "",
 	'simple'		=> "Простой",
 	'cursor'		=> "Курсор",
 	'floater'		=> "Плавающий"
@@ -126,26 +114,16 @@ $GLOBALS['str3rdPartyTrack']		 = "Поддержка учета кликов";
 $GLOBALS['strCacheBuster']		    = "Вставить код, запрещающий кэширование";
 
 // Non-Img creatives Warning for zone image-only invocation
-$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
-$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
 // unkown HTML tag type Warning for zone invocation
-$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
 
 // sql/web banner-type warning for clickonly zone invocation
-$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
-<br /> 1) Download the banner:";
-$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
-$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
 
 // IMG invocation selected for tracker with appended code
-$GLOBALS['strWarning'] = "Warning";
 $GLOBALS['strImgWithAppendWarning'] = "Трекер имеет встроенный код, который должен располагаться внутри контейнера JavaScript";
 
 // Local Invocation
 $GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Внимание:</strong> Локальный режим вызова баннеров работает только при вызове кода с той же физической машины, что и рекламный сервер.</span><br />Проверьте, что переменная MAX_PATH указывает на базовую папку вашей инсталляции<br />и у вас есть соответствующий файл конфигурации в MAX_PATH/var";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

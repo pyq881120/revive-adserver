@@ -129,10 +129,6 @@ $GLOBALS['strServerCommunicationError'] = "
     <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
     able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strCheckForUpdatesDisabled'] = "
-    <b>Check for updates is disabled. Please enable via the
-    <a href='account-settings-update.php'>update settings</a> screen.</b>
-";
 
 $GLOBALS['strNewVersionAvailable']		= "
 	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
@@ -166,7 +162,6 @@ $GLOBALS['strConvertingStats']			= "Conversione statistiche...";
 $GLOBALS['strConvertStats']			= "Converti statistiche";
 $GLOBALS['strConvertAdViews']			= "Visualizzazioni convertite,";
 $GLOBALS['strConvertAdClicks']			= "Click convertiti...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
 $GLOBALS['strConvertNothing']			= "Niente da convertire...";
 $GLOBALS['strConvertFinished']			= "Operazione terminata...";
 
@@ -181,8 +176,6 @@ $GLOBALS['strAutoMaintenanceDisabled'] = "La manutenzione automatica è disabili
 $GLOBALS['strAutoMaintenanceEnabled']  = "La manutenzione automatica è abilitata. Per ottenere le performance migliori ti consigliamo di <a href='settings-admin.php'>disabilitare la manutenzione automatica</a>.";
 $GLOBALS['strScheduledMaintenance']         = "La manutenzione programmata sembra essere pianificata correttamente.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "<strong>La manutenzione programmata non è stata eseguita nell'ultima ora. Potrebbe darsi che non sia stata configurata correttamente.</strong>";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "La manutenzione automatica è abilitata e sarà eseguita circa ogni ora.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -191,7 +184,6 @@ $GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenanc
  you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
 
 //  Deliver Limitations
-$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
 $GLOBALS['strAllBannerChannelCompiled'] = "Sono stati ricompilati tutti i valori compilati di limitazioni banner / canale.";
 $GLOBALS['strBannerChannelResult']      = "Seguono i risultati della validazione delle limitazioni banner/canale";
 $GLOBALS['strChannelCompiledLimitationsValid']  = "Tutte le limitazioni compilate del canale sono valide";
@@ -211,13 +203,7 @@ $GLOBALS['strAppendCodesResult']        = "Ecco i risultati di convalida dei cod
 $GLOBALS['strAppendCodesValid']         = "Tutti i codici accodati sono validi";
 $GLOBALS['strRepairAppenedCodes']       = "Sono state trovate alcune inconsistenze, puoi ripararle usando il bottone seguente. Ricompilerai i codici accodati per ogni tracker del sistema";
 
-$GLOBALS['strPlugins']                  = "Plugins";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
-$GLOBALS['strPluginsOk']                = "No problems found";
 
-$GLOBALS['strMenus']                    = "Menus";
-$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
-$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
-$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
 
 ?>

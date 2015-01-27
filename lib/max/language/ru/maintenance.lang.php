@@ -57,7 +57,6 @@ $GLOBALS['strLowPriorityCampaigns']		= "Кампании с низким при�
 $GLOBALS['strPredictedAdViews']			= "Предсказано просмотров";
 $GLOBALS['strPriorityDaysRunning']		= "There are currently {days} days worth of statistics available from where ".MAX_PRODUCT_NAME." can base its daily prediction on. ";
 $GLOBALS['strPriorityBasedLastWeek']		= "Предсказания основаны на данных по этой и прошлой неделе. ";
-$GLOBALS['strPriorityBasedLastDays']		= "The prediction is based on data from the last couple of days. ";
 $GLOBALS['strPriorityBasedYesterday']		= "Предсказание основано на данных за вчера. ";
 $GLOBALS['strPriorityNoData']			= "Недостаточно данных для надёжного предсказания количества показов, которые данный сервер сгенерирует сегодня. Назначение проритетов будет основываться на статистике, собираемой в реальном времени. ";
 $GLOBALS['strPriorityEnoughAdViews']		= "Должно быть достаточно показов для удовлетворения требований всех высокоприоритетных кампаний. ";
@@ -129,10 +128,6 @@ $GLOBALS['strServerCommunicationError'] = "
     <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
     able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strCheckForUpdatesDisabled'] = "
-    <b>Check for updates is disabled. Please enable via the
-    <a href='account-settings-update.php'>update settings</a> screen.</b>
-";
 
 $GLOBALS['strNewVersionAvailable']		= "
 	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
@@ -166,7 +161,6 @@ $GLOBALS['strConvertingStats']			= "Преобразовываем статис�
 $GLOBALS['strConvertStats']			= "Преобразовать статистику";
 $GLOBALS['strConvertAdViews']			= "Показы преобразованы,";
 $GLOBALS['strConvertAdClicks']			= "Клики преобразованы...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
 $GLOBALS['strConvertNothing']			= "Нечего преобразовывать...";
 $GLOBALS['strConvertFinished']			= "Закончено...";
 
@@ -178,11 +172,8 @@ $GLOBALS['strConvertFinishedExplaination']  	= "\\n	Преобразование
 
 //  Maintenace
 $GLOBALS['strAutoMaintenanceDisabled'] = "Автоматическое обслуживание было отключено.";
-$GLOBALS['strAutoMaintenanceEnabled']  = "Automatic maintenance is enabled. For best performance it is advised to <a href='settings-admin.php'>disable automatic maintenance</a>.";
 $GLOBALS['strScheduledMaintenance']         = "Запланированное обслуживание работает корректно.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "Запланированное обслуживание не запускалось в течение последнего часа. Возможно, оно настроено некорректно.";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Автоматическое обслуживание включено и будет запускаться каждый час";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -191,7 +182,6 @@ $GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenanc
  you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
 
 //  Deliver Limitations
-$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
 $GLOBALS['strAllBannerChannelCompiled'] = "Все ограничения каналов и баннеров были пересчитаны";
 $GLOBALS['strBannerChannelResult']      = "Ниже приведены результаты проверки ограничений баннеров и каналов";
 $GLOBALS['strChannelCompiledLimitationsValid']  = "Все ограничения канала корректны";
@@ -211,13 +201,7 @@ $GLOBALS['strAppendCodesResult']        = "Результаты пересчет
 $GLOBALS['strAppendCodesValid']         = "Все коды корректны";
 $GLOBALS['strRepairAppenedCodes']       = "Были найдены некоторые несовпадения. для их коррекции нажмите пожалуйста кнопку ниже.";
 
-$GLOBALS['strPlugins']                  = "Plugins";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
-$GLOBALS['strPluginsOk']                = "No problems found";
 
-$GLOBALS['strMenus']                    = "Menus";
-$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
-$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
-$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
 
 ?>

@@ -14,14 +14,12 @@
 
 $GLOBALS['strDeliveryEngine']				= "Motor de Livrare";
 $GLOBALS['strMaintenance']					= "Întreţinere";
-$GLOBALS['strAdministrator']				= "Administrator";
 
 // Audit
 $GLOBALS['strLogging']                      = "Înregistrare în Jurnal";
 $GLOBALS['strAudit']                        = "Jurnal Bilanţ";
 $GLOBALS['strDebugLog']                     = "Jurnal Depanare";
 $GLOBALS['strEvent']                        = "Eveniment";
-$GLOBALS['strTimestamp']                    = "Timestamp";
 $GLOBALS['strDeleted']                      = "şters";
 $GLOBALS['strInserted']                     = "adăugat";
 $GLOBALS['strUpdated']                      = "actualizat";
@@ -30,8 +28,6 @@ $GLOBALS['strInsert']                       = "Adaugă";
 $GLOBALS['strUpdate']                       = "Actualizează";
 $GLOBALS['strHas']                          = "are";
 $GLOBALS['strFilters']                      = "Filtre";
-$GLOBALS['strAdvertiser']                   = "Advertiser";
-$GLOBALS['strPublisher']                    = "Website";
 $GLOBALS['strCampaign']                     = "Campanie";
 $GLOBALS['strZone']                         = "Zonă";
 $GLOBALS['strType']                         = "Tip";

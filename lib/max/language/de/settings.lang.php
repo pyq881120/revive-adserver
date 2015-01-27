@@ -72,9 +72,6 @@ $GLOBALS['strProductUpToDateTitle']     =  PRODUCT_NAME . " is up to date";
 $GLOBALS['strOaUpToDate']               = "Your " . PRODUCT_NAME . " database and file structure are both using the most recent version and therefore no upgrade is required at this time. Please click Continue to proceed to the administration panel.";
 $GLOBALS['strOaUpToDateCantRemove']     = "Warnung: Es fehlen die nötigen Rechte an der Datei UPGRADE um diese aus dem Openads-'var'-Verzeichnis zu entfernen. Bitte löschen Sie die Datei manuell.";
 $GLOBALS['strRemoveUpgradeFile']               = "Sie müssen die Datei UPGRADE aus dem var-Verzeichnis löschen.";
-$GLOBALS['strInstallSuccess']               = "Clicking 'Continue' will log you in to your ad server.
-<p><strong>What next?</strong></p>
-<div class='psub'>";
 $GLOBALS['strInstallSuccess2'] ="
   <p><b>Serving your first ad campaign</b><br>
     Use our <a href='".PRODUCT_DOCSURL."/user/quickStartGuide' target='_blank'>quick start guide to start serving your first ad campaign</a>.
@@ -106,10 +103,6 @@ $GLOBALS['strErrorUpgrade']                 = 'Das Upgrade der Datenbank der bes
 $GLOBALS['strErrorInstallDbConnect']        = "Eine Verbindung zur Datenbank konnte nicht geöffnet werden.";
 
 $GLOBALS['strErrorWritePermissions']        = "Nicht ausreichende Datei- und Verzeichnisrechte erkannt, Sie müssen dies beheben bevor die Installation fortgesetzt werden kann.<br />Um diese Rechte auf einem Linux System zu gewähren, tippen Sie den/die folgenden Befehle auf einer Shell:";
-$GLOBALS['strErrorFixPermissionsCommand']   = "<i>chmod a+w %s</i>";
-$GLOBALS['strErrorFixPermissionsRCommand']  = "<i>chmod -R a+w %s</i>";
-$GLOBALS['strNotWriteable']                 = "NOT writeable";
-$GLOBALS['strDirNotWriteableError']         = "Directory must be writeable";
 
 $GLOBALS['strErrorWritePermissionsWin']     = "Nicht ausreichende Datei- und Verzeichnisrechte erkannt, Sie müssen dies beheben bevor die Installation fortgesetzt werden kann.";
 $GLOBALS['strCheckDocumentation']           = "For more help, please see the <a href=\"".PRODUCT_DOCSURL."\">" . PRODUCT_NAME . " documentation</a>.";
@@ -209,7 +202,6 @@ $GLOBALS['strEmailAddresses']                        = "E-Mail \"Von\" Adresse";
 $GLOBALS['strEmailFromName']                         = "E-Mail \"Von\" Name";
 $GLOBALS['strEmailFromAddress']                      = "E-Mail \"Von\" E-Mail Adresse";
 $GLOBALS['strEmailFromCompany']                      = "E-Mail \"Von\" Firma";
-$GLOBALS['strUseManagerDetails']                     = 'Use the owning account\'s Contact, Email and Name instead of the above Name, Email Address and Company when emailing reports to Advertiser or Website accounts.';
 $GLOBALS['strQmailPatch']                            = "Änderungen für qmail";
 $GLOBALS['strEnableQmailPatch']                      = "Kopfzeile auch für qmail lesbar machen";
 $GLOBALS['strEmailHeader']                           = "E-Mail-Header";
@@ -218,7 +210,6 @@ $GLOBALS['strEmailLog']                              = "E-Mail Protokoll";
 // Audit Trail Settings
 $GLOBALS['strAuditTrailSettings']                    = "Einstellungen Prüfprotokoll";
 $GLOBALS['strEnableAudit']                           = "Prüfprotokoll aktivieren";
-$GLOBALS['strEnableAuditForZoneLinking']             = "Enable Audit Trail for Zone Linking screen (introduces huge performance penalty when linking large amounts of zones)";
 
 // Debug Logging Settings
 $GLOBALS['strDebug']                                 = "Grundsätzliche Einstellungen für das Debug-Logging";
@@ -228,9 +219,7 @@ $GLOBALS['strDebugMethodNames']                      = "Methodennamen im Debug-L
 $GLOBALS['strDebugLineNumbers']                      = "Zeilennummern im Debug-Log vermerken";
 $GLOBALS['strDebugType']                             = "Typ des Debug-Logs";
 $GLOBALS['strDebugTypeFile']                         = "Datei";
-$GLOBALS['strDebugTypeMcal']                         = "mCal";
 $GLOBALS['strDebugTypeSql']                          = "SQL-Datenbank";
-$GLOBALS['strDebugTypeSyslog']                       = "Syslog";
 $GLOBALS['strDebugName']                             = "Name des Debug-Logs, Kalender, SQL-Tabelle,<br />oder Syslog Facility";
 $GLOBALS['strDebugPriority']                         = "Debug Dringlichkeitsstufe";
 $GLOBALS['strPEAR_LOG_DEBUG']                        = "PEAR_LOG_DEBUG - Alle Informationen";
@@ -272,24 +261,10 @@ $GLOBALS['strTypeFTPErrorNoSupport']                 = "Ihre PHP-Installation un
 $GLOBALS['strTypeFTPErrorUpload']                    = "Hochladen auf den FTP-Server nicht möglich, überprüfen Sie die Zugangsrechte in dem Host-Verzeichnis.";
 $GLOBALS['strTypeFTPErrorHost']                      = "Rechnername für FTP-Server ist fehlerhaft";
 $GLOBALS['strDeliveryFilenames']                     = "Namen der Dateien, die das System zur Werbemittelauslieferung nutzt";
-$GLOBALS['strDeliveryFilenamesAdClick']              = "Ad Click";
 $GLOBALS['strDeliveryFilenamesAdConversionVars']     = "Ad Conversion Variablen";
-$GLOBALS['strDeliveryFilenamesAdContent']            = "Ad Content";
-$GLOBALS['strDeliveryFilenamesAdConversion']         = "Ad Conversion";
-$GLOBALS['strDeliveryFilenamesAdConversionJS']       = "Ad Conversion (JavaScript)";
-$GLOBALS['strDeliveryFilenamesAdFrame']              = "Ad Frame";
-$GLOBALS['strDeliveryFilenamesAdImage']              = "Ad Image";
-$GLOBALS['strDeliveryFilenamesAdJS']                 = "Ad (JavaScript)";
-$GLOBALS['strDeliveryFilenamesAdLayer']              = "Ad Layer";
-$GLOBALS['strDeliveryFilenamesAdLog']                = "Ad Log";
-$GLOBALS['strDeliveryFilenamesAdPopup']              = "Ad Popup";
-$GLOBALS['strDeliveryFilenamesAdView']               = "Ad View";
 $GLOBALS['strDeliveryFilenamesXMLRPC']               = "XML RPC Bannercode";
 $GLOBALS['strDeliveryFilenamesLocal']                = "Lokaler Bannercode";
-$GLOBALS['strDeliveryFilenamesFrontController']      = "Front Controller";
 $GLOBALS['strDeliveryFilenamesFlash']                = "Flash Include (Kann eine vollständige URL sein)";
-$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
-$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "Allgemeine Einstellungen des Auslieferungs-Caches";
 $GLOBALS['strDeliveryCacheLimit']                    = "Zeitintervall zwischen Cache-Aktualisierungen (in Sek.)";
 $GLOBALS['strDeliveryCacheStore']                    = "Cache-Typ für die Bannerauslieferung";
@@ -302,12 +277,10 @@ $GLOBALS['strOriginType']                            = "Ursprungsserver Typ";
 $GLOBALS['strOriginHost']                            = "Hostname des Ursprungsservers";
 $GLOBALS['strOriginPort']                            = "Port-Nummer des Ursprungsserver Datenbank";
 $GLOBALS['strOriginScript']                          = "Script-Datei für Ursprungsserver Datenbank";
-$GLOBALS['strOriginTypeXMLRPC']                      = "XMLRPC";
 $GLOBALS['strOriginTimeout']                         = "Zeitlimit (Sekunden) für Ursprungsserver";
 $GLOBALS['strOriginProtocol']                        = "Protokoll für Ursprungsserver ";
 
 $GLOBALS['strDeliveryAcls']                          = "Überprüfe die Auslieferungseinschränkungen eines Banners während der Auslieferung";
-$GLOBALS['strDeliveryAclsDirectSelection']           = "Evaluate banner delivery limitations for direct selected ads";
 $GLOBALS['strDeliveryObfuscate']                     = "Bei der Auslieferung die Gruppe eines Werbemittels verschleiern";
 $GLOBALS['strDeliveryExecPhp']                       = "PHP-Code in Werbemitteln wird ausgeführt<br />(Achtung: Starkes Sicherheitsrisiko)";
 $GLOBALS['strDeliveryCtDelimiter']                   = "Begrenzung des 3rd Party Kick-Trackings";
@@ -356,7 +329,6 @@ $GLOBALS['strShowBannerPreview']                     = "Werbemittelvorschau oben
 $GLOBALS['strHideInactive']                          = "Inaktive ausblenden";
 $GLOBALS['strGUIShowMatchingBanners']                = "Anzeige des zugehörenden Werbemittels auf der Seite <i>Verknüpfte Werbemittel</i>";
 $GLOBALS['strGUIShowParentCampaigns']                = "Anzeige der zugehörenden Kampagne auf der Seite <i>Veknüpfte Werbemittel</i>";
-$GLOBALS['strShowEntityId']                          = "Show entity identifiers";
 $GLOBALS['strGUIAnonymousCampaignsByDefault']        = "anonyme Kampagnen als Grundeinstellung";
 $GLOBALS['strStatisticsDefaults']                    = "Statistiken";
 $GLOBALS['strBeginOfWeek']                           = "Wochenbeginn";
@@ -420,11 +392,6 @@ $GLOBALS['strEnforceUserAgents']                     = "Die Statistikdaten <b>nu
 $GLOBALS['strBannerStorage']                         = "Einstellungen Speicherung der Banner";
 
 // Campaign ECPM settings
-$GLOBALS['strEnableECPM']                            = "Use eCPM optimized priorities instead of remnant-weighted priorities";
-$GLOBALS['strEnableContractECPM']                    = "Use eCPM optimized priorities instead of standard contract priorities";
-$GLOBALS['strEnableECPMfromRemnant']                 = "(If you enable this feature all your remnant campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strEnableECPMfromECPM']                    = "(If you disable this feature some of your active eCPM campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strInactivatedCampaigns']                  = "List of campaigns which became inactive due to the changes in preferences:";
 
 // Statistics & Maintenance Settings
 $GLOBALS['strMaintenanceSettings']                   = "Wartungseinstellungen";
@@ -439,7 +406,6 @@ $GLOBALS['strMaintenanceOI']                         = "Wartungsintervall (in Mi
 $GLOBALS['strMaintenanceOIError']                    = "Dieses Wartungsintervall ist nicht zulässig - bitte konsultieren Sie die Dokumentation";
 $GLOBALS['strPrioritySettings']                      = "Einstellung der Prioritäten";
 $GLOBALS['strPriorityInstantUpdate']                 = "Sofortige Neuberechnung der Prioritäten nach Änderungen in der Benutzeroberfläche.";
-$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
 $GLOBALS['strDefaultImpConWindow']                   = "Vorgabewert (in Sekunden) für das Zeitfenster von Ad Impressions bei der Neuanlage von Trackern";
 $GLOBALS['strDefaultImpConWindowError']              = "Wenn gesetzt, muß der Vorgabewert für das Zeitfenster der Tracker Ad Impression eine positive ganze Zahl sein";
 $GLOBALS['strDefaultCliConWindow']                   = "Vorgabewert (in Sekunden) für das Zeitfenster von Ad Klicks bei der Neuanlage von Trackern";
@@ -477,7 +443,6 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "Vordergrundfarbe der Kop
 $GLOBALS['strGuiHeaderBackgroundColor']              = "Hintergrundfarbe der Kopfzeile";
 $GLOBALS['strGuiActiveTabColor']                     = "Farbe des aktiven Reiters";
 $GLOBALS['strGuiHeaderTextColor']                    = "Textfarbe in der Kopfzeile";
-$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "Bitte geben Sie die Farben im RGB-Format an, z.B. '0066CC'";
 
 $GLOBALS['strGzipContentCompression']                = "Komprimieren mit GZIP";
@@ -491,35 +456,13 @@ $GLOBALS['strPublisherAgreementEnabled']             = "Erlaube das Einloggen vo
 $GLOBALS['strPublisherAgreementText']                = "Konditionen (AGB) für Werbetreibende beim Login (HTML-Tags sind erlaubt)";
 
 // Regenerate Platfor Hash script
-$GLOBALS['strPlatformHashRegenerate']                = "Platform Hash Regenerate";
-$GLOBALS['strNewPlatformHash']                       = "Your new Platform Hash is:";
-$GLOBALS['strPlatformHashInsertingError']            = "Error inserting Platform Hash into database";
 
 // Plugin Settings
-$GLOBALS['strPluginSettings']                        = "Plugin Settings";
-$GLOBALS['strEnableNewPlugins']                      = "Enable newly installed plugins";
-$GLOBALS['strUseMergedFunctions']                    = "Use merged delivery functions file";
 
 /*-------------------------------------------------------*/
 /* Unknown (unused?) translations                        */
 /*-------------------------------------------------------*/
 
-$GLOBALS['strExperimental']                 = "Experimental";
-$GLOBALS['strKeywordRetrieval']             = "Keyword retrieval";
-$GLOBALS['strBannerRetrieval']              = "Banner retrieval method";
-$GLOBALS['strRetrieveRandom']               = "Random banner retrieval (default)";
-$GLOBALS['strRetrieveNormalSeq']            = "Normal sequental banner retrieval";
-$GLOBALS['strWeightSeq']                    = "Weight based sequential banner retrieval";
-$GLOBALS['strFullSeq']                      = "Full sequential banner retrieval";
-$GLOBALS['strUseKeywords']                  = "Use keywords to select banners";
-$GLOBALS['strUseConditionalKeys']           = "Allow logical operators when using direct selection";
-$GLOBALS['strUseMultipleKeys']              = "Allow multiple keywords when using direct selection";
 
-$GLOBALS['strTableBorderColor']             = "Table Border Color";
-$GLOBALS['strTableBackColor']               = "Table Back Color";
-$GLOBALS['strTableBackColorAlt']            = "Table Back Color (Alternative)";
-$GLOBALS['strMainBackColor']                = "Main Back Color";
-$GLOBALS['strOverrideGD']                   = "Override GD Imageformat";
-$GLOBALS['strTimeZone']                     = "Time Zone";
 
 ?>

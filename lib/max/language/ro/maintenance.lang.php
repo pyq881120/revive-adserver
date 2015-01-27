@@ -51,22 +51,11 @@ $GLOBALS['strAutoMantenaceEnabled']		= "Totuşi, întreţinerea automată încă
 
 // Priority
 $GLOBALS['strRecalculatePriority']		= "Recalculează prioritatea";
-$GLOBALS['strHighPriorityCampaigns']		= "High priority campaigns";
-$GLOBALS['strAdViewsAssigned']			= "AdViews assigned";
-$GLOBALS['strLowPriorityCampaigns']		= "Low priority campaigns";
-$GLOBALS['strPredictedAdViews']			= "Predicted AdViews";
 $GLOBALS['strPriorityDaysRunning']		= "There are currently {days} days worth of statistics available from where ".MAX_PRODUCT_NAME." can base its daily prediction on. ";
-$GLOBALS['strPriorityBasedLastWeek']		= "The prediction is based on data from this week and last week. ";
-$GLOBALS['strPriorityBasedLastDays']		= "The prediction is based on data from the last couple of days. ";
-$GLOBALS['strPriorityBasedYesterday']		= "The prediction is based on data from yesterday. ";
-$GLOBALS['strPriorityNoData']			= "There isn't enough data available to make a reliable prediction about the number of impressions this adserver will generate today. Priority assignments will be based on real time statistics only. ";
-$GLOBALS['strPriorityEnoughAdViews']		= "There should be enough AdViews to fully satisfy the target all high priority campaigns. ";
-$GLOBALS['strPriorityNotEnoughAdViews']		= "It isn't clear wether there will be enough AdViews served today to satisfy the target all high priority campaigns. ";
 
 
 // Banner cache
 $GLOBALS['strCheckBannerCache']		= "Verifică cache banner";
-$GLOBALS['strRebuildBannerCache']		= "Rebuild banner cache";
 $GLOBALS['strBannerCacheErrorsFound'] = "Verificarea bazei de date pentru cache-ul bannerului a întâmpinat unele erori. Aceste bannere nu vor funcţiona până când nu le repari manual.";
 $GLOBALS['strBannerCacheOK'] = "Nu a fost detectată nici o eroare. Baza de date cu cache-ul bannerului este actualizată";
 $GLOBALS['strBannerCacheDifferencesFound'] = "Verificarea bazei de date pentru cache-ul bannerului a descoperit ca sunt necesare actualizări ce necesită reconstruirea acesteia. Apasă aici pentru actualizarea automată a cache-ului.";
@@ -129,10 +118,6 @@ $GLOBALS['strServerCommunicationError'] = "
     <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
     able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strCheckForUpdatesDisabled'] = "
-    <b>Check for updates is disabled. Please enable via the
-    <a href='account-settings-update.php'>update settings</a> screen.</b>
-";
 
 $GLOBALS['strNewVersionAvailable']		= "
 	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
@@ -161,43 +146,15 @@ $GLOBALS['strAndPlain']					= "şi";
 
 
 // Stats conversion
-$GLOBALS['strConverting']			= "Converting";
-$GLOBALS['strConvertingStats']			= "Converting statistics...";
-$GLOBALS['strConvertStats']			= "Convert statistics";
-$GLOBALS['strConvertAdViews']			= "AdViews converted,";
-$GLOBALS['strConvertAdClicks']			= "AdClicks converted...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
-$GLOBALS['strConvertNothing']			= "Nothing to convert...";
-$GLOBALS['strConvertFinished']			= "Finished...";
 
-$GLOBALS['strConvertExplaination']		= "
-	You are currently using the compact format to store your statistics, but there are <br />
-	still some statistics in verbose format. As long as the verbose statistics aren't  <br />
-	converted to compact format they will not be used while viewing these pages.  <br />
-	Before converting your statistics, make a backup of the database!  <br />
-	Do you want to convert your verbose statistics to the new compact format? <br />
-";
 
-$GLOBALS['strConvertingExplaination']		= "
-	All remaining verbose statistics are now being converted to the compact format. <br />
-	Depending on how many impressions are stored in verbose format this may take a  <br />
-	couple of minutes. Please wait until the conversion is finished before you visit other <br />
-	pages. Below you will see a log of all modification made to the database. <br />
-";
 
-$GLOBALS['strConvertFinishedExplaination']  	= "
-	The conversion of the remaining verbose statistics was succesful and the data <br />
-	should now be usable again. Below you will see a log of all modification made <br />
-	to the database.<br />
-";
 
 //  Maintenace
 $GLOBALS['strAutoMaintenanceDisabled'] = "Întreţinerea automată este dezactivată.";
 $GLOBALS['strAutoMaintenanceEnabled']  = "Întreţinerea automată este activată. Pentru cea mai bună performanţă îţi recomandăm să <a href='settings-admin.php'>dezactivezi întreţinerea automată</a>.";
 $GLOBALS['strScheduledMaintenance']         = "Se pare că întreţinerea programată funcţionează corect.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "Întreţinerea programată nu a fost executată în ultima oră. Acest lucru ar putea însemna că nu ai setat-o corect.";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Întreţinerea automată este activată şi va accesa întreţinerea în fiecare oră.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -226,13 +183,7 @@ $GLOBALS['strAppendCodesResult']        = "Aici sunt rezultatele validării codu
 $GLOBALS['strAppendCodesValid']         = "Toate codurile alăturate ale contorului compilate sunt valide";
 $GLOBALS['strRepairAppenedCodes']       = "Au fost găsite unele incompatibilităţi mai sus, le poţi repara folosind butonul de mai jos, acesta va recompila codurile alăturate pentru fiecare contor din sistem";
 
-$GLOBALS['strPlugins']                  = "Plugins";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
-$GLOBALS['strPluginsOk']                = "No problems found";
 
-$GLOBALS['strMenus']                    = "Menus";
-$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
-$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
-$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
 
 ?>

@@ -83,28 +83,10 @@ $GLOBALS['phpAds_hlp_my_footer'] = "
         ניתן להכיל טקסט �?ו קוד HTML בקבצי�? �?לה (כ�?שר �?תה משתמש ב-HTML הימנע משימוש בתגי�? כמו <body> �?ו <html>).
 		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "
 	בהפעלת דחיסת תוכן מסוג	GZIP תופחת כמות הנתוני�? הנשלחת מהשרת �?ל הדפדפן בכל פע�? שעמוד המנהלה עולה.
@@ -185,10 +167,6 @@ $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		banner in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adconversions'] = "
-        Normally all AdConversions are logged, if you don't want to gather statistics
-        about AdConversions you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		If a visitor reloads a page with an AdConversion beacon, ".MAX_PRODUCT_NAME." will log the AdConversion
@@ -216,14 +194,8 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
-$GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "
-		If you enable this feature, the gathered statistics will be automatically deleted after the
-		period you specify below this checkbox is passed. For example, if you set this to 5 weeks,
-		statistics older than 5 weeks will be automatically deleted.
-		";
 
 $GLOBALS['phpAds_hlp_auto_clean_userlog'] =
 $GLOBALS['phpAds_hlp_auto_clean_userlog_interval'] = "
@@ -380,10 +352,6 @@ $GLOBALS['phpAds_hlp_admin'] = "
        ש�? המשתמש של ה�?חר�?י (�?דמיניסטרטור). ב�?מצעות ש�? זה ניתן להתחבר לממשק המנהלה.";
 
 $GLOBALS['phpAds_hlp_admin_pw'] =
-$GLOBALS['phpAds_hlp_admin_pw2'] = "
-        Please enter the password you want to use to log into the administrator interface.
-		You need to enter it twice to prevent typing errors.
-		";
 
 $GLOBALS['phpAds_hlp_pwold'] =
 $GLOBALS['phpAds_hlp_pw'] =
@@ -399,18 +367,7 @@ $GLOBALS['phpAds_hlp_admin_email'] = "
 $GLOBALS['phpAds_hlp_admin_novice'] = "
       �?�? �?תה רוצה לקבל �?תר�?ה לפני מחיקת מפרס�?/י�?, קמפיין �?ו ב�?נרי�?, סמן �?ופציה זו.	";
 
-$GLOBALS['phpAds_hlp_client_welcome'] = "
-		If you turn this feature on a welcome message will be displayed on the first page an
-		advertiser will see after loggin in. You can personalize this message by editing the
-		welcome.html file location in the admin/templates directory. Things you might want to
-		include are for example: Your company name, contact information, your company logo, a
-		link a page with advertising rates, etc..
-		";
 
-$GLOBALS['phpAds_hlp_client_welcome_msg'] = "
-		Instead of editing the welcome.html file you can also specify a small text here. If you enter
-		a text here, the welcome.html file will be ignored. It is allowed to use html tags.
-		";
 
 $GLOBALS['phpAds_hlp_updates_frequency'] = "
 		If you want to check for new versions of ".MAX_PRODUCT_NAME." you can enable this feature.
@@ -424,13 +381,6 @@ $GLOBALS['phpAds_hlp_userlog_email'] = "
 		can enable this feature. The email messages are stored in the userlog.
 		";
 
-$GLOBALS['phpAds_hlp_userlog_inventory'] = "
-		To ensure the inventory calculation ran correctly, you can save a report about
-		the hourly inventory calculation. This report includes the predicted profile and how much
-		priority is assigned to all banners. This information might be useful if you
-		want to submit a bugreport about the priority calculations. The reports are
-		stored inside the userlog.
-		";
 
 $GLOBALS['phpAds_hlp_userlog_autoclean'] = "
 		כדי להבטיח שבסיס הנתוני�? דולל נכונה, ניתן לשמור דיווח �?ודות מה �?ירע במהלך פעולה זו. מידע זה נשמ�? ביומן המשתמש.

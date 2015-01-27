@@ -17,7 +17,6 @@ $GLOBALS['strLanguageSelection']            = "Pilihan Bahasa";
 $GLOBALS['strDatabaseSettings']             = "Penyetelan Database";
 $GLOBALS['strAdminSettings']                = "Penyetelan Administrator";
 $GLOBALS['strAdminAccount']                 = "Administrator Account";
-$GLOBALS['strAdministrativeSettings']       = "Administrative Settings";
 $GLOBALS['strAdvancedSettings']             = "Penyetelan Lanjut";
 $GLOBALS['strOtherSettings']                = "Penyetelan Lainnya";
 $GLOBALS['strSpecifySyncSettings']          = "Penyetelan Sinkronisasi";
@@ -72,9 +71,6 @@ $GLOBALS['strProductUpToDateTitle']     =  PRODUCT_NAME . " is up to date";
 $GLOBALS['strOaUpToDate']               = "Your " . PRODUCT_NAME . " database and file structure are both using the most recent version and therefore no upgrade is required at this time. Please click Continue to proceed to the administration panel.";
 $GLOBALS['strOaUpToDateCantRemove']     = "Perhatian: File UPGRADE masih berada dalam direktori var. Kami tidak dapat menghapus file tersebut disebabkan oleh permission yang tidak cukup. Mohon hapuskan file tersebut secara manual.";
 $GLOBALS['strRemoveUpgradeFile']               = "Anda harus menghapus file UPGRADE dari direktori var.";
-$GLOBALS['strInstallSuccess']               = "Clicking 'Continue' will log you in to your ad server.
-<p><strong>What next?</strong></p>
-<div class='psub'>";
 $GLOBALS['strInstallSuccess2'] ="
   <p><b>Serving your first ad campaign</b><br>
     Use our <a href='".PRODUCT_DOCSURL."/user/quickStartGuide' target='_blank'>quick start guide to start serving your first ad campaign</a>.
@@ -106,10 +102,7 @@ $GLOBALS['strErrorUpgrade']                 = 'Instalasi dari database yang suda
 $GLOBALS['strErrorInstallDbConnect']        = "Gagal membuka koneksi ke database.";
 
 $GLOBALS['strErrorWritePermissions']        = "Error pada File permission terdeteksi. Masalah ini harus diperbaiki terlebih dahulu sebelum melanjut.<br />To fix the errors on a Linux system, try typing in the following command(s):";
-$GLOBALS['strErrorFixPermissionsCommand']   = "<i>chmod a+w %s</i>";
 $GLOBALS['strErrorFixPermissionsRCommand']  = "<i>chmod a+w %s</i>";
-$GLOBALS['strNotWriteable']                 = "NOT writeable";
-$GLOBALS['strDirNotWriteableError']         = "Directory must be writeable";
 
 $GLOBALS['strErrorWritePermissionsWin']     = "Error pada File permission terdeteksi. Masalah ini harus diperbaiki terlebih dahulu sebelum melanjut.";
 $GLOBALS['strCheckDocumentation']           = "For more help, please see the <a href=\"".PRODUCT_DOCSURL."\">" . PRODUCT_NAME . " documentation</a>.";
@@ -123,7 +116,6 @@ $GLOBALS['strImagesUrlPrefixSSL']           = "URL penyimpanan gambar (SSL)";
 
 $GLOBALS['strInvalidUserPwd']               = "Nama Pengguna atau Kata Sandi tidak benar";
 
-$GLOBALS['strUpgrade']                      = "Upgrade";
 $GLOBALS['strSystemUpToDate']               = "Sistem Anda sudah aktual. Upgrade pada saat ini tidak diperlukan. <br>Klik <b>Lanjut</b> untuk melanjut ke halaman muka.";
 $GLOBALS['strSystemNeedsUpgrade']           = "Struktur database dan file konfigurasi perlu di-upgrade untuk berfungsi dengan baik. Klik <b>Lanjut</b> untuk memulai proses upgrade. <br><br>Tergantung pada versi yang di-upgrade dan pada jumlah statistik yang telah tersimpan pada database, proses ini dapat mengakibatkan beban yang tinggi pada database server. Mohon sabar, proses upgrade membutuhkan waktu berberapa menit.";
 $GLOBALS['strSystemUpgradeBusy']            = "Upgrade sistem dalam proses, silakan tunggu...";
@@ -167,10 +159,8 @@ $GLOBALS['strAdminCheckDaily']                       = "Setiap hari";
 $GLOBALS['strAdminCheckWeekly']                      = "Setiap minggu";
 $GLOBALS['strAdminCheckMonthly']                     = "Setiap bulan";
 $GLOBALS['strAdminCheckNever']                       = "tidak samasekali";
-$GLOBALS['strNovice']                                = "Delete actions require confirmation for safety";
 $GLOBALS['strUserlogEmail']                          = "Catat seluruh E-Mail yang dikirim";
 $GLOBALS['strEnableDashboard']                       = "Aktifkan Dashboard";
-$GLOBALS['strEnableDashboardSyncNotice']             = "Please enable <a href='account-settings-update.php'>check for updates</a> to use the dashboard.";
 $GLOBALS['strTimezone']                              = "Zona waktu";
 $GLOBALS['strTimezoneEstimated']                     = "Perkiraan zona waktu";
 $GLOBALS['strTimezoneGuessedValue']                  = "Zona waktu pada PHP tidak distel dengan benar";
@@ -178,7 +168,6 @@ $GLOBALS['strTimezoneSeeDocs']                       = "Silakan belajari %DOCS% 
 $GLOBALS['strTimezoneDocumentation']                 = "dokumentasi";
 $GLOBALS['strAdminSettingsTitle']                    = "Akun Administrator Anda";
 $GLOBALS['strAdminSettingsIntro']                    = "Akun Administrator digunakan untuk login ke tampilan  dan untuk mengatur inventori, statistik dan membuat tags. Silakan masukkan nama pengguna, kata sandi dan alamat E-Mail Administrator.";
-$GLOBALS['strConfigSettingsIntro']                   = "Please check the configuration settings below and make any required changes before proceeding. If unsure, leave the default values.";
 
 $GLOBALS['strEnableAutoMaintenance']	             = "Bila jadwal untuk pemeliharaan tidak di-set pada Cron, jalankan pemeliharaan dengan cara otomatis pada saat penyampaian iklan";
 
@@ -188,16 +177,13 @@ $GLOBALS['strDatabaseServer']                        = "Database Server";
 $GLOBALS['strDbLocal']                               = "Koneksi ke server lokal dengan menggunakan socket";
 $GLOBALS['strDbType']                                = "Jenis Database";
 $GLOBALS['strDbHost']                                = "Hostname Database";
-$GLOBALS['strDbSocket']                              = "Database Socket";
 $GLOBALS['strDbPort']                                = "Port Number Database";
 $GLOBALS['strDbUser']                                = "Pengguna Database";
 $GLOBALS['strDbPassword']                            = "Kata Sandi Database";
 $GLOBALS['strDbName']                                = "Nama Database";
-$GLOBALS['strDbNameHint']                            = "Database will be created if it does not exist";
 $GLOBALS['strDatabaseOptimalisations']               = "Optimalisasi Database";
 $GLOBALS['strPersistentConnections']                 = "Gunakan Koneksi Persistent";
 $GLOBALS['strCantConnectToDb']                       = "Koneksi ke Database gagal";
-$GLOBALS['strCantConnectToDbDelivery']               = 'Can\'t Connect to Database for Delivery';
 $GLOBALS['strDemoDataInstall']                       = "Instal data Demo";
 $GLOBALS['strDemoDataIntro']                         = "Default setup data can be loaded into ". MAX_PRODUCT_NAME ." to help you get started serving online advertising. The most common banner types, as well as some initial campaigns can be loaded and pre-configured. This is highly recommended for new installations.";
 
@@ -205,46 +191,18 @@ $GLOBALS['strDemoDataIntro']                         = "Default setup data can b
 
 // Email Settings
 $GLOBALS['strEmailSettings']                         = "Penyetelan Utama";
-$GLOBALS['strEmailAddresses']                        = "Email 'From' Address";
-$GLOBALS['strEmailFromName']                         = "Email 'From' Name";
-$GLOBALS['strEmailFromAddress']                      = "Email 'From' Email Address";
-$GLOBALS['strEmailFromCompany']                      = "Email 'From' Company";
-$GLOBALS['strUseManagerDetails']                     = 'Use the owning account\'s Contact, Email and Name instead of the above Name, Email Address and Company when emailing reports to Advertiser or Website accounts.';
 $GLOBALS['strQmailPatch']                            = "Aktifkan qmail patch";
-$GLOBALS['strEnableQmailPatch']                      = "Enable qmail patch";
-$GLOBALS['strEmailHeader']                           = "Email headers";
-$GLOBALS['strEmailLog']                              = "Email log";
 
 // Audit Trail Settings
-$GLOBALS['strAuditTrailSettings']                    = "Audit Trail Settings";
-$GLOBALS['strEnableAudit']                           = "Enable Audit Trail";
-$GLOBALS['strEnableAuditForZoneLinking']             = "Enable Audit Trail for Zone Linking screen (introduces huge performance penalty when linking large amounts of zones)";
 
 // Debug Logging Settings
 $GLOBALS['strDebug']                                 = "Penyetelan Global Debug Logging";
-$GLOBALS['strProduction']                            = "Production server";
 $GLOBALS['strEnableDebug']                           = "Aktifkan Debug Logging";
 $GLOBALS['strDebugMethodNames']                      = "Mencakupkan nama metode pada debug log";
 $GLOBALS['strDebugLineNumbers']                      = "Mencakupkan nomor garis pada debug log";
 $GLOBALS['strDebugType']                             = "Jenis Debug Log";
-$GLOBALS['strDebugTypeFile']                         = "File";
-$GLOBALS['strDebugTypeMcal']                         = "mCal";
-$GLOBALS['strDebugTypeSql']                          = "SQL Database";
-$GLOBALS['strDebugTypeSyslog']                       = "Syslog";
 $GLOBALS['strDebugName']                             = "Debug Log Name, Calendar, SQL Table,<br />atau Syslog Facility";
-$GLOBALS['strDebugPriority']                         = "Debug Priority Level";
-$GLOBALS['strPEAR_LOG_DEBUG']                        = "PEAR_LOG_DEBUG - Most Information";
 $GLOBALS['strPEAR_LOG_INFO']                         = "PEAR_LOG_INFO - Informasi anggapan";
-$GLOBALS['strPEAR_LOG_NOTICE']                       = "PEAR_LOG_NOTICE";
-$GLOBALS['strPEAR_LOG_WARNING']                      = "PEAR_LOG_WARNING";
-$GLOBALS['strPEAR_LOG_ERR']                          = "PEAR_LOG_ERR";
-$GLOBALS['strPEAR_LOG_CRIT']                         = "PEAR_LOG_CRIT";
-$GLOBALS['strPEAR_LOG_ALERT']                        = "PEAR_LOG_ALERT";
-$GLOBALS['strPEAR_LOG_EMERG']                        = "PEAR_LOG_EMERG - Least Information";
-$GLOBALS['strDebugIdent']                            = "Debug Identification String";
-$GLOBALS['strDebugUsername']                         = "mCal, SQL Server Username";
-$GLOBALS['strDebugPassword']                         = "mCal, SQL Server Password";
-$GLOBALS['strProductionSystem']                      = "Production System";
 
 // Delivery Settings
 $GLOBALS['strDeliverySettings']                      = "Penyetelan Penyampaian";
@@ -258,63 +216,33 @@ $GLOBALS['strImageStore']                            = "Folder gambar";
 $GLOBALS['strTypeWebSettings']                       = "Global Webserver Local Banner Storage Settings";
 $GLOBALS['strTypeWebMode']                           = "Metode Penyimpanan";
 $GLOBALS['strTypeWebModeLocal']                      = "Direktori lokal";
-$GLOBALS['strTypeDirError']                          = "The local directory cannot be written to by the web server";
 $GLOBALS['strTypeWebModeFtp']                        = "Server FTP eksternal";
 $GLOBALS['strTypeWebDir']                            = "Direktori lokal";
 $GLOBALS['strTypeFTPHost']                           = "Host FTP";
 $GLOBALS['strTypeFTPDirectory']                      = "Direktori Host";
-$GLOBALS['strTypeFTPUsername']                       = "Login";
 $GLOBALS['strTypeFTPPassword']                       = "Kata Sandi";
 $GLOBALS['strTypeFTPPassive']                        = "Gunakan FTP pasif";
 $GLOBALS['strTypeFTPErrorDir']                       = "Direktori dari hosti FTP tidak ada";
 $GLOBALS['strTypeFTPErrorConnect']                   = "Koneksi ke server FTP gagal. Nama login atau kata sandi salah";
-$GLOBALS['strTypeFTPErrorNoSupport']                 = "Your installation of PHP does not support FTP.";
-$GLOBALS['strTypeFTPErrorUpload']                    = "Could not upload file to the FTP Server, check set proper rights to Host Directory";
 $GLOBALS['strTypeFTPErrorHost']                      = "Hosti FTP yang dipilih salah";
 $GLOBALS['strDeliveryFilenames']                     = "Nama-nama file dari Penyampaian Global";
-$GLOBALS['strDeliveryFilenamesAdClick']              = "Ad Click";
-$GLOBALS['strDeliveryFilenamesAdConversionVars']     = "Ad Conversion Variables";
-$GLOBALS['strDeliveryFilenamesAdContent']            = "Ad Content";
-$GLOBALS['strDeliveryFilenamesAdConversion']         = "Ad Conversion";
-$GLOBALS['strDeliveryFilenamesAdConversionJS']       = "Ad Conversion (JavaScript)";
-$GLOBALS['strDeliveryFilenamesAdFrame']              = "Ad Frame";
-$GLOBALS['strDeliveryFilenamesAdImage']              = "Ad Image";
-$GLOBALS['strDeliveryFilenamesAdJS']                 = "Ad (JavaScript)";
-$GLOBALS['strDeliveryFilenamesAdLayer']              = "Ad Layer";
-$GLOBALS['strDeliveryFilenamesAdLog']                = "Ad Log";
-$GLOBALS['strDeliveryFilenamesAdPopup']              = "Ad Popup";
-$GLOBALS['strDeliveryFilenamesAdView']               = "Ad View";
-$GLOBALS['strDeliveryFilenamesXMLRPC']               = "XML RPC Invocation";
 $GLOBALS['strDeliveryFilenamesLocal']                = "Invokasi lokal";
 $GLOBALS['strDeliveryFilenamesFrontController']      = "Kontrol depan";
 $GLOBALS['strDeliveryFilenamesFlash']                = "Pencakupan Flash (Alamat URL lengkap diizinkan)";
-$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
-$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "Penyetelan global untuk caching penyampaian";
 $GLOBALS['strDeliveryCacheLimit']                    = "Time Between Cache Updates (seconds)";
-$GLOBALS['strDeliveryCacheStore']                    = "Banner Delivery Cache Store Type";
 
-$GLOBALS['strErrorInCacheStorePlugin']               = "Some errors were reported by the '%s' delivery store plugin:";
-$GLOBALS['strDeliveryCacheStorage']                  = "Delivery cache storage type";
 
 $GLOBALS['strOrigin']                                = "Gunakan server muasal remote";
 $GLOBALS['strOriginType']                            = "Jenis server muasal";
 $GLOBALS['strOriginHost']                            = "Nama host dari server muasal";
 $GLOBALS['strOriginPort']                            = "Nomor port dari database muasal";
-$GLOBALS['strOriginScript']                          = "Script file for origin database";
-$GLOBALS['strOriginTypeXMLRPC']                      = "XMLRPC";
-$GLOBALS['strOriginTimeout']                         = "Origin timeout (seconds)";
-$GLOBALS['strOriginProtocol']                        = "Origin server protocol";
 
 $GLOBALS['strDeliveryAcls']                          = "Evaluasikan limitasi dari penyampaian banner pada saat penyampaian";
-$GLOBALS['strDeliveryAclsDirectSelection']           = "Evaluate banner delivery limitations for direct selected ads";
 $GLOBALS['strDeliveryObfuscate']                     = "Mengkaburkan saluran pada saat penyampaian iklan";
 $GLOBALS['strDeliveryExecPhp']                       = "Izinkan eksekusi kode PHP dalam iklan<br />(Perhatian: Resiko Keamanan)";
-$GLOBALS['strDeliveryCtDelimiter']                   = "3rd Party Click Tracking Delimiter";
-$GLOBALS['strGlobalDefaultBannerUrl']                = "Global default Banner Image URL";
 $GLOBALS['strP3PSettings']                           = "Kebijaksanaan keleluasaan pribadi global P3P";
 $GLOBALS['strUseP3P']                                = "Gunakan kebijaksanaan P3P";
-$GLOBALS['strP3PCompactPolicy']                      = "P3P Compact Policy";
 $GLOBALS['strP3PPolicyLocation']                     = "Lokasi dari kebijaksanaan P3P";
 
 // General Settings
@@ -323,10 +251,8 @@ $GLOBALS['uiEnabled']                                = "Interface untuk pengguna
 $GLOBALS['defaultLanguage']                          = "Anggapan Bahasa yang digunakan<br />(Setiap pengguna dapat memilih bahasa yang diinginkan)";
 
 // Geotargeting Settings
-$GLOBALS['strGeotargetingSettings']                  = "Geotargeting Settings";
 $GLOBALS['strGeotargeting']                          = "Penyetelan Global Geotargeting";
 $GLOBALS['strGeotargetingType']                      = "Jenis modul Geotargeting";
-$GLOBALS['strGeotargetingUseBundledCountryDb']       = "Use the bundled MaxMind GeoLiteCountry database";
 $GLOBALS['strGeotargetingGeoipCountryLocation']      = "Lokasi dari database MaxMind GeoIP Country<br />(Tinggalkan kosong untuk menggunakan free database)";
 $GLOBALS['strGeotargetingGeoipRegionLocation']       = "Lokasi dari database MaxMind GeoIP Region";
 $GLOBALS['strGeotargetingGeoipCityLocation']         = "Lokasi dari database MaxMind GeoIP City";
@@ -351,22 +277,12 @@ $GLOBALS['strUploadConversions']                     = "Upload Konversi";
 $GLOBALS['strShowCampaignInfo']                      = "Tampilkan informasi tambahan tentang kampanya pada halaman <i>Peninjauan Luas Kampanye</i>";
 $GLOBALS['strShowBannerInfo']                        = "Tampilkan informasi tambahan tentang banner pada halaman <i>Peninjauan Luas Banner</i>";
 $GLOBALS['strShowCampaignPreview']                   = "Tampilkan pertunjukan pendahuluan dari seluruh banner pada halaman <i>Peninjauan Luas Banner</i>";
-$GLOBALS['strShowBannerHTML']                        = "Show actual banner instead of plain HTML code for HTML banner preview";
-$GLOBALS['strShowBannerPreview']                     = "Show banner preview at the top of pages which deal with banners";
 $GLOBALS['strHideInactive']                          = "Sembunyikan yang tidak aktif";
-$GLOBALS['strGUIShowMatchingBanners']                = "Show matching banners on the <i>Linked banner</i> pages";
-$GLOBALS['strGUIShowParentCampaigns']                = "Show parent campaigns on the <i>Linked banner</i> pages";
-$GLOBALS['strShowEntityId']                          = "Show entity identifiers";
-$GLOBALS['strGUIAnonymousCampaignsByDefault']        = "Default Campaigns to Anonymous";
 $GLOBALS['strStatisticsDefaults']                    = "Statistik";
-$GLOBALS['strBeginOfWeek']                           = "Beginning of Week";
 $GLOBALS['strPercentageDecimals']                    = "Presentase dari angka desimal";
 $GLOBALS['strWeightDefaults']                        = "Bobot anggapan";
 $GLOBALS['strDefaultBannerWeight']                   = "Bobot anggapan untuk banner";
 $GLOBALS['strDefaultCampaignWeight']                 = "Bobot anggapan untuk kamanye";
-$GLOBALS['strDefaultBannerWErr']                     = "Default banner weight should be a positive integer";
-$GLOBALS['strDefaultCampaignWErr']                   = "Default campaign weight should be a positive integer";
-$GLOBALS['strConfirmationUI']                        = "Confirmation in User Interface";
 
 $GLOBALS['strPublisherDefaults']                     = "Anggapan untuk Penerbit";
 $GLOBALS['strModesOfPayment']                        = "Cara pembayaran";
@@ -397,63 +313,33 @@ $GLOBALS['strCSVTemplateIncVariables']               = "Mengikutkan informasi te
  */
 // Invocation Settings
 $GLOBALS['strAllowedInvocationTypes']                = "Jenis Invokasi yang diizinkan";
-$GLOBALS['strInvocationDefaults']                    = "Invocation Defaults";
 $GLOBALS['strEnable3rdPartyTrackingByDefault']       = "Aktifkan Pelacak Klik (Clicktracking) dari pihak ketiga secara anggapan";
 
 // Banner Delivery Settings
-$GLOBALS['strBannerDelivery']                         = "Banner Delivery Settings";
 
 // Banner Logging Settings
-$GLOBALS['strBannerLogging']                         = "Banner Logging Settings";
 $GLOBALS['strLogAdRequests']                         = "Log an Ad Request every time an advertisement is requested";
 $GLOBALS['strLogAdImpressions']                      = "Log an Ad Impression every time an advertisement is viewed";
 $GLOBALS['strLogAdClicks']                           = "Log an Ad Click every time a viewer clicks on an advertisement";
 $GLOBALS['strLogTrackerImpressions']                 = "Log a Tracker Impression every time a tracker beacon viewed";
-$GLOBALS['strReverseLookup']                         = "Reverse lookup the hostnames of viewers when not supplied";
-$GLOBALS['strProxyLookup']                           = "Try to determine the real IP address of viewers behind a proxy server";
 $GLOBALS['strPreventLogging']                        = "Global Prevent Statistics Logging Settings";
 $GLOBALS['strIgnoreHosts']                           = "Don't store statistics for viewers using one of the following IP addresses or hostnames";
-$GLOBALS['strIgnoreUserAgents']                      = "<b>Don't</b> log statistics from clients with any of the following strings in their user-agent (one-per-line)";
-$GLOBALS['strEnforceUserAgents']                     = "<b>Only</b> log statistics from clients with any of the following strings in their user-agent (one-per-line)";
 
 // Banner Storage Settings
-$GLOBALS['strBannerStorage']                         = "Banner Storage Settings";
 
 // Campaign ECPM settings
-$GLOBALS['strEnableECPM']                            = "Use eCPM optimized priorities instead of remnant-weighted priorities";
-$GLOBALS['strEnableContractECPM']                    = "Use eCPM optimized priorities instead of standard contract priorities";
-$GLOBALS['strEnableECPMfromRemnant']                 = "(If you enable this feature all your remnant campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strEnableECPMfromECPM']                    = "(If you disable this feature some of your active eCPM campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strInactivatedCampaigns']                  = "List of campaigns which became inactive due to the changes in preferences:";
 
 // Statistics & Maintenance Settings
-$GLOBALS['strMaintenanceSettings']                   = "Maintenance Settings";
-$GLOBALS['strConversionTracking']                    = "Conversion Tracking Settings";
-$GLOBALS['strEnableConversionTracking']              = "Enable Conversion Tracking";
-$GLOBALS['strCsvImport']                             = "Allow upload of offline conversions";
 $GLOBALS['strBlockAdViews']                          = "Don't log an Ad Impression if the viewer has seen the same ad within the specified time (seconds)";
-$GLOBALS['strBlockAdViewsError']                     = "Ad Impression block value must be a non-negative integer";
 $GLOBALS['strBlockAdClicks']                         = "Don't log an Ad Click if the viewer has clicked on the same ad within the specified time (seconds)";
-$GLOBALS['strBlockAdClicksError']                    = "Ad Click block value must be a non-negative integer";
-$GLOBALS['strMaintenanceOI']                         = "Maintenance Operation Interval (minutes)";
-$GLOBALS['strMaintenanceOIError']                    = "The Maintenace Operation Interval is not valid - see documentation for valid values";
 $GLOBALS['strPrioritySettings']                      = "Penyetelan prioritas secara global";
-$GLOBALS['strPriorityInstantUpdate']                 = "Update advertisement priorities immediately when changes made in the UI";
-$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
-$GLOBALS['strDefaultImpConWindow']                   = "Default Ad Impression Connection Window (seconds)";
-$GLOBALS['strDefaultImpConWindowError']              = "If set, the Default Ad Impression Connection Window must be a positive integer";
-$GLOBALS['strDefaultCliConWindow']                   = "Default Ad Click Connection Window (seconds)";
-$GLOBALS['strDefaultCliConWindowError']              = "If set, the Default Ad Click Connection Window must be a positive integer";
 $GLOBALS['strAdminEmailHeaders']                     = "Add the following headers to each email message sent by ". MAX_PRODUCT_NAME;
 $GLOBALS['strWarnLimit']                             = "Kirimkan pemberitahuan bilamana jumlah impresi yang tersisa kurang dari jumlah impresi yang ditentukan disini";
 $GLOBALS['strWarnLimitErr']                          = "Pemberitahuan batas harus dalam angka positiv";
 $GLOBALS['strWarnLimitDays']                         = "Kirimkan pemberitahuan bilamana jumlah hari yang tersisa kurang dari jumlah hari yang ditentukan disini";
 $GLOBALS['strWarnLimitDaysErr']                      = "Pemberitahuan tentang jumlah hari yang tersisa harus dalam angka positiv";
 $GLOBALS['strAllowEmail']                            = "Izinkan pengiriman E-Mail secara umum";
-$GLOBALS['strEmailAddressFrom']                      = "Email address to send reports FROM";
 $GLOBALS['strEmailAddressName']                      = "Company or personal name to sign off e-mail with";
-$GLOBALS['strWarnAdmin']                             = "Send a warning to the administrator every time a campaign is almost expired";
-$GLOBALS['strWarnClient']                            = "Send a warning to the advertiser every time a campaign is almost expired";
 $GLOBALS['strWarnAgency']                            = "Send a warning to the agency every time a campaign is almost expired";
 
 // UI Settings
@@ -466,10 +352,8 @@ $GLOBALS['strMyFooter']                              = "Lokasi dari file Footer"
 $GLOBALS['strMyFooterError']                         = "File footer tidak ditemukan dalam lokasi yang ditunjuk oleh Anda";
 $GLOBALS['strDefaultTrackerStatus']                  = "Anggapan Status dari pelacak";
 $GLOBALS['strDefaultTrackerType']                    = "Jenis pelacak anggapan";
-$GLOBALS['strSSLSettings']                           = "SSL Settings";
 $GLOBALS['requireSSL']                               = "Paksakan penggunaan SSL pada interface Pengguna";
 $GLOBALS['sslPort']                                  = "Port SSL yang digunakan oleh Web Server";
-$GLOBALS['strDashboardSettings']                     = "Dashboard Settings";
 
 $GLOBALS['strMyLogo']                                = "Nama dari file lambang kegaliban";
 $GLOBALS['strMyLogoError']                           = "Nama dari file lambang tidak ditemukan dalam direktori admin/images";
@@ -477,7 +361,6 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "Warna dari header pada l
 $GLOBALS['strGuiHeaderBackgroundColor']              = "Warna dari header pada latar belakang";
 $GLOBALS['strGuiActiveTabColor']                     = "Warna dari tab yang aktif";
 $GLOBALS['strGuiHeaderTextColor']                    = "Warna dari teks dalam header";
-$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "Silakan masukkan warna dalam format RGB, seperti '0066CC'";
 
 $GLOBALS['strGzipContentCompression']                = "Gunakan GZIP Content Compression";
@@ -491,35 +374,14 @@ $GLOBALS['strPublisherAgreementEnabled']             = "Aktifkan pengendalian Lo
 $GLOBALS['strPublisherAgreementText']                = "Pesan yang ditampilkan pada saat Login (Tag HTML diizinkan)";
 
 // Regenerate Platfor Hash script
-$GLOBALS['strPlatformHashRegenerate']                = "Platform Hash Regenerate";
-$GLOBALS['strNewPlatformHash']                       = "Your new Platform Hash is:";
-$GLOBALS['strPlatformHashInsertingError']            = "Error inserting Platform Hash into database";
 
 // Plugin Settings
-$GLOBALS['strPluginSettings']                        = "Plugin Settings";
-$GLOBALS['strEnableNewPlugins']                      = "Enable newly installed plugins";
-$GLOBALS['strUseMergedFunctions']                    = "Use merged delivery functions file";
 
 /*-------------------------------------------------------*/
 /* Unknown (unused?) translations                        */
 /*-------------------------------------------------------*/
 
-$GLOBALS['strExperimental']                 = "Experimental";
-$GLOBALS['strKeywordRetrieval']             = "Keyword retrieval";
-$GLOBALS['strBannerRetrieval']              = "Banner retrieval method";
-$GLOBALS['strRetrieveRandom']               = "Random banner retrieval (default)";
-$GLOBALS['strRetrieveNormalSeq']            = "Normal sequental banner retrieval";
-$GLOBALS['strWeightSeq']                    = "Weight based sequential banner retrieval";
-$GLOBALS['strFullSeq']                      = "Full sequential banner retrieval";
-$GLOBALS['strUseKeywords']                  = "Use keywords to select banners";
-$GLOBALS['strUseConditionalKeys']           = "Allow logical operators when using direct selection";
-$GLOBALS['strUseMultipleKeys']              = "Allow multiple keywords when using direct selection";
 
-$GLOBALS['strTableBorderColor']             = "Table Border Color";
-$GLOBALS['strTableBackColor']               = "Table Back Color";
-$GLOBALS['strTableBackColorAlt']            = "Table Back Color (Alternative)";
-$GLOBALS['strMainBackColor']                = "Main Back Color";
-$GLOBALS['strOverrideGD']                   = "Override GD Imageformat";
 $GLOBALS['strTimeZone']                     = "Zona Waktu";
 
 ?>

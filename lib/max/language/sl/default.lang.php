@@ -11,26 +11,11 @@
 */
 
 // Set text direction and characterset
-$GLOBALS['phpAds_TextDirection']        = "ltr";
-$GLOBALS['phpAds_TextAlignRight']       = "right";
-$GLOBALS['phpAds_TextAlignLeft']        = "left";
-$GLOBALS['phpAds_CharSet']              = "UTF-8";
 
-$GLOBALS['phpAds_DecimalPoint']         = ".";
-$GLOBALS['phpAds_ThousandsSeperator']   = ",";
 
 // Date & time configuration
-$GLOBALS['date_format']                 = "%d-%m-%Y";
-$GLOBALS['time_format']                 = "%H:%M:%S";
-$GLOBALS['minute_format']               = "%H:%M";
-$GLOBALS['month_format']                = "%m-%Y";
-$GLOBALS['day_format']                  = "%d-%m";
-$GLOBALS['week_format']                 = "%W-%Y";
-$GLOBALS['weekiso_format']              = "%V-%G";
 
 // Formats used by PEAR Spreadsheet_Excel_Writer packate
-$GLOBALS['excel_integer_formatting']    = "#,##0;-#,##0;-";
-$GLOBALS['excel_decimal_formatting']    = "#,##0.000;-#,##0.000;-";
 
 /*-------------------------------------------------------*/
 /* Translations                                          */
@@ -38,13 +23,11 @@ $GLOBALS['excel_decimal_formatting']    = "#,##0.000;-#,##0.000;-";
 
 $GLOBALS['strHome']                     = "Domov";
 $GLOBALS['strHelp']                     = "Pomoč";
-$GLOBALS['strContactUs']                = "Contact us";
 $GLOBALS['strStartOver']                = "Začni znova";
 $GLOBALS['strNavigation']               = "Navigacija";
 $GLOBALS['strShortcuts']                = "Bližnjice";
 $GLOBALS['strActions']                  = "Dejanja";
 $GLOBALS['strMore']                     = "Več";
-$GLOBALS['strAndXMore']                 = "and %s more";
 $GLOBALS['strLess']                     = "Manj";
 $GLOBALS['strAdminstration']            = "Inventar";
 $GLOBALS['strMaintenance']              = "Vzdrževanje";
@@ -53,24 +36,20 @@ $GLOBALS['strInvocationcode']           = "Pozivna koda";
 $GLOBALS['strTrackerVariables']         = "Sledilne spremenljivke";
 $GLOBALS['strBasicInformation']         = "Osnovne informacije";
 $GLOBALS['strAdditionalInformation']    = "Dodatne informacije";
-$GLOBALS['strContractInformation']      = "Contract information";
 $GLOBALS['strLoginInformation']         = "Informacije o prijavi";
 $GLOBALS['strLogoutURL']                = "URL za preusmeritev ob odjavi. <br />Prazno za privzeto";
 $GLOBALS['strAppendTrackerCode']        = "Pripni sledilno kodo";
 $GLOBALS['strOverview']                 = "Pregled";
 $GLOBALS['strSearch']                   = "<u>I</u>skanje";
-$GLOBALS['strHistory']                  = "History";
 $GLOBALS['strDetails']                  = "Podrobnosti";
 $GLOBALS['strUpdateSettings']           = "Posodobitvene nastavitve";
 $GLOBALS['strCheckForUpdates']          = "Preveri za posodobitve";
 $GLOBALS['strWhenCheckingForUpdates']   = "Pri preverjanju za posodobitve";
 $GLOBALS['strCompact']                  = "Zgoščeno";
-$GLOBALS['strVerbose']                  = "Verbose";
 $GLOBALS['strUser']                     = "Uporabnik";
 $GLOBALS['strEdit']                     = "Uredi";
 $GLOBALS['strCreate']                   = "Ustvari";
 $GLOBALS['strDuplicate']                = "Podvoji";
-$GLOBALS['strCopyOf']                   = "Copy of";
 $GLOBALS['strMoveTo']                   = "Premakni v";
 $GLOBALS['strDelete']                   = "Izbriši";
 $GLOBALS['strActivate']                 = "Aktiviraj";
@@ -84,40 +63,31 @@ $GLOBALS['strSave']                     = "Shrani";
 $GLOBALS['strCancel']                   = "Prekliči";
 $GLOBALS['strBack']                     = "Nazaj";
 $GLOBALS['strPrevious']                 = "Predhodnji";
-$GLOBALS['strPrevious_Key']             = "<u>P</u>revious";
 $GLOBALS['strNext']                     = "Naslednji";
-$GLOBALS['strNext_Key']                 = "<u>N</u>ext";
 $GLOBALS['strYes']                      = "Da";
 $GLOBALS['strNo']                       = "Ne";
 $GLOBALS['strNone']                     = "Nobeden";
 $GLOBALS['strCustom']                   = "Po meri";
 $GLOBALS['strDefault']                  = "Privzeto";
 $GLOBALS['strOther']                    = "Drugo";
-$GLOBALS['strUnknown']                  = "Unknown";
 $GLOBALS['strUnlimited']                = "Neomejeno";
 $GLOBALS['strUntitled']                 = "Neimenovano";
 $GLOBALS['strAll']                      = "vsi";
 $GLOBALS['strAvg']                      = "Povp.";
 $GLOBALS['strAverage']                  = "Povprečje";
-$GLOBALS['strAveraged']                 = "Averaged";
 $GLOBALS['strAveragedColumnLegend']		= "This icon indicates that the values in this row are averaged.<br> There are situations where more than a single set of targeting data may have been generated for an hour. <br/> <ul><li> For example, if you run " . PRODUCT_NAME . " with an Operation Interval of less than 60 minutes (see \"Maintenance Settings\"), the targeting information for Contract Campaigns is calculated at every Operation Interval, and is then averaged to get the hour data.  </li><li>This can also happen in the case where you have enabled the option to update ads priorities when changes are made in the UI (see Priority Settings in the \"Maintenance Settings\" menu) and you have made changes to the Contract Campaigns while they are running.</li></ul>";
 $GLOBALS['strOverall']                  = "Celotno";
 $GLOBALS['strTotal']                    = "Skupno";
-$GLOBALS['strUnfilteredTotal']          = "Total (unfiltered)";
-$GLOBALS['strFilteredTotal']            = "Total (filtered)";
 $GLOBALS['strActive']                   = "aktiven";
-$GLOBALS['strFrom']                     = "From";
 $GLOBALS['strTo']                       = "do";
 $GLOBALS['strAdd']                      = "Dodaj";
 $GLOBALS['strLinkedTo']                 = "povezan z";
 $GLOBALS['strDaysLeft']                 = "Preostalo dni";
 $GLOBALS['strCheckAllNone']             = "Preveri vse / ničesar";
-$GLOBALS['strKiloByte']                 = "KB";
 $GLOBALS['strExpandAll']                = "<u>R</u>azširi vse";
 $GLOBALS['strCollapseAll']              = "<u>P</u>ovrni vse";
 $GLOBALS['strShowAll']                  = "Prikaži vse";
 $GLOBALS['strNoAdminInterface']         = "Administratorski vmesnik je bil izklopljen zaradi vzdrževalnih del. To ne vpliva na dostavo vaših kampanj.";
-$GLOBALS['strFilterBySource']           = "filter by source";
 $GLOBALS['strFieldStartDateBeforeEnd']  = "\\'Od' datum mora biti zgodnješi kot 'Do' datum";
 $GLOBALS['strFieldContainsErrors']      = "Naslednja polja vsebujejo napake:";
 $GLOBALS['strFieldFixBeforeContinue1']  = "Preden lahko nadaljujete, morate";
@@ -140,7 +110,6 @@ $GLOBALS['strAdmin']                    = "Administrator";
 $GLOBALS['strWarning']                  = "Opozorilo";
 $GLOBALS['strNotice']                   = "Obvestilo";
 $GLOBALS['strRequiredField']            = "Zahtevano polje";
-$GLOBALS['strCloseWindow']              = "Close window";
 
 // Dashboard
 $GLOBALS['strDashboardCantBeDisplayed'] = "Nadzorna plošča ne more biti prikazana";
@@ -159,9 +128,7 @@ $GLOBALS['strPriority']                 = "Prioriteta";
 $GLOBALS['strPriorityLevel']            = "Prednostna raven";
 $GLOBALS['strPriorityTargeting']        = "Razporeditev";
 $GLOBALS['strPriorityOptimisation']     = "Razno"; // Er, what?
-$GLOBALS['strOverrideAds']              = "Override Campaign Advertisements";
 $GLOBALS['strHighAds']                  = "Pogodbeni oglasi";
-$GLOBALS['strECPMAds']                  = "eCPM Campaign Advertisements";
 $GLOBALS['strLowAds']                   = "Preostali oglasi";
 $GLOBALS['strLimitations']              = "Omejitve";
 $GLOBALS['strNoLimitations']            = "Brez omejitev";
@@ -174,23 +141,17 @@ $GLOBALS['strName']                     = "Ime";
 $GLOBALS['strSize']                     = "Velikost";
 $GLOBALS['strWidth']                    = "Širina";
 $GLOBALS['strHeight']                   = "Višina";
-$GLOBALS['strURL2']                     = "URL";
 $GLOBALS['strTarget']                   = "Cilj";
 $GLOBALS['strLanguage']                 = "Jezik";
 $GLOBALS['strDescription']              = "Opis";
 $GLOBALS['strVariables']                = "Spremenljivke";
-$GLOBALS['strID']                       = "ID";
 $GLOBALS['strComments']                 = "Komentarji";
 
 // User access
 $GLOBALS['strWorkingAs']                = "Deluje kot";
-$GLOBALS['strWorkingAs_Key']            = "<u>W</u>orking as";
 $GLOBALS['strWorkingAs']                = "Deluje kot";
 $GLOBALS['strSwitchTo']                 = "Preklopi na";
-$GLOBALS['strUseSearchBoxToFindMoreAccounts'] = "Use the switcher's search box to find more accounts";
 $GLOBALS['strWorkingFor']               = "%s za...";
-$GLOBALS['strNoAccountWithXInNameFound']= "No accounts with \"%s\" in name found";
-$GLOBALS['strRecentlyUsed']             = "Recently used";
 $GLOBALS['strLinkUser']                 = "Dodaj uporabnika";
 $GLOBALS['strLinkUser_Key']             = "Dodaj <u>u</u>porabnika";
 $GLOBALS['strUsernameToLink']           = "Uporabniško ime uporabnika za dodajanje";
@@ -205,7 +166,7 @@ $GLOBALS['strUserUnlinkedFromAccount']  = "Uporabnik je bil odstranjen iz račun
 $GLOBALS['strUserWasDeleted']           = "Uporabnik je bil izbrisan";
 $GLOBALS['strUserNotLinkedWithAccount'] = "Naveden uporabnik ni povezan z računom";
 $GLOBALS['strCantDeleteOneAdminUser']   = "Ne morete izbrisati uporabnika. Vsaj en uporabnik mora biti povezan z administratorskim računom.";
-$GLOBALS['strLinkUserHelp']             = "To add an <b>existing user</b>, type %s and click {$GLOBALS['strLinkUser']} <br />To add a <b>new user</b>, type desired %s and click {$GLOBALS['strLinkUser']}" ;
+$GLOBALS['strLinkUserHelp']             = "To add an <b>existing user</b>, type %s and click {$GLOBALS['strLinkUser']} <br />To add a <b>new user</b>, type desired %s and click {$GLOBALS['']}" ;
 $GLOBALS['strLinkUserHelpUser']         = "uporabniško ime";
 $GLOBALS['strLinkUserHelpEmail']        = "e-poštni naslov";
 $GLOBALS['strLastLoggedIn']             = "Zadnja prijava";
@@ -237,7 +198,6 @@ $GLOBALS['strPasswordRepeat']           = "Ponovite geslo";
 $GLOBALS['strAccessDenied']             = "Dostop zavrnjen";
 $GLOBALS['strUsernameOrPasswordWrong']  = "Uporabniško ime in/ali geslo se ne ujemata. Prosimo, poizkusite znova.";
 $GLOBALS['strPasswordWrong']            = "Geslo ni pravilno";
-$GLOBALS['strParametersWrong']          = "The parameters you supplied are not correct";
 $GLOBALS['strNotAdmin']                 = "Vaš račun nima dovolj zahtevanih dovoljenj za uporabo te funkcije. Za uporabo se lahko prijavite pod drugim računom. Kliknite <a href='logout.php'>tukaj</a> za prijavo kot drug uporabnik.";
 $GLOBALS['strDuplicateClientName']      = "Uporabniško ime že obstaja. Prosimo, izberite drugo.";
 $GLOBALS['strDuplicateAgencyName']      = "Uporabniško ime že obstaja. Prosimo, izberite drugo.";
@@ -247,7 +207,6 @@ $GLOBALS['strNotSamePasswords']         = "Gesli se ne ujemata";
 $GLOBALS['strRepeatPassword']           = "Ponovite geslo";
 $GLOBALS['strOldPassword']              = "Trenutno geslo";
 $GLOBALS['strNewPassword']              = "Novo geslo";
-$GLOBALS['strNoBannerId']               = "No banner ID";
 $GLOBALS['strDeadLink']                 = "Vaša povezava je neveljavna.";
 $GLOBALS['strNoPlacement']              = "Izbrana kampanja ne obstaja. Poizkusite s to <a href='{link}'>povezavo</a> ";
 $GLOBALS['strNoAdvertiser']             = "Izbran oglaševalec ne obstaja. poizkusite s to <a href='{link}'>povezavo</a>";
@@ -257,29 +216,18 @@ $GLOBALS['strRequests']                 = "Zahtev";
 $GLOBALS['strImpressions']              = "Učinkov";
 $GLOBALS['strClicks']                   = "Klikov";
 $GLOBALS['strConversions']              = "Pretvorb";
-$GLOBALS['strCTRShort']                 = "CTR";
-$GLOBALS['strCTRShortHigh']             = "CTR for High";
-$GLOBALS['strCTRShortLow']              = "CTR for Low";
-$GLOBALS['strCNVRShort']                = "SR";
 $GLOBALS['strCTR']                      = "CTR";
 $GLOBALS['strCNVR']                     = "Prodajno razmerje";
-$GLOBALS['strCPC']                      = "Cost Per Click";
-$GLOBALS['strCPCo']                     = "Cost Per Conversion";
-$GLOBALS['strCPCoShort']                = "CPCo";
-$GLOBALS['strCPCShort']                 = "CPC";
-$GLOBALS['strTotalViews']               = "Total Impressions";
 $GLOBALS['strTotalClicks']              = "Celotnih klikov";
 $GLOBALS['strTotalConversions']         = "Celotnih pretvorb";
 $GLOBALS['strViewCredits']              = "Učinkovni krediti";
 $GLOBALS['strClickCredits']             = "Klikovni krediti";
 $GLOBALS['strConversionCredits']        = "Pretvorbeni krediti";
-$GLOBALS['strImportStats']              = "Import Statistics";
 $GLOBALS['strDateTime']                 = "Datum Ura";
 $GLOBALS['strTrackerID']                = "ID sledilnika";
 $GLOBALS['strTrackerName']              = "Ime sledilnika";
 $GLOBALS['strTrackerImageTag']          = "Zaznamek slike";
 $GLOBALS['strTrackerJsTag']             = "Zaznamek JavaScript";
-$GLOBALS['strTrackerAlwaysAppend']      = "Always display appended code, even if no conversion is recorded by the tracker?";
 $GLOBALS['strBanners']                  = "Pasice";
 $GLOBALS['strCampaigns']                = "Kampanje";
 $GLOBALS['strCampaignID']               = "ID kampanje";
@@ -290,12 +238,7 @@ $GLOBALS['strWindowDelay']              = "Zamik okna";
 $GLOBALS['strStatsVariables']           = "Spremenljivke";
 
 // Finance
-$GLOBALS['strFinanceCPM']               = "CPM";
-$GLOBALS['strFinanceCPC']               = "CPC";
-$GLOBALS['strFinanceCPA']               = "CPA";
 $GLOBALS['strFinanceMT']                = "Mesečni zakup";
-$GLOBALS['strFinanceCTR']               = "CTR";
-$GLOBALS['strFinanceCR']                = "CR";
 $GLOBALS['strPercentRevenueSplit']      = "% razdelitve dohodka";
 $GLOBALS['strPercentBasketValue']       = "& vrednosti košarice";
 $GLOBALS['strAmountPerItem']            = "Količina na postavko";
@@ -304,25 +247,20 @@ $GLOBALS['strPercentSumVariables']      = "& vsote spremenljivk";
 
 // Time and date related
 $GLOBALS['strDate']                     = "Datum";
-$GLOBALS['strToday']                    = "Today";
 $GLOBALS['strDay']                      = "Dan";
 $GLOBALS['strDays']                     = "Dni";
-$GLOBALS['strLast7Days']                = "Last 7 days";
 $GLOBALS['strWeek']                     = "Teden";
 $GLOBALS['strWeeks']                    = "Tednov";
 $GLOBALS['strSingleMonth']              = "Mesec";
 $GLOBALS['strMonths']                   = "Mesecev";
 $GLOBALS['strDayOfWeek']                = "Dan v tednu";
-$GLOBALS['strThisMonth']                = "This month";
 $GLOBALS['strMonth']                    = array("January","February","March","April","May","June","July", "August", "September", "October", "November", "December");
 $GLOBALS['strDayFullNames']             = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
 $GLOBALS['strDayShortCuts']             = array("Su","Mo","Tu","We","Th","Fr","Sa");
 $GLOBALS['strHour']                     = "Ura";
-$GLOBALS['strHourFilter']               = "Hour Filter";
 $GLOBALS['strSeconds']                  = "sekund";
 $GLOBALS['strMinutes']                  = "minut";
 $GLOBALS['strHours']                    = "ur";
-$GLOBALS['strTimes']                    = "times";
 
 // Advertiser
 $GLOBALS['strClient']                       = "Oglaševalec";
@@ -337,7 +275,6 @@ $GLOBALS['strNoClients']                    = "Trenutno ni definiranih nobenih o
 $GLOBALS['strNoClientsForBanners']          = "Trenutno ni definiranih nobenih oglaševalcev. Za dodajanje pasic morate <a href='advertiser-edit.php'>dodati novega oglaševalca</a> in kampanjo.";
 $GLOBALS['strConfirmDeleteClient']          = "Ste prepričani, da želite izbrisati tega oglaševalca?";
 $GLOBALS['strConfirmDeleteClients']         = "Ste prepričani, da želite izbrisati izbrane oglaševalce?";
-$GLOBALS['strConfirmResetClientStats']      = "Do you really want to delete all existing statistics for this advertiser?";
 $GLOBALS['strSite']                         = "Stran";
 $GLOBALS['strHideInactive']                 = "Skrij neaktivne";
 $GLOBALS['strHideInactiveAdvertisers']      = "Skrij neaktivne oglaševalce";
@@ -360,7 +297,6 @@ $GLOBALS['strNoDaysBetweenReports']             = "Število dni med dostavo poro
 $GLOBALS['strSendDeactivationWarning']          = "Pošlji e-pošto, ko se kampanja samodejno aktivira/deaktivira";
 $GLOBALS['strAllowClientModifyInfo']            = "Dovoli temu uporabniku spremembo lastnih nastavitev";
 $GLOBALS['strAllowClientModifyBanner']          = "Dovoli temu uporabniku spremembo lastnih pasic";
-$GLOBALS['strAllowClientAddBanner']             = "Allow this user to add their own banners";
 $GLOBALS['strAllowClientDisableBanner']         = "Dovoli temu uporabniku deaktivacijo lastnih pasic";
 $GLOBALS['strAllowClientActivateBanner']        = "Dovoli temu uporabniku aktivacijo lastnih pasic";
 $GLOBALS['strAllowClientViewTargetingStats']    = "Dovoli temu uporabniku vpogled v ciljno statistiko";
@@ -378,10 +314,7 @@ $GLOBALS['strActiveCampaigns']              = "Aktivnih kampanj";
 $GLOBALS['strAddCampaign']                  = "Dodaj novo kampanjo";
 $GLOBALS['strAddCampaign_Key']              = "Dodaj <u>n</u>ovo kampanjo";
 $GLOBALS['strCampaignForAdvertiser']        = "za oglaševalca";
-$GLOBALS['strCreateNewCampaign']            = "Create new campaign";
 $GLOBALS['strModifyCampaign']               = "Prilagodi kampanjo";
-$GLOBALS['strMoveToNewCampaign']            = "Move to a new campaign";
-$GLOBALS['strBannersWithoutCampaign']       = "Banners without a campaign";
 $GLOBALS['strDeleteAllCampaigns']           = "Izbriši vse kampanje";
 $GLOBALS['strLinkedCampaigns']              = "Kampanje z povezavami";
 $GLOBALS['strCampaignStats']                = "Statistika kampanje";
@@ -389,12 +322,10 @@ $GLOBALS['strCampaignProperties']           = "Lastnosti kampanje";
 $GLOBALS['strCampaignOverview']             = "Pregled kampanje";
 $GLOBALS['strCampaignHistory']              = "Zgodovina kampanje";
 $GLOBALS['strNoCampaigns']                  = "Trenutni ni definiranih kampanj za tega oglaševalca";
-$GLOBALS['strNoCampaignsAddAdvertiser']     = "There are currently no campaigns defined, because there are no advertisers. To create a campaign, <a href='advertiser-edit.php'>add a new advertiser</a> first.";
 $GLOBALS['strNoCampaignsForBanners']        = "Ta oglaševalec nima kampanj. Najprej morate <a href='campaign-edit.php?clientid=%s'>dodati novo kampanjo</a> , če želite dodajati pasice";
 $GLOBALS['strConfirmDeleteAllCampaigns']    = "Ste prepričani, da želite izbrisati vse kampanje tega oglaševalca?";
 $GLOBALS['strConfirmDeleteCampaign']        = "Ste prepričani, da želite izbrisati to kampanjo?";
 $GLOBALS['strConfirmDeleteCampaigns']       = "Ste prepričani, da želite izbrisati izbrane kampanje?";
-$GLOBALS['strConfirmResetCampaignStats']    = "Do you really want to delete all existing statistics for this campaign?";
 $GLOBALS['strShowParentAdvertisers']        = "Prikaži izvorne oglaševalce";
 $GLOBALS['strHideParentAdvertisers']        = "Skrij izvorne oglaševalce";
 $GLOBALS['strHideInactiveCampaigns']        = "Skrij neaktivne kampanje";
@@ -402,27 +333,15 @@ $GLOBALS['strInactiveCampaignsHidden']      = "skrite neaktivne kampanje";
 $GLOBALS['strContractDetails']              = "Pogodbene podrobnosti";
 $GLOBALS['strInventoryDetails']             = "Podrobnosti inventarja";
 $GLOBALS['strPriorityInformation']          = "Prioriteta v razmerju z ostalimi kampanjami";
-$GLOBALS['strImpressionGoal']               = "Impression Goal";
-$GLOBALS['strECPMInformation']              = "eCPM prioritization";
-$GLOBALS['strRemnantEcpmDescription']       = "eCPM is automatically calculated based on this campaign's performance.<br />It will be used to prioritise Remnant campaigns relative to each other.";
-$GLOBALS['strContractEcpmDescription']      = "eCPM is automatically calculated based on this campaign's performance.<br />It will be used to prioritise campaigns with priority levels %s through %s.";
-$GLOBALS['strEcpmMinImpsDescription']       = "Set this to your desired minium basis on which to calculate this campaign's eCPM.";
 $GLOBALS['strHiddenCampaign']               = "Kampanja";
 $GLOBALS['strHiddenAd']                     = "Oglas";
 $GLOBALS['strHiddenAdvertiser']             = "Oglaševalec";
 $GLOBALS['strHiddenTracker']                = "Sledilnik";
 $GLOBALS['strHiddenWebsite']              = "Spletna stran";
 $GLOBALS['strHiddenZone']                   = "Področje";
-$GLOBALS['strUnderdeliveringCampaigns']     = "Underdelivering Campaigns";
-$GLOBALS['strCampaignDelivery']             = "Campaign delivery";
-$GLOBALS['strBookedMetric']                 = "Booked Metric";
-$GLOBALS['strValueBooked']                  = "Value Booked";
-$GLOBALS['strRemaining']                    = "Remaining";
 $GLOBALS['strCompanionPositioning']         = "Spremljevalni položaj";
 $GLOBALS['strSelectUnselectAll']            = "Izberi / Odizberi vse";
-$GLOBALS['strConfirmOverwrite']             = "Saving these changes will overwrite any individual banner-zone links. Are you sure?";
 $GLOBALS['strCampaignsOfAdvertiser']        = "od"; //this is added between page name and advertiser name eg. 'Campaigns of Advertiser 1'
-$GLOBALS['strShowCappedNoCookie']           = "Show capped ads if cookies are disabled";
 
 // Campaign-zone linking page
 $GLOBALS['strCalculatedForAllCampaigns']    = "Preračunano za vse kampanje";
@@ -466,17 +385,12 @@ $GLOBALS['strImpressionsBooked']                = "Rezerviranih učinkov";
 $GLOBALS['strClicksBooked']                     = "Rezerviranih klikov";
 $GLOBALS['strConversionsBooked']                = "Rezerviranih pretvorb";
 $GLOBALS['strCampaignWeight']                   = "Nastavi kampanjsko vrednost";
-$GLOBALS['strTargetLimitAdImpressions']         = "Target Limit Ad Impressions";
 $GLOBALS['strOptimise']                         = "Optimiziraj";
 $GLOBALS['strAnonymous']                        = "Skrij oglaševalca in spletne strani te kampanje";
 $GLOBALS['strHighPriority']                     = "Show banners in this campaign with high priority.<br />If you use this option ".MAX_PRODUCT_NAME." will try to distribute the number of Impressions evenly over the course of the day.";
-$GLOBALS['strLowPriority']                      = "Show banner in this campaign with low priority.<br /> This campaign is used to show the left over Impressions which aren't used by high priority campaigns.";
 $GLOBALS['strTargetPerDay']                     = "na dan.";
-$GLOBALS['strTargetLimitImpressionsTo']         = "Limit impressions to";
 $GLOBALS['strPriorityAutoTargeting']            = "Samodejno - Enakomerno razporedi preostanek inventarja preko naslednjih dni.";
 $GLOBALS['strCampaignWarningRemnantNoWeight']   = "Tip te kampanje je bil nastavljen na Preostalo, \\nvendar je postavka nastavljena na nič ali pa ni specificirana.\\nKampanja bo zaradi tega deaktivirana \\nin pasice ne bodo dostavljene,\\ndokler postavke ne spremenite v veljaven element. \\n\\nSte prepričani, da želite nadaljevati?";
-$GLOBALS['strCampaignWarningEcpmNoRevenue']     = "This campaign uses eCPM optimisation \\nbut the 'revenue' is set to zero or it has not been specified. \\nThis will cause the campaign to be deactivated \\nand its banners won't be delivered until the \\nrevenue has been set to a valid number. \\n\\nAre you sure you want to continue?";
-$GLOBALS['strCampaignWarningOverrideNoWeight']  = "The type of this campaign has been set to Override, \\nbut the weight is set to zero or it has not been \\nspecified. This will cause the campaign to be \\ndeactivated and its banners won't be delivered \\nuntil the weight has been set to a valid number. \\n\\nAre you sure you want to continue?";
 $GLOBALS['strCampaignWarningNoTarget']          = "Tip te kampanje je bil nastavljen na Pogodbeno, \\nvendar ni nastavljena dnevna omejitev. \\nZaradi tega bo kampanja deaktivirana, \\npasice pa ne bodo prikazane, dokler ne nastavite \\ndnevne omejitve. \\n\\nSte prepričani, da želite nadaljevati?";
 $GLOBALS['strCampaignStatusPending']            = "V teku";
 $GLOBALS['strCampaignStatusInactive']           = "Neaktiven";
@@ -508,31 +422,22 @@ $GLOBALS['strChangeStatus']                     = "Spremeni stanje";
 $GLOBALS['strCampaignType']                     = "Tip kampanje";
 $GLOBALS['strType']                             = "Tip";
 $GLOBALS['strContract']                         = "Pogodba";
-$GLOBALS['strOverride']                         = "Override";
-$GLOBALS['strOverrideInfo']                     = "Override campaigns are a special campaign type specifically to
-    override (i.e. take priority over) Remnant and Contract campaigns. Override campaigns are generally used with
-    specific targeting and/or capping rules to ensure that the campaign banners are always displayed in certain
-    locations, to certain users, and perhaps a certain number of times, as part of a specific promotion. (This campaign
-    type was previously known as 'Contract (Exclusive)'.)";
 $GLOBALS['strStandardContract']                 = "Pogodba";
 $GLOBALS['strStandardContractInfo']             = "Ta kampanja ima dnevne omejitve in bo enakomerno dostavljana do zaključnega datuma ali nastavljene omejitve";
 $GLOBALS['strRemnant']                          = "Ostanek";
 $GLOBALS['strRemnantInfo']                      = "To je standardna kampanja, ki jo lahko omejite z zaključnim datumom ali določenimi ostalimi omejitvami";
-$GLOBALS['strECPMInfo']                         = "This is a standard campaign which can be constrained with either an end date or a specific limit. Based on current settings it will be prioritised using eCPM.";
 $GLOBALS['strContractCampaign']                 = "Pogodbena kampanja";
 $GLOBALS['strRemnantCampaign']                  = "Preostala kampanja";
 $GLOBALS['strPricing']                          = "Cenitev";
 $GLOBALS['strPricingModel']                     = "Cenitveni model";
 $GLOBALS['strSelectPricingModel']               = "\\-- izberite model --";
 $GLOBALS['strRatePrice']                        = "Razmerje / Cena";
-$GLOBALS['strMinimumImpressions']               = "Minimum daily impressions";
 $GLOBALS['strLimit']                            = "Omejitev";
 $GLOBALS['strLowExclusiveDisabled']             = "Te kampanje ne morete spremeniti v Preostalo ali Eksluzivno, saj je nastavljen zaključni datum ali omejitev ogledov/klikov/pretvorb. <br>Če bi želeli spremeniti tip, morate odstraniti zaključni datum ali ostale omejitve";
 $GLOBALS['strCannotSetBothDateAndLimit']        = "Za Eksluzivno in Preostalo kampanjo ne morete nastaviti zaključnega datuma in omejitev.<br>Če morate nastaviti zaključni datum in omejitve ogledov/klikov/pretvorb, prosimo uporabite neeksluzivno pogodbeno kampanjo.";
 $GLOBALS['strWhyDisabled']                      = "zakaj je onemogočeno?";
 $GLOBALS['strBackToCampaigns']                  = "Vrnitev na kampanje";
 $GLOBALS['strCampaignBanners']                  = "Pasice kampanje";
-$GLOBALS['strCookies']                          = "Cookies";
 
 // Tracker
 $GLOBALS['strTracker']                    = "Sledilnik";
@@ -559,19 +464,7 @@ $GLOBALS['strConversionWindow']           = "Pretvorbeno okno";
 $GLOBALS['strUniqueWindow']               = "Edinstveno okno";
 $GLOBALS['strClick']                      = "Klik";
 $GLOBALS['strView']                       = "Pogled";
-$GLOBALS['strArrival']                    = "Arrival";
-$GLOBALS['strManual']                     = "Manual";
 $GLOBALS['strImpression']                 = "Ogled";
-$GLOBALS['strConversionClickWindow']      = "Count conversions which occur within this number of seconds of a click";
-$GLOBALS['strConversionViewWindow']       = "Count conversions which occur within this number of seconds of a view";
-$GLOBALS['strTotalTrackerImpressions']    = "Total Impressions";
-$GLOBALS['strTotalTrackerConnections']    = "Total Connections";
-$GLOBALS['strTotalTrackerConversions']    = "Total Conversions";
-$GLOBALS['strTrackerImpressions']         = "Impressions";
-$GLOBALS['strTrackerImprConnections']     = "Impression Connections";
-$GLOBALS['strTrackerClickConnections']    = "Click Connections";
-$GLOBALS['strTrackerImprConversions']     = "Impression Conversions";
-$GLOBALS['strTrackerClickConversions']    = "Click Conversions";
 $GLOBALS['strConversionType']             = "Tip pretvorbe";
 $GLOBALS['strLinkCampaignsByDefault']     = "Privzeto nastavi povezave pri novih kampanjah";
 $GLOBALS['strNoLinkedTrackersDropdown']   = "\\-- ni povezanega sledilnika --";
@@ -583,7 +476,6 @@ $GLOBALS['strBackToTrackers']             = "Nazaj k sledilnikom";
 // Banners (General)
 $GLOBALS['strBanner']                        = "Pasica";
 $GLOBALS['strBanners']                       = "Pasice";
-$GLOBALS['strBannerFilter']                  = "Banner Filter";
 $GLOBALS['strAddBanner']                     = "Dodaj novo pasico";
 $GLOBALS['strAddBanner_Key']                 = "Dodaj <u>n</u>ovo pasico";
 $GLOBALS['strBannerToCampaign']              = "v kampanjo";
@@ -591,31 +483,23 @@ $GLOBALS['strModifyBanner']                  = "Prilagodi pasico";
 $GLOBALS['strActiveBanners']                 = "Aktivne pasice";
 $GLOBALS['strTotalBanners']                  = "Vseh pasic";
 $GLOBALS['strShowBanner']                    = "Prikaži pasico";
-$GLOBALS['strShowAllBanners']                = "Show all banners";
-$GLOBALS['strShowBannersNoAdViews']          = "Show banners without Impressions";
-$GLOBALS['strShowBannersNoAdClicks']         = "Show banners without Clicks";
-$GLOBALS['strShowBannersNoAdConversions']    = "Show banners without Sales";
 $GLOBALS['strDeleteAllBanners']              = "Izbriši vse pasice";
 $GLOBALS['strActivateAllBanners']            = "Aktiviraj vse pasice";
 $GLOBALS['strDeactivateAllBanners']          = "Deaktiviraj vse pasice";
 $GLOBALS['strBannerOverview']                = "Pregled pasice";
 $GLOBALS['strBannerProperties']              = "Lastnosti pasice";
 $GLOBALS['strBannerHistory']                 = "Zgodovina pasice";
-$GLOBALS['strBannerNoStats']                 = "There are no statistics available for this banner";
 $GLOBALS['strNoBanners']                     = "Trenutno ni nobene definirane pasice za to kampanjo";
 $GLOBALS['strNoBannersAddCampaign']          = "Trenutno ni definiranih nobenih pasic, ker ni kampanj. Za ustvaritev pasice, <a href='campaign-edit.php?clientid=%s'>dodajte novo kampanjo</a> najprej.";
 $GLOBALS['strNoBannersAddAdvertiser']        = "Treutno ni definiranih nobenih pasic, ker ni oglaševalcev. Za ustvaritev pasice, <a href='advertiser-edit.php'>dodajte novega oglaševalca</a> najprej.";
 $GLOBALS['strConfirmDeleteBanner']           = "Ste prepričani, da želite izbrisati to pasico?";
 $GLOBALS['strConfirmDeleteBanners']          = "Ste prepričani, da želite izbrisati izbrane pasice?";
 $GLOBALS['strConfirmDeleteAllBanners']       = "Ste prepričani, da želite izbrisati vse pasice v lasti te kampanje?";
-$GLOBALS['strConfirmResetBannerStats']       = "Do you really want to delete all existing statistics for this banner?";
 $GLOBALS['strShowParentCampaigns']           = "Prikaži izvorne kampanje";
 $GLOBALS['strHideParentCampaigns']           = "Skrij izvorne kampanje";
 $GLOBALS['strHideInactiveBanners']           = "Skrij neaktivne pasice";
 $GLOBALS['strInactiveBannersHidden']         = "skrite neaktivne pasice";
-$GLOBALS['strAppendOthers']                  = "Append others";
 $GLOBALS['strAppendTextAdNotPossible']       = "Dodajanje drugih pasic k tekstovnim oglasom ni mogoče.";
-$GLOBALS['strHiddenBanner']                  = "Hidden banner";
 $GLOBALS['strWarningTag1']                   = "Opozorilo, zaznamek";
 $GLOBALS['strWarningTag2']                   = "verjetno ni zaprt/odprt";
 $GLOBALS['strWarningMissing']                = "Opozorilo, morda manjka";
@@ -628,7 +512,6 @@ $GLOBALS['strBannersOfCampaign']             = "v"; //this is added between page
 
 // Banner Preferences
 $GLOBALS['strBannerPreferences']                     = "Preference pasice";
-$GLOBALS['strCampaignPreferences']                   = "Campaign Preferences";
 $GLOBALS['strDefaultBanners']                        = "Privzete pasice";
 $GLOBALS['strDefaultBannerUrl']                      = "URL privzete slike";
 $GLOBALS['strDefaultBannerDestination']              = "URL privzetega naslova";
@@ -649,14 +532,12 @@ $GLOBALS['strWebBanner']               = "Naloži lokalno pasico v spletni stre�
 $GLOBALS['strURLBanner']               = "Poveži zunanjo pasico";
 $GLOBALS['strHTMLBanner']              = "Ustvari HTML pasico";
 $GLOBALS['strTextBanner']              = "Ustvari besedilno pasico";
-$GLOBALS['strAlterHTML']               = "Alter HTML to enable click tracking for:";
 $GLOBALS['strUploadOrKeep']            = "Ali želite obdržati <br />obstoječo sliko, ali pa <br />nastaviti drugo?";
 $GLOBALS['strUploadOrKeepAlt']        = "Ali želite obdržati <br />obstoječo arhivsko sliko, ali pa <br />nastaviti drugo?";
 $GLOBALS['strNewBannerFile']         = "Izberite sliko, ki jo želite <br />uporabiti za to pasico<br /><br />";
 $GLOBALS['strNewBannerFileAlt']     = "Izberite arhivsko sliko, ki jo želite <br />uporabiti v primeru, če brskalnik<br />ne podpira obogatenih medijskih vsebin<br /><br />";
 $GLOBALS['strNewBannerURL']         = "URL slike (vključno z http://)";
 $GLOBALS['strURL']                     = "URL cilja (vključno z http://)";
-$GLOBALS['strHTML']                 = "HTML";
 $GLOBALS['strKeyword']              = "Ključne besede";
 $GLOBALS['strTextBelow']             = "Besedilo pod sliko";
 $GLOBALS['strWeight']                 = "Vrednost";
@@ -665,14 +546,11 @@ $GLOBALS['strStatusText']            = "Besedilo stanja";
 $GLOBALS['strBannerWeight']            = "Vrednost pasice";
 $GLOBALS['strBannerType']           = "Tip oglasa";
 $GLOBALS['strAdserverTypeGeneric']  = "Generična HTML pasica";
-$GLOBALS['strDoNotAlterHtml']  = "Do not alter HTML";
 $GLOBALS['strGenericOutputAdServer'] = "Splošno";
 $GLOBALS['strSwfTransparency']		   = "Dovoli prozorno ozadje";
 $GLOBALS['strBackToBanners']           = "Vrnitev na pasice";
 
 // Banner (advanced)
-$GLOBALS['strBannerPrependHTML']       = "Always prepend the following HTML code to this banner";
-$GLOBALS['strBannerAppendHTML']        = "Always append the following HTML code to this banner";
 
 // Banner (swf)
 $GLOBALS['strCheckSWF']                = "Preveri za hard-code povezave v FLASH datoteki";
@@ -681,14 +559,8 @@ $GLOBALS['strHardcodedLinks']        = "Implementirane povezave (hard-coded link
 $GLOBALS['strConvertSWF']            = "<br />The Flash file you just uploaded contains hard-coded urls. ".MAX_PRODUCT_NAME." won't be able to track the number of Clicks for this banner unless you convert these hard-coded urls. Below you will find a list of all urls inside the Flash file. If you want to convert the urls, simply click <b>Convert</b>, otherwise click <b>Cancel</b>.<br /><br />Please note: if you click <b>Convert</b> the Flash file you just uploaded will be physically altered. <br />Please keep a backup of the original file. Regardless of in which version this banner was created, the resulting file will need the Flash 4 player (or higher) to display correctly.<br /><br />";
 $GLOBALS['strCompressSWF']            = "Stisni SWF datoteko za hitrejši prenos (zahtevan Flash player 6)";
 $GLOBALS['strOverwriteSource']        = "Prepiši izvirni parameter";
-$GLOBALS['strLinkToShort']            = "Warning: Hard-coded URLs detected - However the URL it too short to be automatically modified";
 
 // Banner (network)
-$GLOBALS['strBannerNetwork']        = "HTML template";
-$GLOBALS['strChooseNetwork']        = "Choose the template you want to use";
-$GLOBALS['strMoreInformation']        = "More information...";
-$GLOBALS['strRichMedia']            = "Richmedia";
-$GLOBALS['strTrackAdClicks']        = "Track Clicks";
 
 // Banner (AdSense)
 $GLOBALS['strAdSenseAccounts']            = "AdSense računi";
@@ -700,10 +572,8 @@ $GLOBALS['strEditAdSenseAccount']         = "Uredi AdSense račun";
 $GLOBALS['strModifyBannerAcl']            = "Možnosti dostave";
 $GLOBALS['strACL']                        = "Dostava";
 $GLOBALS['strACLAdd']                     = "Dodaj dostavno omejitev";
-$GLOBALS['strACLAdd_Key']                 = "Add <u>n</u>ew limitation";
 $GLOBALS['strNoLimitations']              = "Brez omejitev";
 $GLOBALS['strApplyLimitationsTo']         = "Uporabi omejitve";
-$GLOBALS['strAllBannersInCampaign']       = "All banners in this campaign";
 $GLOBALS['strRemoveAllLimitations']       = "Odstrani vse omejitve";
 $GLOBALS['strEqualTo']                    = "je enak";
 $GLOBALS['strDifferentFrom']              = "je različen od";
@@ -711,8 +581,6 @@ $GLOBALS['strLaterThan']                  = "je poznejši kot";
 $GLOBALS['strLaterThanOrEqual']           = "je kasnejši ali enak";
 $GLOBALS['strEarlierThan']                = "je zgodnejši kot";
 $GLOBALS['strEarlierThanOrEqual']         = "je zgodnejši ali enak";
-$GLOBALS['strContains']                   = "contains";
-$GLOBALS['strNotContains']                = "doesn't contain";
 $GLOBALS['strGreaterThan']                = "je večji kot";
 $GLOBALS['strLessThan']                   = "je manj kot";
 $GLOBALS['strAND']                        = "IN";                          // logical operator
@@ -721,26 +589,8 @@ $GLOBALS['strOnlyDisplayWhen']            = "To pasico prikaži samo ko:";
 $GLOBALS['strWeekDay']                    = "Delavnik";
 $GLOBALS['strWeekDays']                   = "Delavniki";
 $GLOBALS['strTime']                       = "Čas";
-$GLOBALS['strUserAgent']                  = "Useragent";
-$GLOBALS['strDomain']                     = "Domain";
-$GLOBALS['strClientIP']                   = "Client IP";
 $GLOBALS['strSource']                     = "Vir";
-$GLOBALS['strSourceFilter']               = "Source Filter";
-$GLOBALS['strBrowser']                    = "Browser";
-$GLOBALS['strOS']                         = "OS";
-$GLOBALS['strCountryCode']                = "Country Code (ISO 3166)";
-$GLOBALS['strCountryName']                = "Country Name";
-$GLOBALS['strRegion']                     = "Region Code (ISO-3166-2 or FIPS 10-4)";
 $GLOBALS['strCity']                       = "Mesto";
-$GLOBALS['strPostalCode']                 = "US/Canada ZIP/Postcode";
-$GLOBALS['strLatitude']                   = "Latitude";
-$GLOBALS['strLongitude']                  = "Longitude";
-$GLOBALS['strDMA']                        = "US DMA Code";
-$GLOBALS['strArea']                       = "US Telephone Area Prefix Code";
-$GLOBALS['strOrg']                        = "Organisation Name";
-$GLOBALS['strIsp']                        = "ISP Name";
-$GLOBALS['strNetspeed']                   = "Internet Connection Speed";
-$GLOBALS['strReferer']                    = "Referring page";
 $GLOBALS['strDeliveryLimitations']        = "Omejitve dostave";
 
 $GLOBALS['strDeliveryCapping']            = "Omejitve dostave na obiskovalca";
@@ -749,15 +599,15 @@ $GLOBALS['strDeliveryCappingTotal']       = "celotnih";
 $GLOBALS['strDeliveryCappingSession']     = "na sejo";
 
 $GLOBALS['strCappingBanner'] = array();
-$GLOBALS['strCappingBanner']['title'] = $GLOBALS['strDeliveryCapping'];
+$GLOBALS['strCappingBanner']['title'] = $GLOBALS[''];
 $GLOBALS['strCappingBanner']['limit'] = "Omeji prikazov pasice na:";
 
 $GLOBALS['strCappingCampaign'] = array();
-$GLOBALS['strCappingCampaign']['title'] = $GLOBALS['strDeliveryCapping'];
+$GLOBALS['strCappingCampaign']['title'] = $GLOBALS[''];
 $GLOBALS['strCappingCampaign']['limit'] = "Omeji prikazov kampanje na:";
 
 $GLOBALS['strCappingZone'] = array();
-$GLOBALS['strCappingZone']['title'] = $GLOBALS['strDeliveryCapping'];
+$GLOBALS['strCappingZone']['title'] = $GLOBALS[''];
 $GLOBALS['strCappingZone']['limit'] = "Omeji prikazov področja na:";
 
 // Website
@@ -821,16 +671,13 @@ $GLOBALS['strCategory']                     = "Kategorija";
 $GLOBALS['strPrimaryCategory']              = "Primarna kategorija";
 $GLOBALS['strSecondaryCategory']            = "Sekundarna kategorija";
 $GLOBALS['strHelpFile']                     = "Datoteka s pomočjo";
-$GLOBALS['strApprovedTandC']                = "Approved terms and conditions";
 $GLOBALS['strWebsiteZones']                 = "Področja spletne strani";
 
 // Zone
-$GLOBALS['strChooseZone']                   = "Choose Zone";
 $GLOBALS['strZone']                         = "Področje";
 $GLOBALS['strZones']                        = "Področja";
 $GLOBALS['strAddNewZone']                   = "Dodaj novo področje";
 $GLOBALS['strAddNewZone_Key']               = "Dodaj <u>n</u>ovo področje";
-$GLOBALS['strAddZone']                      = "Create zone";
 $GLOBALS['strModifyZone']                   = "Prilagodi področje";
 $GLOBALS['strZoneToWebsite']                = "k spletni strani";
 $GLOBALS['strLinkedZones']                  = "Področja z povezavami";
@@ -851,8 +698,6 @@ $GLOBALS['strPopup']                        = "Prikazujoč (pop-up)";
 $GLOBALS['strTextAdZone']                   = "Tekstovni oglas";
 $GLOBALS['strEmailAdZone']                  = "E-poštno/Newsletter področje";
 $GLOBALS['strZoneClick']                    = "Sledilno področje \"klikov\"";
-$GLOBALS['strZoneVideoInstream']            = "Inline Video ad";
-$GLOBALS['strZoneVideoOverlay']             = "Overlay Video ad";
 $GLOBALS['strShowMatchingBanners']          = "Prikaži ujemajoče pasice";
 $GLOBALS['strHideMatchingBanners']          = "Skrij ujemajoče pasice";
 $GLOBALS['strBannerLinkedAds']              = "Pasice povezujoče v področje";
@@ -882,17 +727,13 @@ $GLOBALS['strIab']['IAB_MediumRectangle(300x250)*']  = "IAB srednji pravokotnik 
 $GLOBALS['strIab']['IAB_LargeRectangle(336x280)']    = "IAB veliki pravokotnik (336 x 280)";
 $GLOBALS['strIab']['IAB_VerticalRectangle(240x400)'] = "IAB navpični pravokotnik (240 x 400)";
 $GLOBALS['strIab']['IAB_WideSkyscraper(160x600)*']   = "IAB širok nebotičnik (160 x 600)";
-$GLOBALS['strIab']['IAB_Pop-Under(720x300)']         = "IAB Pop-Under (720 x 300)";
-$GLOBALS['strIab']['IAB_3:1Rectangle(300x100)']      = "IAB 3:1 Rectangle (300 x 100)";
 
 // Advanced zone settings
 $GLOBALS['strAdvanced']                    = "Napredno";
-$GLOBALS['strChains']                    = "Chains";
 $GLOBALS['strChainSettings']            = "Verižne nastavitve";
 $GLOBALS['strZoneNoDelivery']            = "Če iz tega področja ni dostavljena nobena pasica, <br />poizkusite...";
 $GLOBALS['strZoneStopDelivery']            = "Ustavi dostavo in ne prikaži pasice";
 $GLOBALS['strZoneOtherZone']            = "Prikaži izbrano področje";
-$GLOBALS['strZoneUseKeywords']            = "Select a banner using the keywords entered below";
 $GLOBALS['strZoneAppend']                = "Vedno pripni naslednjo HTML kodo v prikazane pasice tega področja";
 $GLOBALS['strAppendSettings']            = "Pripni in omogoči nastavitve";
 $GLOBALS['strZoneForecasting']            = "Nastavitev področnih predvidevanj";
@@ -915,14 +756,9 @@ $GLOBALS['strLinkedBanners']            = "Poveži posamezne pasice";
 $GLOBALS['strCampaignDefaults']            = "Poveži pasice po izvorni kampanji";
 $GLOBALS['strLinkedCategories']         = "Poveži pasice po kategoriji";
 $GLOBALS['strWithXBanners']                = "%d oglas(i)";
-$GLOBALS['strInteractive']                = "Interactive";
 $GLOBALS['strRawQueryString']            = "Ključna beseda";
 $GLOBALS['strIncludedBanners']            = "Pasice s povezavo";
-$GLOBALS['strLinkedBannersOverview']    = "Linked banners overview";
-$GLOBALS['strLinkedBannerHistory']        = "Linked banner history";
 $GLOBALS['strNoZonesToLink']            = "Na voljo ni nobenih področij, s katerimi bi lahko povezali to pasico";
-$GLOBALS['strNoBannersToLink']            = "There are currently no banners available which can be linked to this zone";
-$GLOBALS['strNoLinkedBanners']            = "There are no banners available which are linked to this zone";
 $GLOBALS['strMatchingBanners']            = "{count} ujemajočih pasic";
 $GLOBALS['strNoCampaignsToLink']        = "Na voljo ni nobenih kampanj, s katerimi bi lahko povezali to področje";
 $GLOBALS['strNoTrackersToLink']            = "Na voljo ni nobenih sledilnikov, s katerimi bi lahko povezali to kampanjo";
@@ -934,7 +770,6 @@ $GLOBALS['strSelectPlacement']          = "Izberite kampanjo";
 $GLOBALS['strSelectAd']                 = "Izberite pasico";
 $GLOBALS['strSelectPublisher']          = "Izberite spletno stran";
 $GLOBALS['strSelectZone']               = "Izberite področje";
-$GLOBALS['strTrackerCode']              = "Append the following code to each Javascript tracker impression";
 $GLOBALS['strTrackerCodeSubject']          = "Pripni zbirnik sledilnika";
 $GLOBALS['strAppendTrackerNotPossible']    = "Pripnitev tega zaznamka ni mogoča.";
 $GLOBALS['strStatusPending']            = "V teku";
@@ -956,37 +791,16 @@ $GLOBALS['strNoStats']                   = "Trenutno ni na voljo nobenih statist
 $GLOBALS['strNoTargetingStats']          = "Trenutno ni na voljo nobenih ciljanih statističnih podatkov";
 $GLOBALS['strNoStatsForPeriod']          = "Trenutno ni na voljo nobenih statističnih podatkov za obdobje od %s do %s";
 $GLOBALS['strNoTargetingStatsForPeriod'] = "Trenutni ni na voljo nobenih ciljanih statističnih podatkov za obdobje od %s do %s";
-$GLOBALS['strConfirmResetStats']         = "Do you really want to delete all existing statistics?";
 $GLOBALS['strGlobalHistory']             = "Celotna zgodovina";
 $GLOBALS['strDailyHistory']              = "Dnevna zgodovina";
 $GLOBALS['strDailyStats']                = "Dnevna statistika";
 $GLOBALS['strWeeklyHistory']             = "Tedenska zgodovina";
 $GLOBALS['strMonthlyHistory']            = "Mesečna zgodovina";
 $GLOBALS['strCreditStats']               = "Statistika kreditov";
-$GLOBALS['strDetailStats']               = "Detailed statistics";
 $GLOBALS['strTotalThisPeriod']           = "Vseh za to obdobje";
-$GLOBALS['strAverageThisPeriod']         = "Average this period";
 $GLOBALS['strPublisherDistribution']     = "Razporeditev spletne strani";
 $GLOBALS['strCampaignDistribution']      = "Razporeditev kampanje";
-$GLOBALS['strDistributionBy']            = "Distribution by";
-$GLOBALS['strResetStats']                = "Reset statistics";
-$GLOBALS['strSourceStats']               = "Source statistics";
-$GLOBALS['strSources']                   = "Sources";
-$GLOBALS['strAvailableSources']          = "Available Sources";
-$GLOBALS['strSelectSource']              = "Select the source you want to view:";
-$GLOBALS['strSizeDistribution']          = "Distribution by size";
-$GLOBALS['strCountryDistribution']       = "Distribution by country";
-$GLOBALS['strEffectivity']               = "Effectivity";
 $GLOBALS['strTargetStats']               = "Ciljana statistika";
-$GLOBALS['strCampaignTarget']            = "Target";
-$GLOBALS['strTargetRatio']               = "Target Ratio";
-$GLOBALS['strTargetModifiedDay']         = "Targets were modified during the day, targeting could be not accurate";
-$GLOBALS['strTargetModifiedWeek']        = "Targets were modified during the week, targeting could be not accurate";
-$GLOBALS['strTargetModifiedMonth']       = "Targets were modified during the month, targeting could be not accurate";
-$GLOBALS['strNoTargetStats']             = "There are currently no statistics about targeting available";
-$GLOBALS['strOVerall']                   = "Overall";
-$GLOBALS['strByZone']                    = "By Zone";
-$GLOBALS['strImpressionsRequestsRatio']  = "View Request Ratio (%)";
 $GLOBALS['strViewBreakdown']             = "Pogled po";
 $GLOBALS['strBreakdownByDay']            = "Dan";
 $GLOBALS['strBreakdownByWeek']           = "Teden";
@@ -1002,17 +816,11 @@ $GLOBALS['strDistributionHistoryZone']   = "Zgodovina distribucije (Področje)";
 $GLOBALS['strShowGraphOfStatistics']     = "Prikaži <u>G</u>raf statistike";
 $GLOBALS['strExportStatisticsToExcel']   = "<u>I</u>zvozi statistiko v Excel-ovo datoteko";
 $GLOBALS['strGDnotEnabled']              = "V PHP-ju morate imeti omogočen GD za prikaz grafov. <br />Obiščite <a href='http://www.php.net/gd' target='_blank'>http://www.php.net/gd</a> za več informacij.";
-$GLOBALS['strTTFnotEnabled']             = "You have GD enabled in PHP but there is a problem with FreeType support. <br /> Freetype is needed in order to show the graph. <br />Please check your server configuration.";
 $GLOBALS['strStatsArea']                 = "Površina";
 
 // Hosts
-$GLOBALS['strHosts']                = "Hosts";
-$GLOBALS['strTopHosts']             = "Top requesting hosts";
-$GLOBALS['strTopCountries']         = "Top requesting countries";
-$GLOBALS['strRecentHosts']             = "Most recent requesting hosts";
 
 // Expiration
-$GLOBALS['strExpired']                = "Expired";
 $GLOBALS['strExpiration']             = "Potek roka";
 $GLOBALS['strNoExpiration']           = "Datum izteka ni nastavljen";
 $GLOBALS['strEstimated']              = "Predviden iztek";
@@ -1023,14 +831,9 @@ $GLOBALS['strCampaignStop']           = "Ustavitev kampanje";
 // Reports
 $GLOBALS['strReports']                = "Poročila";
 $GLOBALS['strAdvancedReports']        = "Naprednejša poročila";
-$GLOBALS['strAdminReports']           = "Admin Reports";
-$GLOBALS['strAdvertiserReports']      = "Advertiser Reports";
-$GLOBALS['strAgencyReports']          = "Account Reports";
 $GLOBALS['strPublisherReports']       = "Poročilo spletne strani";
-$GLOBALS['strSelectReport']           = "Select the report you want to generate";
 $GLOBALS['strStartDate']              = "Datum začetka";
 $GLOBALS['strEndDate']                = "Datum zaključka";
-$GLOBALS['strNoData']                 = "There is no data available for this time period";
 $GLOBALS['strPeriod']                 = "Obdobje";
 $GLOBALS['strLimitations']            = "Omejitve";
 $GLOBALS['strWorksheets']             = "Delovnih listov";
@@ -1057,9 +860,7 @@ $GLOBALS['strParameters']                = "Nastavitve zaznamka";
 $GLOBALS['strFrameSize']                = "Velikost okvirja";
 $GLOBALS['strBannercode']                = "Koda pasice";
 $GLOBALS['strTrackercode']                = "Pripni naslednji niz v posamezen Javascript sledilnik ogledov";
-$GLOBALS['strOptional']                    = "optional";
 $GLOBALS['strBackToTheList']            = "Vrnitev na zapisni seznam";
-$GLOBALS['strGoToReportBuilder']        = "Go to the selected report";
 $GLOBALS['strCharset']                  = "Postavitev znakov";
 $GLOBALS['strAutoDetect']                   = "Samodejno prepoznaj";
 $GLOBALS['strCacheBusterComment']       = "* Zamenjaj vse primere {random} z * naključno ustvarjenim številom (ali časovnim žigom). *";
@@ -1069,7 +870,6 @@ $GLOBALS['strSSLDeliveryComment']       = "* Ta zaznamek je bil ustvarjen za upo
 $GLOBALS['strThirdPartyComment']        = "* Ne pozabite zamenjati '{clickurl}' besedila z	* URL sledilnikom klikov, če bo da oglas dostavlja preko zunanjega (3rd party) 	* (non-Max) oglaševalskega strežnika. 	*";
 
 // Errors
-$GLOBALS['strMySQLError']                       = "SQL Error:";
 $GLOBALS['strErrorDatabaseConnetion']           = "Napaka povezave podatkovne baze.";
 $GLOBALS['strErrorCantConnectToDatabase']       = "Prišlo je do težke napake. %s se ne more povezati s podatkovno bazo. Zaradi tega ni mogoče uporabljati administratorskega vmesnika. Dostava pasic je verjetno tudi onemogočena. Verjetni razlogi za ta problem so lahko: <ul> <li>Strežnik podatkovne baze trenutno ne deluje</li> <li>Lokacija strežnika podatkovne baze je bila spremenjena</li> <li>Uporabniško ime in geslo za povezavo s strežnikom nista pravilna</li> <li>PHP se ni naložil v MySQL razširitev</li> </ul>";
 $GLOBALS['strLogErrorClients']                  = "[phpAds] Prišlo je do napake pri poskusu pridobitve oglaševalca iz podatkovne baze.";
@@ -1077,19 +877,11 @@ $GLOBALS['strLogErrorBanners']                  = "[phpAds] Prišlo je do napake
 $GLOBALS['strLogErrorViews']                    = "[phpAds] Prišlo je do napake pri poskusu pridobitve učinkov iz podatkovne baze.";
 $GLOBALS['strLogErrorClicks']                   = "[phpAds] Prišlo je do napake pri poskusu pridobitve klikov iz podatkovne baze.";
 $GLOBALS['strLogErrorConversions']              = "[phpAds] Prišlo je do napake pri poskusu pridobitve pretvorb iz podatkovne baze.";
-$GLOBALS['strErrorViews']                       = "You must enter the number of impressions or select the unlimited box !";
-$GLOBALS['strErrorNegViews']                    = "Negative impressions are not allowed";
-$GLOBALS['strErrorClicks']                      = "You must enter the number of clicks or select the unlimited box !";
-$GLOBALS['strErrorNegClicks']                   = "Negative clicks are not allowed";
-$GLOBALS['strErrorConversions']                 = "You must enter the number of conversions or select the unlimited box !";
-$GLOBALS['strErrorNegConversions']              = "Negative conversions are not allowed";
 $GLOBALS['strNoMatchesFound']                   = "Ni zadetkov";
 $GLOBALS['strErrorOccurred']                    = "Prišlo je do napake";
 $GLOBALS['strErrorUploadSecurity']              = "Prišlo je do odkritja varnostnega problema, nalaganje ustavljeno!";
 $GLOBALS['strErrorUploadBasedir']               = "Ne morem dostopati do želene datoteke, verjetno zaradi varnostnih razlogov.";
 $GLOBALS['strErrorUploadUnknown']               = "Ne morem dostopati do želene datoteke zaradi neznane napake. Prosimo, preverite vašo PHP konfiguracijo.";
-$GLOBALS['strErrorStoreLocal']                  = "An error occcured while trying to save the banner in the local directory. This is probably the result of a misconfiguration of the local directory path settings";
-$GLOBALS['strErrorStoreFTP']                    = "An error occcured while trying to upload the banner to the FTP server. This could be because the server is not available, or because of a misconfiguration of the FTP server settings";
 $GLOBALS['strErrorDBPlain']                     = "Prišlo je do napake pri dostopanju do podatkovne baze.";
 $GLOBALS['strErrorDBSerious']                   = "Odkrit je bil resen problem pri podatkovni bazi.";
 $GLOBALS['strErrorDBNoDataPlain']               = "Due to a problem with the database ".MAX_PRODUCT_NAME." couldn't retrieve or store data. ";
@@ -1098,13 +890,11 @@ $GLOBALS['strErrorDBCorrupt']                   = "Podatkovna baza je najverjetn
 $GLOBALS['strErrorDBContact']                   = "Prosimo, obvestite administratorja o problemu na tej strani.";
 $GLOBALS['strErrorDBSubmitBug']                 = "If this problem is reproducable it might be caused by a bug in ".MAX_PRODUCT_NAME.". Please report the following information to the creators of ".MAX_PRODUCT_NAME.". Also try to describe the actions that led to this error as clearly as possible.";
 $GLOBALS['strMaintenanceNotActive']             = "The maintenance script has not been run in the last 24 hours. \\nIn order for ".MAX_PRODUCT_NAME." to function correctly it needs to run \\nevery hour. \\n\\nPlease read the Administrator guide for more information \\nabout configuring the maintenance script.";
-$GLOBALS['strErrorBadUserType']                 = "The system was unable to determine your account user type!";
 $GLOBALS['strErrorLinkingBanner']               = "Povezava pasice s tem področjem je bila neizvedljiva zaradi:";
 $GLOBALS['strUnableToLinkBanner']               = "Ne morem vzpostaviti povezave s to pasico:";
 $GLOBALS['strErrorEditingCampaign']             = "Prišlo je do napake pri posodabljanju kampanje:";
 $GLOBALS['strUnableToChangeCampaign']           = "Ne morem prilagoditi te spremembe zaradi:";
 $GLOBALS['strErrorEditingCampaignRevenue']      = "napačna oblika številk v polju Informacije o dohodkih";
-$GLOBALS['strErrorEditingCampaignECPM']         = "incorrect number format in ECPM Information field";
 $GLOBALS['strErrorEditingZone']                 = "Napaka pri posodabljanju področja:";
 $GLOBALS['strUnableToChangeZone']               = "Ne morem prilagoditi te spremembe zaradi:";
 $GLOBALS['strDatesConflict']                    = "datumi so v navzkrižju z:";
@@ -1118,7 +908,6 @@ $GLOBALS['strRequiredFieldLegend']              = "označite zahtevano polje";
 $GLOBALS['strFormContainsErrors']               = "Obrazec vsebuje napake. Prosimo popravite spodaj označena polja.";
 $GLOBALS['strRequiredField']                    = "Zahtevano polje";
 $GLOBALS['strXRequiredField']                   = "%s je zahtevan";
-$GLOBALS['strMaxLengthField']                   = "Please enter maximum %s characters";
 $GLOBALS['strEmailField']                       = "Prosimo, vnesite veljaven e-poštni naslov";
 $GLOBALS['strNumericField']                     = "Prosimo, vnesite številko";
 $GLOBALS['strGreaterThanZeroField']             = "Mora biti več kot 0";
@@ -1132,7 +921,6 @@ $GLOBALS['strInvalidWebsiteURL']                = "Napačen URL spletne strani";
 // Email
 $GLOBALS['strSirMadam']                         = "Gospod/Gospa";
 $GLOBALS['strMailSubject']                      = "Poročilo oglaševalca";
-$GLOBALS['strAdReportSent']                     = "Advertiser report sent";
 $GLOBALS['strMailHeader']                       = "Spoštovani/a {contact},\\n";
 $GLOBALS['strMailBannerStats']                  = "Spodaj boste našli statistične podatke o pasici za {clientname}:";
 $GLOBALS['strMailBannerActivatedSubject']       = "Kampanja aktivirana";
@@ -1140,7 +928,6 @@ $GLOBALS['strMailBannerDeactivatedSubject']     = "Kampanja deaktivirana";
 $GLOBALS['strMailBannerActivated']              = "Vaša kampanja (prikazana spodaj), je bila aktivirana,\\nker je bil dosežen aktivacijski datum.";
 $GLOBALS['strMailBannerDeactivated']            = "Vaša kampanja (prikazana spodaj) je bila deaktivirana zaradi";
 $GLOBALS['strMailFooter']                       = "Prijeten dan še naprej,\\n   {adminfullname}";
-$GLOBALS['strMailClientDeactivated']            = "The following banners have been disabled because";
 $GLOBALS['strMailNothingLeft']                  = "Če bi v prihodnje želeli še oglaševati na naši strani, nas kontaktirajte.\\nZ veseljem se Vam bomo oglasili.";
 $GLOBALS['strClientDeactivated']                = "Ta kampanja trenutno ni aktivna, ker";
 $GLOBALS['strBeforeActivate']                   = "aktivacijski datum še ni bil dosežen";
@@ -1149,7 +936,6 @@ $GLOBALS['strNoMoreImpressions']                = "na voljo ni več ogledov";
 $GLOBALS['strNoMoreClicks']                     = "na voljo ni več klikov";
 $GLOBALS['strNoMoreConversions']                = "no voljo ni več prometa";
 $GLOBALS['strWeightIsNull']                     = "vrednost je nastavljena na nič";
-$GLOBALS['strRevenueIsNull']                    = "its revenue is set to zero";
 $GLOBALS['strTargetIsNull']                     = "dnevna omejitev je nastavljena na nič - navesti morate datum zaključka in omejitev ali nastaviti dnevno omejitev";
 $GLOBALS['strWarnClientTxt']                    = "Ogledi, kliki ali pretvorbe pri vaši pasici počasi dosegajo raven {limit}. \\nVaše pasice bodo izklopljene, ko ne bo na voljo več učinkov, klikov ali pretvorb.";
 $GLOBALS['strImpressionsClicksConversionsLow']  = "Ogledi/Kliki/Pretvorbe dosegajo nizko raven";
@@ -1204,18 +990,7 @@ $GLOBALS['strColumnRank']                       = "Niz stolpca";
 $GLOBALS['strRevenue']                             = "Dohodek";
 $GLOBALS['strNumberOfItems']                       = "Število predmetov";
 $GLOBALS['strRevenueCPC']                          = "CPC dohodek";
-$GLOBALS['strERPM']                                = "ERPM";
-$GLOBALS['strERPC']                                = "ERPC";
-$GLOBALS['strERPS']                                = "ERPS";
-$GLOBALS['strEIPM']                                = "EIPM";
-$GLOBALS['strEIPC']                                = "EIPC";
-$GLOBALS['strEIPS']                                = "EIPS";
 $GLOBALS['strECPM']                                = "ECPM";
-$GLOBALS['strECPC']                                = "ECPC";
-$GLOBALS['strECPS']                                = "ECPS";
-$GLOBALS['strEPPM']                                = "EPPM";
-$GLOBALS['strEPPC']                                = "EPPC";
-$GLOBALS['strEPPS']                                = "EPPS";
 $GLOBALS['strPendingConversions']               = "Pretvorb v teku";
 $GLOBALS['strImpressionSR']                     = "SR ogledov";
 $GLOBALS['strClickSR']                          = "SR klikov";
@@ -1229,26 +1004,11 @@ $GLOBALS['strZonesImpressions']                 = "Seštevek področnih ogledov"
 
     // Short names
 $GLOBALS['strRevenue_short']                    = "Doh.";
-$GLOBALS['strBasketValue_short']                = "BV";
 $GLOBALS['strNumberOfItems_short']              = "Štev. postavk";
 $GLOBALS['strRevenueCPC_short']                 = "CPC doh.";
-$GLOBALS['strERPM_short']                       = "ERPM";
-$GLOBALS['strERPC_short']                       = "ERPC";
-$GLOBALS['strERPS_short']                       = "ERPS";
-$GLOBALS['strEIPM_short']                       = "EIPM";
-$GLOBALS['strEIPC_short']                       = "EIPC";
-$GLOBALS['strEIPS_short']                       = "EIPS";
-$GLOBALS['strECPM_short']                       = "ECPM";
-$GLOBALS['strECPC_short']                       = "ECPC";
-$GLOBALS['strECPS_short']                       = "ECPS";
-$GLOBALS['strEPPM_short']                       = "EPPM";
-$GLOBALS['strEPPC_short']                       = "EPPC";
-$GLOBALS['strEPPS_short']                       = "EPPS";
-$GLOBALS['strID_short']                         = "ID";
 $GLOBALS['strRequests_short']                   = "Zah.";
 $GLOBALS['strImpressions_short']                = "Ogled.";
 $GLOBALS['strClicks_short']                     = "Klikov";
-$GLOBALS['strCTR_short']                        = "CTR";
 $GLOBALS['strConversions_short']                = "Pretv.";
 $GLOBALS['strPendingConversions_short']         = "Pretv. v teku";
 $GLOBALS['strImpressionSR_short']               = "SR ogled.";
@@ -1260,7 +1020,6 @@ $GLOBALS['strGlobalSettings']               = "Globalne nastavitve";
 $GLOBALS['strGeneralSettings']              = "Splošne nastavitve";
 $GLOBALS['strMainSettings']                 = "Glavne nastavitve";
 $GLOBALS['strAdminSettings']                = "Administratorske nastavitve";
-$GLOBALS['strPlugins']                      = "Plugins";
 
 $GLOBALS['strChooseSection']          = 'Izberi oddelek';
 
@@ -1329,10 +1088,6 @@ $GLOBALS['strGeneric']               = "Splošno";
 $GLOBALS['strBasketValue']           = "Vrednost košarice";
 $GLOBALS['strNumItems']              = "Število predmetov";
 $GLOBALS['strVariableIsUnique']      = "Izvedi pretvorbe?";
-$GLOBALS['strJavascript']             = "Javascript";
-$GLOBALS['strRefererQuerystring']     = "Referer Querystring";
-$GLOBALS['strQuerystring']             = "Querystring";
-$GLOBALS['strInteger']                 = "Integer";
 $GLOBALS['strNumber']                 = "Število";
 $GLOBALS['strString']                 = "Niz";
 $GLOBALS['strTrackFollowingVars']     = "Sledi naslednji spremenljivki";
@@ -1364,7 +1119,6 @@ $GLOBALS['strYouHaveNoZones']       = "Pasica ni povezana v nobeno področje!";
 $GLOBALS['strNoBannersDropdown']    = "\\--Nobene pasice ni bilo mogoče najti--";
 $GLOBALS['strNoZonesDropdown']      = "\\--Nobenega področja ni bilo mogoče najti--";
 $GLOBALS['strInsertErrorPart1']     = "<br><br><center><b> Napaka, ";
-$GLOBALS['strInsertErrorPart2']     = "records was not inserted! </b></center>";
 $GLOBALS['strDuplicatedValue']      = "Podvojena vrednost!";
 $GLOBALS['strInsertCorrect']        = "<br><br><center><b> Datoteka je bila pravilno naložena </b></center>";
 $GLOBALS['strReuploadCsvFile']      = "Ponovno naloži CSV datoteko";
@@ -1452,7 +1206,6 @@ $GLOBALS['strTrackerHasBeenDuplicated'] = "Sledilnik <a href='%s'>%s</a> je bil 
 $GLOBALS['strTrackerHasBeenMoved'] = "Sledilnik <b>%s</b> je bil premaknjen k oglaševalcu <b>%s</b>";
 
 $GLOBALS['strCampaignHasBeenAdded'] = "Kampanja <a href='%s'>%s</a> je bila dodana, <a href='%s'>dodaj pasico</a>";
-$GLOBALS['strCampaignHasBeenNoBanner'] = "Campaign <a href='%s'>%s</a> has been added";
 $GLOBALS['strCampaignHasBeenUpdated'] = "Kampanja <a href='%s'>%s</a> je bila posodobljena";
 $GLOBALS['strCampaignTrackersHaveBeenUpdated'] = "Povezani sledilniki kampanje <a href='%s'>%s</a> so bili posodobljeni";
 $GLOBALS['strCampaignHasBeenDeleted'] = "Kampanja <b>%s</b> je bila izbrisana";
@@ -1464,7 +1217,6 @@ $GLOBALS['strBannerHasBeenAdded'] = "Pasica <a href='%s'>%s</a> je bila dodana";
 $GLOBALS['strBannerHasBeenUpdated'] = "Pasica <a href='%s'>%s</a> je bila posodobljena";
 $GLOBALS['strBannerAdvancedHasBeenUpdated'] = "Naprednejše nastavitve pasice <a href='%s'>%s</a> so bile posodobljene";
 $GLOBALS['strBannerAclHasBeenUpdated'] = "Dostavne možnosti pasice <a href='%s'>%s</a> so bile posodobljene";
-$GLOBALS['strBannerAclHasBeenAppliedTo'] = "Delivery options for banner <a href='%s'>%s</a> have been applied to %d banners";
 $GLOBALS['strBannerHasBeenDeleted'] = "Pasica <b>%s</b> je bila izbrisana";
 $GLOBALS['strBannersHaveBeenDeleted'] = "Vse izbrane pasice so bile izbrisane";
 $GLOBALS['strBannerHasBeenDuplicated'] = "Pasica <a href='%s'>%s</a> je bila kopirana v <a href='%s'>%s</a>";
@@ -1505,7 +1257,6 @@ $GLOBALS['strEmailChanged'] = "Vaš e-poštni naslov je bil spremenjen";
 $GLOBALS['strPasswordChanged'] = "Vaše geslo je bilo spremenjeno";
 $GLOBALS['strXPreferencesHaveBeenUpdated'] = "<b>%s</b> so posodobljene";
 $GLOBALS['strXSettingsHaveBeenUpdated'] = "<b>%s</b> so posodobljene";
-$GLOBALS['strTZPreferencesWarning'] = "However, campaign activation and expiry were not updated, nor time-based banner limitations.<br />You will need to update them manually if you wish them to use the new timezone";
 
 
 /*-------------------------------------------------------*/
@@ -1514,28 +1265,12 @@ $GLOBALS['strTZPreferencesWarning'] = "However, campaign activation and expiry w
 
 // Reserved keys
 // Do not change these unless absolutely needed
-$GLOBALS['keyHome']            = "h";
-$GLOBALS['keyUp']            = "u";
-$GLOBALS['keyNextItem']        = ".";
-$GLOBALS['keyPreviousItem']    = ",";
-$GLOBALS['keyList']            = "l";
 
 // Other keys
 // Please make sure you underline the key you
 // used in the string in default.lang.php
-$GLOBALS['keySearch']        = "s";
-$GLOBALS['keyCollapseAll']    = "c";
-$GLOBALS['keyExpandAll']    = "e";
-$GLOBALS['keyAddNew']        = "n";
-$GLOBALS['keyNext']            = "n";
-$GLOBALS['keyPrevious']        = "p";
-$GLOBALS['keyLinkUser']        = "u";
-$GLOBALS['keyWorkingAs']        = "w";
 
 // Market entities
-$GLOBALS['strMarketCampaignOptin'] = "OpenX Market - Opted In Campaigns";
-$GLOBALS['strMarketZoneOptin'] = "OpenX Market - Zone Default Ads";
-$GLOBALS['strMarketZoneBeforeOpenX2.8.4'] = "OpenX Market ads before OpenX 2.8.4";
 
 /*-------------------------------------------------------*/
 /* Languages Names                                       */

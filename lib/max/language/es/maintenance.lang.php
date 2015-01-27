@@ -163,7 +163,6 @@ $GLOBALS['strConvertingStats']			= "Convirtiendo estadísticas...";
 $GLOBALS['strConvertStats']			= "Estadísticas convertidas";
 $GLOBALS['strConvertAdViews']			= "Impresiones convertidas,";
 $GLOBALS['strConvertAdClicks']			= "Clicks convertidos...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
 $GLOBALS['strConvertNothing']			= "No hay nada que convertir...";
 $GLOBALS['strConvertFinished']			= "Finalizado...";
 
@@ -178,8 +177,6 @@ $GLOBALS['strAutoMaintenanceDisabled'] = "El mantenimiento automático está des
 $GLOBALS['strAutoMaintenanceEnabled']  = "El mantenimineto automático está habilitado. Para un mejor rendimiento se aconseja <a href='settings-admin.php'>deshabilitar el mantenimiento automático</a>.";
 $GLOBALS['strScheduledMaintenance']         = "El mantenimiento programado parece estar ejecutándose correctamente.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "El mantenimiento programado no se ha ejecutado en la pasada hora. Esto puede significar que no lo haya configurado correctamente.";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "El mantenimiento automático está habilitado y se ejecutará mantenimiento cada hora.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -188,7 +185,6 @@ $GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenanc
  you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
 
 //  Deliver Limitations
-$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
 $GLOBALS['strAllBannerChannelCompiled'] = "Todos los valores compilados de limitaciones de banners/canales han sido recompilados";
 $GLOBALS['strBannerChannelResult']      = "Aqui están los resultados de la validación de las limitaciones compiladas de banners/canales";
 $GLOBALS['strChannelCompiledLimitationsValid']  = "Todas las limitaciones de canales compiladas son válidas";
@@ -208,13 +204,7 @@ $GLOBALS['strAppendCodesResult']        = "Aquí están los resultados de la val
 $GLOBALS['strAppendCodesValid']         = "Todos los trackers de los códigos agregados compilados son válidos";
 $GLOBALS['strRepairAppenedCodes']       = "Se encontraron algunas inconsistencias arriba, puede repararlas usando el botón de abajo, esto recompilará los códigos agregados para cada tracker en el sistema";
 
-$GLOBALS['strPlugins']                  = "Plugins";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
-$GLOBALS['strPluginsOk']                = "No problems found";
 
-$GLOBALS['strMenus']                    = "Menus";
-$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
-$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
-$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
 
 ?>

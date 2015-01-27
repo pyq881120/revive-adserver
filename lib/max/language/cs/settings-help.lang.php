@@ -79,28 +79,10 @@ $GLOBALS['phpAds_hlp_ssl_url_prefix'] = "
 $GLOBALS['phpAds_hlp_my_header'] =
 $GLOBALS['phpAds_hlp_my_footer'] = "\\n        You should put here the path to the header files (e.g.: /home/login/www/header.htm)\\n        to have a header and/or footer on each page in the admin interface. You\\n        can put either text or html in these files (if you want to use html in\\n        one or both of these files do not use tags like <body> or <html>).\\n		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "\\n		By enabling GZIP content compression you will get a big decrease of the data which\\n		is sent to the browser each time a page of the administrator interface is opened.\\n		To enable this feature you need to have at least PHP 4.0.5 with the GZIP extention installed.\\n		";
 
@@ -197,7 +179,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n		If you enable this feature, the gathered statistics will be automatically deleted after the\\n		period you specify below this checkbox is passed. For example, if you set this to 5 weeks,\\n		statistics older than 5 weeks will be automatically deleted.\\n		";

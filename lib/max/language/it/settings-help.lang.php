@@ -79,28 +79,10 @@ $GLOBALS['phpAds_hlp_ssl_url_prefix'] = "
 $GLOBALS['phpAds_hlp_my_header'] =
 $GLOBALS['phpAds_hlp_my_footer'] = "\\n		Qui si possono inserire gli indirizzi dei file (p.es. /home/login/www/header.htm)\\n		da utilizzare come intestazione e pié di pagina nelle pagine di amministrazione.\\n		Si possono utilizzare sia file di testo che html (questi ultimi non devono contenere tag\\n		<body> o <html>).\\n		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "\\n		Abilitando la compressione GZIP dei contenuti si otterrà una grande diminuzione\\n		dei dei inviati al browser ogni volta che si utilizza l'interfaccia di amministrazione.\\n		Per abilitare questa caratteristica è necessario avere almeno PHP 4.0.5 con\\n		l'estensione GZIP installata.\\n		";
 
@@ -174,10 +156,6 @@ $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		banner in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adconversions'] = "
-        Normally all AdConversions are logged, if you don't want to gather statistics
-        about AdConversions you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		If a visitor reloads a page with an AdConversion beacon, ".MAX_PRODUCT_NAME." will log the AdConversion
@@ -200,7 +178,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n		Abilitando questa opzione, le statistiche raccolte saranno automaticamente cancellate una volta\\n		trascorso il periodo specificato. Per esempio: impostando il periodo a 5 settimane, verranno\\n		cancellate automaticamente le statistiche più vecchie di 5 settimane.\\n		";
@@ -230,12 +207,6 @@ $GLOBALS['phpAds_hlp_geotracking_cookie'] = "
 		of converting the IP address.
 		";
 
-$GLOBALS['phpAds_hlp_ignore_hosts'] = "
-        If you don't want to count views, clicks, and conversions from certain computer you
-        can add these to this list. If you have enabled reverse lookup you can
-        add both domain names and IP addresses, otherwise you can only use IP
-        addresses. You can also use wildcards (i.e. '*.altavista.com' or '192.168.*').
-		";
 
 $GLOBALS['phpAds_hlp_begin_of_week'] = "\\n		Per la maggior parte delle persone una settimana di Lunedì, ma se desideri\\n		puoi utilizzare anche la Domenica come primo giorno della settimana.\\n		";
 
@@ -286,13 +257,6 @@ $GLOBALS['phpAds_hlp_delivery_caching'] = "
 		will seriously affect the performance.
 		";
 
-$GLOBALS['phpAds_hlp_type_web_mode'] = "
-        If you want to use banners stored on the web server, you need to configure
-        this setting. If you want to store the banners in a local directory set
-        this option to <i>Local directory</i>. If you want to store the banner on an
-		external FTP server set this option to <i>External FTP server</i>. On certain
-		web servers you may want to use the FTP option even on the local web server.
-		";
 
 $GLOBALS['phpAds_hlp_type_web_dir'] = "
         Specify the directory where ".MAX_PRODUCT_NAME." needs to copy the uploaded banners
@@ -389,19 +353,7 @@ $GLOBALS['phpAds_hlp_userlog_email'] = "
 		can enable this feature. The email messages are stored in the userlog.
 		";
 
-$GLOBALS['phpAds_hlp_userlog_inventory'] = "
-		To ensure the inventory calculation ran correctly, you can save a report about
-		the hourly inventory calculation. This report includes the predicted profile and how much
-		priority is assigned to all banners. This information might be useful if you
-		want to submit a bugreport about the priority calculations. The reports are
-		stored inside the userlog.
-		";
 
-$GLOBALS['phpAds_hlp_userlog_autoclean'] = "
-		To ensure the database was pruned correctly, you can save a report about
-		what exactly happened during the pruning. This information will be stored
-		in the userlog.
-		";
 
 $GLOBALS['phpAds_hlp_default_banner_weight'] = "\\n		Inserire il peso proposto durante la creazione dei banner.\\n		Il valore di default è 1.\\n		";
 
@@ -413,32 +365,9 @@ $GLOBALS['phpAds_hlp_gui_show_banner_info'] = "Se questa opzione è abilitata, s
 
 $GLOBALS['phpAds_hlp_gui_show_campaign_preview'] = "Se questa opzione è abilitata, sarà mostrata una anteprima di ogni banner nella pagina <em>Banner</em>. Se l'opzione viene disabilitata sara comunque possibile vedere un'anteprima di ogni banner cliccando il triangolo adiacente.";
 
-$GLOBALS['phpAds_hlp_gui_show_banner_html'] = "
-		If this option is enabled the actual HTML banner will be shown instead of the HTML code. This
-		option is disabled by default, because the HTML banners might conflict with the user interface.
-		If this option is disabled it is still possible to view the actual HTML banner, by clicking on
-		the <i>Show banner</i> button next to the HTML code.
-		";
 
-$GLOBALS['phpAds_hlp_gui_show_banner_preview'] = "
-		If this option is enabled a preview will be shown at the top of the <i>Banner properties</i>,
-		<i>Delivery option</i> and <i>Linked zones</i> pages. If this option is disabled it is still
-		possible to view the banner, by clicking on the <i>Show banner</i> button at the top of the pages.
-		";
 
 $GLOBALS['phpAds_hlp_gui_hide_inactive'] = "Se questa opzione è abiliata, tutti i banner, le campagne, gli inserzionisti inattivi saranno nascosti dalle pagine <em>Inserzionisti e campagne</em> e <em>Campagne</em>. È possibile visualizzare gli oggetti nascosti cliccando <em>Mostra tutti</em> in fondo alla pagina.";
 
-$GLOBALS['phpAds_hlp_gui_show_matching'] = "
-		If this option is enabled the matching banner will be shown on the <i>Linked banners</i> page, if
-		the <i>Campaign selection</i> method is chosen. This will allow you see exactly which banners are
-		considered for delivery if the campaign is linked. It will also be possible to look at a preview
-		of the matching banners.
-		";
 
-$GLOBALS['phpAds_hlp_gui_show_parents'] = "
-		If this option is enabled the parent campaigns of the banners will be shown on the <i>Linked banners</i>
-		page, if the <i>Banner selection</i> method is chosen. This will allow you to see which banner
-		belongs to which campaign before the banner is linked. This also means that the banners are grouped
-		by the parent campaigns and are no longer sorted alphabetically.
-		";
 ?>

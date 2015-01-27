@@ -43,7 +43,6 @@ $GLOBALS['strIframeGoogleClickTracking']            = "Programmacode opnemen om 
 
 
 // PopUp
-$GLOBALS['strPopUpStyle']			= "Pop-up type";
 $GLOBALS['strPopUpStylePopUp']			= "Pop-up";
 $GLOBALS['strPopUpStylePopUnder']		= "Pop-under";
 $GLOBALS['strPopUpCreateInstance']		= "Moment waarop de pop-up getoond wordt";
@@ -64,8 +63,6 @@ $GLOBALS['strShowScrollbars']		= "Schuifbalken";
 
 // XML-RPC
 $GLOBALS['strXmlRpcLanguage']       = "Scripttaal";
-$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
-$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -113,42 +110,26 @@ $GLOBALS['strHideTransparancy']		= "Transparantie van de verborgen banner";
 
 
 $GLOBALS['strAdLayerStyleName']	= array(
-	'geocities'		=> "Geocities",
+	'geocities'		=> "",
 	'simple'		=> "Simpel",
 	'cursor'		=> "Muiscursor",
-	'floater'		=> "Floater"
+	'floater'		=> ""
 );
 
 // Support for 3rd party server clicktracking
-$GLOBALS['str3rdPartyTrack']		 = "Support 3rd Party Server Clicktracking";
 
 // Support for cachebusting code
-$GLOBALS['strCacheBuster']		    = "Insert Cache-Busting code";
 
 // Non-Img creatives Warning for zone image-only invocation
-$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
-$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
 // unkown HTML tag type Warning for zone invocation
-$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
 
 // sql/web banner-type warning for clickonly zone invocation
-$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
-<br /> 1) Download the banner:";
-$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
-$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
 
 // IMG invocation selected for tracker with appended code
 $GLOBALS['strWarning'] = "Waarschuwing";
-$GLOBALS['strImgWithAppendWarning'] = "This tracker has appended code, appended code will <strong>only</strong> work with JavaScript tags";
 
 // Local Invocation
-$GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Warning:</strong> Local mode invocation will ONLY work if the site calling the code
- is on the same physical machine as the adserver</span><br />
-Check that the MAX_PATH defined in the code below points to the base directory of your MAX installation<br />
-and that you have a config file for the domain of the site showing the ads (in MAX_PATH/var)";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

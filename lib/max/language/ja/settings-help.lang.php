@@ -184,7 +184,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n		If you enable this feature, the gathered statistics will be automatically deleted after the\\n		period you specify below this checkbox is passed. For example, if you set this to 5 weeks,\\n		statistics older than 5 weeks will be automatically deleted.\\n		";

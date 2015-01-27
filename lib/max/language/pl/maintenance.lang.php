@@ -129,10 +129,6 @@ $GLOBALS['strServerCommunicationError'] = "
     <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
     able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strCheckForUpdatesDisabled'] = "
-    <b>Check for updates is disabled. Please enable via the
-    <a href='account-settings-update.php'>update settings</a> screen.</b>
-";
 
 $GLOBALS['strNewVersionAvailable']		= "
 	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
@@ -166,7 +162,6 @@ $GLOBALS['strConvertingStats']			= "Konwertowanie statystyk...";
 $GLOBALS['strConvertStats']			= "Konwertuj statystyki";
 $GLOBALS['strConvertAdViews']			= "Odsłony skonwertowane,";
 $GLOBALS['strConvertAdClicks']			= "Kliknięcia skonwertowane...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
 $GLOBALS['strConvertNothing']			= "Nie ma nic do konwersji...";
 $GLOBALS['strConvertFinished']			= "Zakończone...";
 
@@ -181,8 +176,6 @@ $GLOBALS['strAutoMaintenanceDisabled'] = "Automatyczna konserwacja jest wyłącz
 $GLOBALS['strAutoMaintenanceEnabled']  = "Automatyczna konserwacja jest włączona. Dla optymalnej wydajności zaleca się <a href='settings-admin.php'>wyłączenie automatycznej konserwacji</a>.";
 $GLOBALS['strScheduledMaintenance']         = "Planowana konserwacja wydaje się działać poprawnie.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "Planowana konserwacja nie była uruchomiona w ciągu ostatnich godzin. Może to oznaczać, że nie wszystko dobrze ustawiłeś.";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Automatyczna konserwacja jest włączona i będzie uruchamiana co godzinę.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -191,7 +184,6 @@ $GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenanc
  you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
 
 //  Deliver Limitations
-$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
 $GLOBALS['strAllBannerChannelCompiled'] = "Wszystkie skompilowane wartości limitów dla banerów/kanałów zostały zrekompilowane";
 $GLOBALS['strBannerChannelResult']      = "Oto wyniki walidacji skompilowanych limitów dla banerów/kanałów";
 $GLOBALS['strChannelCompiledLimitationsValid']  = "Wszystkie skompilowane limity dla kanału są ważne";
@@ -213,11 +205,6 @@ $GLOBALS['strRepairAppenedCodes']       = "Stwierdzono pewne nieprawidłowości 
 
 $GLOBALS['strPlugins']                  = "Moduły dodatkowe";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
-$GLOBALS['strPluginsOk']                = "No problems found";
 
-$GLOBALS['strMenus']                    = "Menus";
-$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
-$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
-$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
 
 ?>

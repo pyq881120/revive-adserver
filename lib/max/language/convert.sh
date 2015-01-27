@@ -1,6 +1,4 @@
-#!/bin/sh
-
-# Donwload revive-adserver.zip from crowdin
+#!/bin/bash
 
 rm -Rf build
 mkdir build
@@ -15,9 +13,25 @@ mv pt-PT pt_PT
 mv zh-CN zh_CN
 mv zh-TW zh_TW
 
+find . -type f | xargs sed -i 's/\x0D$//'
+sed -i '/^$.*= "";/d' */*.php
+sed -i "/^$.*= '';/d" */*.php
+
+REPO=../../../../plugins_repo
 for i in `ls`; do
-	sed -i 's/\x0D$//' $i/*.php
 	mv -f $i/*.php ../$i/
+
+	for j in `ls $i/plugins`; do
+		for k in `ls $i/plugins/$j`; do
+			po=$i/plugins/$j/$k/en.po
+			n=`grep msgstr $po | grep -v 'msgstr ""' | wc -l`
+			if [ $n -gt 0 ]; then
+				base=../../../../plugins_repo/$j/plugins/etc/$k/_lang
+				msgfmt $po -o $base/$i.mo
+				mv -f $po $base/po/$i.po
+			fi
+		done
+	done
 done
 
 cd ..

@@ -79,28 +79,10 @@ $GLOBALS['phpAds_hlp_ssl_url_prefix'] = "
 $GLOBALS['phpAds_hlp_my_header'] =
 $GLOBALS['phpAds_hlp_my_footer'] = "\\n        Itt adhatja meg a fejléc fájlok útvonalát (pl.: /home/login/www/header.htm),\\n				hogy legyen fejléc és lábjegyzet az adminisztrátori kezelőfelület mindegyik\\n				oldalán. Szöveget vagy HTML-kódot egyaránt írhat ezekben a fájlokban (ha az\\n				egyik vagy mindkét fájlban HTML-kódot akar használni, akkor ne használjon\\n				olyan elemeket, mint a <body> vagy a <html>).\\n		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "\\n		A GZIP tartalomtönörítés engedélyezésével az adminisztrátor kezelőfelület egy oldalának\\n		minden alkalommal történő megnyitásakor nagyon csökkenhetnek a böngészőhöz küldött\\n		adatok méretei. A funkció engedélyezéséhez legalább PHP 4.0.5 és a GZIP bővítmény\\n		telepítése szükséges.\\n		";
 
@@ -174,10 +156,6 @@ $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		banner in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adconversions'] = "
-        Normally all AdConversions are logged, if you don't want to gather statistics
-        about AdConversions you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		If a visitor reloads a page with an AdConversion beacon, ".MAX_PRODUCT_NAME." will log the AdConversion
@@ -200,7 +178,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n		Ha engedélyezi ezt a tulajdonságot, akkor az összegyűjtött statisztika az alábbi\\n		jelölőnégyzetben megadott időtartam leteltével automatikusan törlésre kerül. Például,\\n		ha 5 hétre állítja ezt a jelölőnégyzetet, akkor az 5 hétnél régebbi statisztika\\n		automatikusan törlésre kerül.\\n		";
@@ -378,13 +355,6 @@ $GLOBALS['phpAds_hlp_userlog_email'] = "
 		can enable this feature. The email messages are stored in the userlog.
 		";
 
-$GLOBALS['phpAds_hlp_userlog_inventory'] = "
-		To ensure the inventory calculation ran correctly, you can save a report about
-		the hourly inventory calculation. This report includes the predicted profile and how much
-		priority is assigned to all banners. This information might be useful if you
-		want to submit a bugreport about the priority calculations. The reports are
-		stored inside the userlog.
-		";
 
 $GLOBALS['phpAds_hlp_userlog_autoclean'] = "\\n		Ha meg akar győződni arról, hogy az adatbázis tisztítása megfelelő volt, akkor\\n		mentheti a jelentést arról, hogy valójában mi is történt tisztítás közben.\\n		Ennek az információnak a tárolása a felhasználói naplóban történik.\\n		";
 

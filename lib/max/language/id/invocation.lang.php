@@ -17,12 +17,10 @@ $GLOBALS['strChooseTypeOfInvocation']               = "Silakan pilih jenis invok
 $GLOBALS['strChooseTypeOfBannerInvocation']         = "Silakan pilih jenis invokasi banner";
 
 // Measures
-$GLOBALS['strAbbrPixels']                           = "px";
 $GLOBALS['strAbbrSeconds']                          = "dtk";
 
 // Common Invocation Parameters
 $GLOBALS['strInvocationWhat']                       = "Pilihan Banner";
-$GLOBALS['strInvocationPreview']                    = "Banner preview";
 $GLOBALS['strInvocationClientID']                   = "Pemasang Iklan";
 $GLOBALS['strInvocationCampaignID']                 = "Kampanye";
 $GLOBALS['strInvocationTarget']                     = "Frame Tujuan";
@@ -39,13 +37,10 @@ $GLOBALS['strIFrameRefreshAfter']                   = "Memperbarui setelah";
 $GLOBALS['strIframeResizeToBanner']                 = "Ubah ukuran iframe sesuai dimensi dari banner";
 $GLOBALS['strIframeMakeTransparent']                = "Ubah iframe menjadi transparan";
 $GLOBALS['strIframeIncludeNetscape4']               = "Masukkan ilayer yang kompatibel dengan Netscape 4";
-$GLOBALS['strIframeGoogleClickTracking']            = "Include code to track Google AdSense clicks";
 
 
 // PopUp
 $GLOBALS['strPopUpStyle']			= "Jenis Pop-up";
-$GLOBALS['strPopUpStylePopUp']			= "Pop-up";
-$GLOBALS['strPopUpStylePopUnder']		= "Pop-under";
 $GLOBALS['strPopUpCreateInstance']		= "Halnya kapan pop-up dikreasi";
 $GLOBALS['strPopUpImmediately']			= "Segera";
 $GLOBALS['strPopUpOnClose']			= "Bila halaman ditutup";
@@ -54,12 +49,8 @@ $GLOBALS['strAutoCloseAfter']			= "Tutup secara otomatis setelah";
 $GLOBALS['strPopUpTop']				= "Posisi asal (atas)";
 $GLOBALS['strPopUpLeft']			= "Posisi asal (kiri)";
 $GLOBALS['strWindowOptions']		= "Pilihan Jendela";
-$GLOBALS['strShowToolbars']			= "Toolbars";
 $GLOBALS['strShowLocation']			= "Lokasi";
-$GLOBALS['strShowMenubar']			= "Menubar";
-$GLOBALS['strShowStatus']			= "Status";
 $GLOBALS['strWindowResizable']		= "Ukuran dabat diubah";
-$GLOBALS['strShowScrollbars']		= "Scrollbars";
 
 
 // XML-RPC
@@ -114,9 +105,9 @@ $GLOBALS['strHideTransparancy']		= "Tingkat transparansi dari banner yang tersem
 
 $GLOBALS['strAdLayerStyleName']	= array(
 	'geocities'		=> "GeocitiesSimpleCursorFloater",
-	'simple'		=> "Simple",
-	'cursor'		=> "Cursor",
-	'floater'		=> "Floater"
+	'simple'		=> "",
+	'cursor'		=> "",
+	'floater'		=> ""
 );
 
 // Support for 3rd party server clicktracking
@@ -142,12 +133,6 @@ $GLOBALS['strWarning'] = "Perhatian";
 $GLOBALS['strImgWithAppendWarning'] = "Pelacak ini mengandung kode tempelan. Kode tempelan <strong>hanya</strong> berfungsi dengan JavaScript tags";
 
 // Local Invocation
-$GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Warning:</strong> Local mode invocation will ONLY work if the site calling the code
- is on the same physical machine as the adserver</span><br />
-Check that the MAX_PATH defined in the code below points to the base directory of your MAX installation<br />
-and that you have a config file for the domain of the site showing the ads (in MAX_PATH/var)";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

@@ -14,7 +14,6 @@
 
 $GLOBALS['strDeliveryEngine']				= "Orodje za dostavo";
 $GLOBALS['strMaintenance']					= "Vzdrževanje";
-$GLOBALS['strAdministrator']				= "Administrator";
 
 // Audit
 $GLOBALS['strLogging']                      = "Beleženje";
@@ -36,7 +35,6 @@ $GLOBALS['strCampaign']                     = "Kampanja";
 $GLOBALS['strZone']                         = "Področje";
 $GLOBALS['strType']                         = "Tip";
 $GLOBALS['strAction']                       = "Dejanje";
-$GLOBALS['strParameter']                    = "Parameter";
 $GLOBALS['strValue']                        = "Vrednost";
 $GLOBALS['strDetailedView']                 = "Podroben pogled";
 $GLOBALS['strReturnAuditTrail']             = "Vrnitev na Pregledno pot";

@@ -79,28 +79,10 @@ $GLOBALS['phpAds_hlp_ssl_url_prefix'] = "
 $GLOBALS['phpAds_hlp_my_header'] =
 $GLOBALS['phpAds_hlp_my_footer'] = "\\n	Disini Anda perlu menetapkan <i>Path</i> ke file Header (contoh: /home/login/www/header.htm)\\n		untuk mengadakan sebuah header dan/atau footer pada setiap halaman di Interface Admin.\\n		Diperbolehkan untuk menggunakan teks atau html dalam file tersebut (bila Anda ingin\\n		menggunakan html dalam satu atau kedua filenya jangan menggunakan <i>Tags</i> seperti &lt;body>\\n		atau &lt;html>).\\n		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "\\n	Dengan membolehkan kompresi GZIP Anda akan dapat mengurangi data yang dikirim kepada browser\\n		setiap kalinya Interface Administrator dibuka yang cukup besar. Untuk mengaktifkan\\n		fasilitas ini minimal versi PHP 4.0.5 dengan ekstensi GZIP perlu terinstal pada\\n		server Anda.\\n		";
 
@@ -154,10 +136,6 @@ $GLOBALS['phpAds_hlp_compact_stats'] = "
 		more detail you can turn the compact statistics off.
 		";
 
-$GLOBALS['phpAds_hlp_log_adviews'] = "
-        Normally all AdViews are logged, if you don't want to gather statistics
-        about AdViews you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adviews'] = "
 		If a visitor reloads a page an AdView will be logged by ".MAX_PRODUCT_NAME." every time.
@@ -167,10 +145,6 @@ $GLOBALS['phpAds_hlp_block_adviews'] = "
 		shown to the same visitor in the last 5 minutes. This feature only works the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adclicks'] = "
-        Normally all AdClicks are logged, if you don't want to gather statistics
-        about AdClicks you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		If a visitor clicks multiple times on a banner an AdClick will be logged by ".MAX_PRODUCT_NAME."
@@ -180,10 +154,6 @@ $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		banner in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adconversions'] = "
-        Normally all AdConversions are logged, if you don't want to gather statistics
-        about AdConversions you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		If a visitor reloads a page with an AdConversion beacon, ".MAX_PRODUCT_NAME." will log the AdConversion
@@ -206,7 +176,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n	Bila Anda ingin gunakan fasilitas ini, statistik yang diperolehkan akan dihapus secara otomatis\\n		setelah periode yang ditentukan pada kotak ini tercapai. Sebagai contoh: Bila Anda tentukan\\n		jangka waktu 5 minggu, statistik yang melebihi jangka waktu 5 minggu akan dihapus secara\\n		otomatis.\\n		";
@@ -384,13 +353,6 @@ $GLOBALS['phpAds_hlp_userlog_email'] = "
 		can enable this feature. The email messages are stored in the userlog.
 		";
 
-$GLOBALS['phpAds_hlp_userlog_inventory'] = "
-		To ensure the inventory calculation ran correctly, you can save a report about
-		the hourly inventory calculation. This report includes the predicted profile and how much
-		priority is assigned to all banners. This information might be useful if you
-		want to submit a bugreport about the priority calculations. The reports are
-		stored inside the userlog.
-		";
 
 $GLOBALS['phpAds_hlp_userlog_autoclean'] = "\\n	Untuk memastikan bahwa database telah dipangkas secara benar, Anda bisa simpan sebuah laporan\\n		tentang apa saja yang terjadi sewaktu pemangkasan tersebut dijalankan. Informasi ini\\n		akan tersimpan pada Userlog.\\n		";
 

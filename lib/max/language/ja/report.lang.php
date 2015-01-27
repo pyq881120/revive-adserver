@@ -70,7 +70,5 @@ $GLOBALS['strCampaignPredictedFullDeliveryMessage']  = 'トラッキング追跡
 $GLOBALS['strStatsAnalysisReport']  = '明細報告書の統計';
 
 // Error messages
-$GLOBALS['strReportErrorMissingSheets'] = "No worksheet was selected for report";
-$GLOBALS['strReportErrorUnknownCode']   = "Unknown error code #";
 
 ?>

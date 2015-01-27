@@ -17,34 +17,13 @@ $GLOBALS['strMaintenance']					= "Onderhoud";
 $GLOBALS['strAdministrator']				= "Beheerder";
 
 // Audit
-$GLOBALS['strLogging']                      = "Logging";
-$GLOBALS['strAudit']                        = "Audit Log";
-$GLOBALS['strDebugLog']                     = "Debug Log";
-$GLOBALS['strEvent']                        = "Event";
-$GLOBALS['strTimestamp']                    = "Timestamp";
 $GLOBALS['strDeleted']                      = "Verwijder";
-$GLOBALS['strInserted']                     = "inserted";
 $GLOBALS['strUpdated']                      = "Geupdate";
-$GLOBALS['strDelete']                       = "Delete";
 $GLOBALS['strInsert']                       = "voeg in";
-$GLOBALS['strUpdate']                       = "Update";
-$GLOBALS['strHas']                          = "has";
-$GLOBALS['strFilters']                      = "Filters";
 $GLOBALS['strAdvertiser']                   = "Adverteerder";
-$GLOBALS['strPublisher']                    = "Website";
-$GLOBALS['strCampaign']                     = "Campaign";
-$GLOBALS['strZone']                         = "Zone";
-$GLOBALS['strType']                         = "Type";
-$GLOBALS['strAction']                       = "Action";
 $GLOBALS['strParameter']                    = "parameter ";
 $GLOBALS['strValue']                        = "Waarde";
 $GLOBALS['strDetailedView']                 = "bekijk gedetailleerd ";
-$GLOBALS['strReturnAuditTrail']             = "Return to Audit Trail";
-$GLOBALS['strAuditTrail']                   = "Audit trail";
-$GLOBALS['strMaintenanceLog']               = "Maintenance log";
-$GLOBALS['strAuditResultsNotFound']         = "No events found matching the selected criteria";
-$GLOBALS['strCollectedAllEvents']           = "All events";
-$GLOBALS['strClear']                        = "Clear";
 
 $GLOBALS['strUserlog'] = array (
 	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",

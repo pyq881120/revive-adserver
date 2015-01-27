@@ -14,7 +14,6 @@
 
 $GLOBALS['strDeliveryEngine']				= "Dostarczanie";
 $GLOBALS['strMaintenance']					= "Utrzymanie";
-$GLOBALS['strAdministrator']				= "Administrator";
 
 // Audit
 $GLOBALS['strLogging']                      = "Protokołowanie";
@@ -25,17 +24,12 @@ $GLOBALS['strTimestamp']                    = "Znacznik czasowy";
 $GLOBALS['strDeleted']                      = "usunięto";
 $GLOBALS['strInserted']                     = "dodano";
 $GLOBALS['strUpdated']                      = "aktualizowano";
-$GLOBALS['strDelete']                       = "Delete";
 $GLOBALS['strInsert']                       = "Dodaj";
 $GLOBALS['strUpdate']                       = "Aktualizuj";
-$GLOBALS['strHas']                          = "has";
 $GLOBALS['strFilters']                      = "Filtry";
 $GLOBALS['strAdvertiser']                   = "Reklamodawca";
 $GLOBALS['strPublisher']                    = "Strona";
-$GLOBALS['strCampaign']                     = "Campaign";
-$GLOBALS['strZone']                         = "Zone";
 $GLOBALS['strType']                         = "Typ";
-$GLOBALS['strAction']                       = "Action";
 $GLOBALS['strParameter']                    = "Parametr";
 $GLOBALS['strValue']                        = "Wartość";
 $GLOBALS['strDetailedView']                 = "Szczegóły";

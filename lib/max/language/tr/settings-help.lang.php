@@ -79,28 +79,10 @@ $GLOBALS['phpAds_hlp_ssl_url_prefix'] = "
 $GLOBALS['phpAds_hlp_my_header'] =
 $GLOBALS['phpAds_hlp_my_footer'] = "\\n		Buraya yönetici sayfasındaki üstbilgi ve altbilgi içeren dosyaların yollarını\\n		belirtebilirsiniz(ör: ../yonetici_paneli/ekstra/header.html). Buraya dosyalara\\n		yazı veya HTML kodu girebilirsiniz.\\n		";
 
-$GLOBALS['phpAds_hlp_my_logo'] = "
-        You should put here the name of the custom logo file that you wish to display instead
-        of the default logo.  The logo must be placed in the admin/images directory before
-        setting the file name here.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_foreground_color'] = "
-        You should put here a custom color which will be used for tabs, the search bar, and
-        some bold text.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_background_color'] = "
-        You should put here a custom color which will be used for the header background.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_active_tab_color'] = "
-        You should put here a custom color which will be used for the currently selected main tab.
-               ";
 
-$GLOBALS['phpAds_hlp_gui_header_text_color'] = "
-        You should put here a custom color which will be used for the text in the header.
-               ";
 
 $GLOBALS['phpAds_hlp_content_gzip_compression'] = "\\n		GZIP içerik sıkıştırmayı aktif ettiğiniz takdirde yönetici paneline her girişteki\\n		tarayıcıya gönderilen veri oranında büyük bir düşüş olur. Bu özelliği aktif\\n		edebilmeniz için en az GZIP eklentili PHP 4.0.5 sürümüne sahip olmanız gerekiyor.\\n		";
 
@@ -174,10 +156,6 @@ $GLOBALS['phpAds_hlp_block_adclicks'] = "
 		banner in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_log_adconversions'] = "
-        Normally all AdConversions are logged, if you don't want to gather statistics
-        about AdConversions you can turn this off.
-		";
 
 $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		If a visitor reloads a page with an AdConversion beacon, ".MAX_PRODUCT_NAME." will log the AdConversion
@@ -187,20 +165,7 @@ $GLOBALS['phpAds_hlp_block_adconversions'] = "
 		page with the AdConversion beacon in the last 5 minutes. This feature only works when the browser accepts cookies.
 		";
 
-$GLOBALS['phpAds_hlp_geotracking_stats'] = "
-		If you are using a geotargeting database you can also store the geographical information
-		in the database. If you have enabled this option you will be able to see statistics about the
-		location of your visitors and how each banner is performing in the different countries.
-		This option will only be available to you if you are using verbose statistics.
-		";
 
-$GLOBALS['phpAds_hlp_reverse_lookup'] = "
-		The hostname is usually determined by the web server, but in some cases this might be
-		turned off. If you want to use the visitors hostname inside delivery limitations and/or
-		keep statistics about this and the server doesn't provide this information you will need to
-		turn this option on. Determining the hostname of the visitor does take some time; it will
-		slow the delivery of banners down.
-		";
 
 $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		Some visitors are using a proxy server to access the internet. In that case ".MAX_PRODUCT_NAME." will
@@ -211,20 +176,10 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
-$GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "
-		If you enable this feature, the gathered statistics will be automatically deleted after the
-		period you specify below this checkbox is passed. For example, if you set this to 5 weeks,
-		statistics older than 5 weeks will be automatically deleted.
-		";
 
 $GLOBALS['phpAds_hlp_auto_clean_userlog'] =
-$GLOBALS['phpAds_hlp_auto_clean_userlog_interval'] = "
-		This feature will automatically delete entries from the userlog which are older than the
-		number of weeks specified below this checkbox.
-		";
 
 $GLOBALS['phpAds_hlp_geotracking_type'] = "
 		Geotargeting allows ".MAX_PRODUCT_NAME." to convert the IP address of the visitor to geographical
@@ -368,10 +323,6 @@ $GLOBALS['phpAds_hlp_type_html_php'] = "
 $GLOBALS['phpAds_hlp_admin'] = "\\n		Site yöneticisi kullanıcı adı, yönetici arabirimindeki loglarda kullanılacak\\n		kullanıcı adını belirtebilirsiniz.\\n		";
 
 $GLOBALS['phpAds_hlp_admin_pw'] =
-$GLOBALS['phpAds_hlp_admin_pw2'] = "
-        Please enter the password you want to use to log into the administrator interface.
-		You need to enter it twice to prevent typing errors.
-		";
 
 $GLOBALS['phpAds_hlp_pwold'] =
 $GLOBALS['phpAds_hlp_pw'] =
@@ -399,19 +350,7 @@ $GLOBALS['phpAds_hlp_userlog_email'] = "
 		can enable this feature. The email messages are stored in the userlog.
 		";
 
-$GLOBALS['phpAds_hlp_userlog_inventory'] = "
-		To ensure the inventory calculation ran correctly, you can save a report about
-		the hourly inventory calculation. This report includes the predicted profile and how much
-		priority is assigned to all banners. This information might be useful if you
-		want to submit a bugreport about the priority calculations. The reports are
-		stored inside the userlog.
-		";
 
-$GLOBALS['phpAds_hlp_userlog_autoclean'] = "
-		To ensure the database was pruned correctly, you can save a report about
-		what exactly happened during the pruning. This information will be stored
-		in the userlog.
-		";
 
 $GLOBALS['phpAds_hlp_default_banner_weight'] = "\\n		Eğer yüksek öneme sahip öntanımlı banner kullanmak istiyorsanız önem ayarını buradan\\n		yapabilirsiniz. Öntanımlı olarak bu değer 1dir.\\n		";
 
@@ -429,17 +368,5 @@ $GLOBALS['phpAds_hlp_gui_show_banner_preview'] = "\\n		Eğer bu seçenek seçilm
 
 $GLOBALS['phpAds_hlp_gui_hide_inactive'] = "\\n		Eğer bu seçenek seçilmiş ise tüm pasif bannerlar, kampanyalar ve reklamcılar <i>Reklamcılar &\\n		Kampanyalar</i> ve <i>Kampanya Önizleme</i> sayfalarında gizlenecektir. Eğer bu seçenek seçilmiş\\n		ise tüm gizlenmiş öğeler sayfanın altında bulunan <i>Hepsini Göster</i> butonu ile görüntülenebilir.\\n		";
 
-$GLOBALS['phpAds_hlp_gui_show_matching'] = "
-		If this option is enabled the matching banner will be shown on the <i>Linked banners</i> page, if
-		the <i>Campaign selection</i> method is chosen. This will allow you see exactly which banners are
-		considered for delivery if the campaign is linked. It will also be possible to look at a preview
-		of the matching banners.
-		";
 
-$GLOBALS['phpAds_hlp_gui_show_parents'] = "
-		If this option is enabled the parent campaigns of the banners will be shown on the <i>Linked banners</i>
-		page, if the <i>Banner selection</i> method is chosen. This will allow you to see which banner
-		belongs to which campaign before the banner is linked. This also means that the banners are grouped
-		by the parent campaigns and are no longer sorted alphabetically.
-		";
 ?>

@@ -19,9 +19,7 @@ $GLOBALS['strAdministrator']				= "Administratorius";
 // Audit
 $GLOBALS['strLogging']                      = "Prisijungiama";
 $GLOBALS['strAudit']                        = "Patikrinimo registras";
-$GLOBALS['strDebugLog']                     = "Debug Log";
 $GLOBALS['strEvent']                        = "Įvykis";
-$GLOBALS['strTimestamp']                    = "Timestamp";
 $GLOBALS['strDeleted']                      = "ištrintas";
 $GLOBALS['strInserted']                     = "įterptas";
 $GLOBALS['strUpdated']                      = "atnaujintas";
@@ -40,7 +38,6 @@ $GLOBALS['strParameter']                    = "Parametrai";
 $GLOBALS['strValue']                        = "Vertė";
 $GLOBALS['strDetailedView']                 = "Detalus vaizdas";
 $GLOBALS['strReturnAuditTrail']             = "Grįžti prie Audit Trail";
-$GLOBALS['strAuditTrail']                   = "Audit trail";
 $GLOBALS['strMaintenanceLog']               = "techninio aptarnavimo registras";
 $GLOBALS['strAuditResultsNotFound']         = "Jokių įvykių pagal įvestus kriterijus nerasta";
 $GLOBALS['strCollectedAllEvents']           = "Visi įvykiai";

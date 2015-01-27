@@ -12,15 +12,9 @@
 
 // Set translation strings
 
-$GLOBALS['strDeliveryEngine']				= "Delivery Engine";
 $GLOBALS['strMaintenance']					= "Vedligholdelse";
-$GLOBALS['strAdministrator']				= "Administrator";
 
 // Audit
-$GLOBALS['strLogging']                      = "Logging";
-$GLOBALS['strAudit']                        = "Audit Log";
-$GLOBALS['strDebugLog']                     = "Debug Log";
-$GLOBALS['strEvent']                        = "Event";
 $GLOBALS['strTimestamp']                    = "Tidsstempel";
 $GLOBALS['strDeleted']                      = "Slettet";
 $GLOBALS['strInserted']                     = "indsat";
@@ -28,13 +22,10 @@ $GLOBALS['strUpdated']                      = "opdateret";
 $GLOBALS['strDelete']                       = "Slet";
 $GLOBALS['strInsert']                       = "Indsæt";
 $GLOBALS['strUpdate']                       = "Opdater";
-$GLOBALS['strHas']                          = "has";
 $GLOBALS['strFilters']                      = "Filtre";
 $GLOBALS['strAdvertiser']                   = "Annoncør";
 $GLOBALS['strPublisher']                    = "Webside";
 $GLOBALS['strCampaign']                     = "Kampagne";
-$GLOBALS['strZone']                         = "Zone";
-$GLOBALS['strType']                         = "Type";
 $GLOBALS['strAction']                       = "Aktion";
 $GLOBALS['strParameter']                    = "Parametre";
 $GLOBALS['strValue']                        = "Værdi";

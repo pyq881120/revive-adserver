@@ -51,22 +51,11 @@ $GLOBALS['strAutoMantenaceEnabled']		= "Samodejno vzdrževanje je še vedno omog
 
 // Priority
 $GLOBALS['strRecalculatePriority']		= "Preračunaj prioriteto";
-$GLOBALS['strHighPriorityCampaigns']		= "High priority campaigns";
-$GLOBALS['strAdViewsAssigned']			= "AdViews assigned";
-$GLOBALS['strLowPriorityCampaigns']		= "Low priority campaigns";
-$GLOBALS['strPredictedAdViews']			= "Predicted AdViews";
 $GLOBALS['strPriorityDaysRunning']		= "There are currently {days} days worth of statistics available from where ".MAX_PRODUCT_NAME." can base its daily prediction on. ";
-$GLOBALS['strPriorityBasedLastWeek']		= "The prediction is based on data from this week and last week. ";
-$GLOBALS['strPriorityBasedLastDays']		= "The prediction is based on data from the last couple of days. ";
-$GLOBALS['strPriorityBasedYesterday']		= "The prediction is based on data from yesterday. ";
-$GLOBALS['strPriorityNoData']			= "There isn't enough data available to make a reliable prediction about the number of impressions this adserver will generate today. Priority assignments will be based on real time statistics only. ";
-$GLOBALS['strPriorityEnoughAdViews']		= "There should be enough AdViews to fully satisfy the target all high priority campaigns. ";
-$GLOBALS['strPriorityNotEnoughAdViews']		= "It isn't clear wether there will be enough AdViews served today to satisfy the target all high priority campaigns. ";
 
 
 // Banner cache
 $GLOBALS['strCheckBannerCache']		= "Preveri pomnilnik pasice";
-$GLOBALS['strRebuildBannerCache']		= "Rebuild banner cache";
 $GLOBALS['strBannerCacheErrorsFound'] = "Preverba podatkovne baze pomnilnika pasic je našla napake. Te pasice ne bodo delovale, dokler jih ročno ne popravite.";
 $GLOBALS['strBannerCacheOK'] = "Nobena napaka ni bila odkrita. Vaša pomnilniška baza pasic deluje pravilno.";
 $GLOBALS['strBannerCacheDifferencesFound'] = "Vaša pomnilniška baza pasice ni posodobljena. Za normalno delovanje je potrebna posodobitev.";
@@ -158,43 +147,15 @@ $GLOBALS['strAndPlain']					= "in";
 
 
 // Stats conversion
-$GLOBALS['strConverting']			= "Converting";
-$GLOBALS['strConvertingStats']			= "Converting statistics...";
-$GLOBALS['strConvertStats']			= "Convert statistics";
-$GLOBALS['strConvertAdViews']			= "AdViews converted,";
-$GLOBALS['strConvertAdClicks']			= "AdClicks converted...";
-$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
-$GLOBALS['strConvertNothing']			= "Nothing to convert...";
-$GLOBALS['strConvertFinished']			= "Finished...";
 
-$GLOBALS['strConvertExplaination']		= "
-	You are currently using the compact format to store your statistics, but there are <br />
-	still some statistics in verbose format. As long as the verbose statistics aren't  <br />
-	converted to compact format they will not be used while viewing these pages.  <br />
-	Before converting your statistics, make a backup of the database!  <br />
-	Do you want to convert your verbose statistics to the new compact format? <br />
-";
 
-$GLOBALS['strConvertingExplaination']		= "
-	All remaining verbose statistics are now being converted to the compact format. <br />
-	Depending on how many impressions are stored in verbose format this may take a  <br />
-	couple of minutes. Please wait until the conversion is finished before you visit other <br />
-	pages. Below you will see a log of all modification made to the database. <br />
-";
 
-$GLOBALS['strConvertFinishedExplaination']  	= "
-	The conversion of the remaining verbose statistics was succesful and the data <br />
-	should now be usable again. Below you will see a log of all modification made <br />
-	to the database.<br />
-";
 
 //  Maintenace
 $GLOBALS['strAutoMaintenanceDisabled'] = "Samodejno vzdrževanje je onemogočeno.";
 $GLOBALS['strAutoMaintenanceEnabled']  = "Samodejno vzdrževanje je omogočeno. Za optimalno delovanje je priporočljivo to funkcijo <a href='settings-admin.php'>onemogočiti</a>.";
 $GLOBALS['strScheduledMaintenance']         = "Načrtovano vzdrževanje deluje pravilno.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "Načrtovano vzdrževanje ni bilo zagnano v zadnji uri. To verjetno pomeni, da ni nastavljeno pravilno.";
-$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Samodejno vzdrževanje je omogočeno in bo aktiviralo vzdrževalni postopek vsako uro.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";

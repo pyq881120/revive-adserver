@@ -13,7 +13,6 @@
 // Set translation strings
 
 $GLOBALS['strDeliveryEngine']				= "Moteur de distribution";
-$GLOBALS['strMaintenance']					= "Maintenance";
 $GLOBALS['strAdministrator']				= "Administrateur";
 
 // Audit
@@ -25,17 +24,12 @@ $GLOBALS['strTimestamp']                    = "Date et heure";
 $GLOBALS['strDeleted']                      = "supprimé(e)";
 $GLOBALS['strInserted']                     = "inséré(e)";
 $GLOBALS['strUpdated']                      = "mis(e) à jour";
-$GLOBALS['strDelete']                       = "Delete";
 $GLOBALS['strInsert']                       = "Insérer";
 $GLOBALS['strUpdate']                       = "Mettre à jour";
 $GLOBALS['strHas']                          = "contient";
 $GLOBALS['strFilters']                      = "Filtres";
 $GLOBALS['strAdvertiser']                   = "Annonceur";
 $GLOBALS['strPublisher']                    = "Site web";
-$GLOBALS['strCampaign']                     = "Campaign";
-$GLOBALS['strZone']                         = "Zone";
-$GLOBALS['strType']                         = "Type";
-$GLOBALS['strAction']                       = "Action";
 $GLOBALS['strParameter']                    = "Paramètre";
 $GLOBALS['strValue']                        = "Valeur";
 $GLOBALS['strDetailedView']                 = "Affichage détaillé";

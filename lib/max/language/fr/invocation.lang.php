@@ -17,16 +17,12 @@ $GLOBALS['strChooseTypeOfInvocation']               = "Veuillez choisir le type 
 $GLOBALS['strChooseTypeOfBannerInvocation']         = "Veuillez choisir le type d'invocation de bannières";
 
 // Measures
-$GLOBALS['strAbbrPixels']                           = "px";
-$GLOBALS['strAbbrSeconds']                          = "sec";
 
 // Common Invocation Parameters
 $GLOBALS['strInvocationWhat']                       = "Sélection de bannières";
-$GLOBALS['strInvocationPreview']                    = "Banner preview";
 $GLOBALS['strInvocationClientID']                   = "Annonceur ou campagne";
 $GLOBALS['strInvocationCampaignID']                 = "Campagne";
 $GLOBALS['strInvocationTarget']                     = "Cadre cible";
-$GLOBALS['strInvocationSource']                     = "Source";
 $GLOBALS['strInvocationWithText']                   = "Afficher du texte sous la bannière";
 $GLOBALS['strInvocationDontShowAgain']              = "Ne pas afficher la bannière à nouveau sur la même page";
 $GLOBALS['strInvocationDontShowAgainCampaign']      = "Ne pas afficher une bannière de la même campagne à nouveau sur la même page";
@@ -53,23 +49,13 @@ $GLOBALS['strPopUpAfterSec']			= "Après";
 $GLOBALS['strAutoCloseAfter']			= "Fermer automatiquement après";
 $GLOBALS['strPopUpTop']				= "Position initiale (haut)";
 $GLOBALS['strPopUpLeft']			= "Position initiale (gauche)";
-$GLOBALS['strWindowOptions']		= "Window options";
-$GLOBALS['strShowToolbars']			= "Toolbars";
-$GLOBALS['strShowLocation']			= "Location";
-$GLOBALS['strShowMenubar']			= "Menubar";
-$GLOBALS['strShowStatus']			= "Status";
-$GLOBALS['strWindowResizable']		= "Resizable";
-$GLOBALS['strShowScrollbars']		= "Scrollbars";
 
 
 // XML-RPC
 $GLOBALS['strXmlRpcLanguage']       = "Language de la machine cliente";
-$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
-$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
-$GLOBALS['strAdLayerStyle']			= "Style";
 
 $GLOBALS['strAlignment']			= "Alignement";
 $GLOBALS['strHAlignment']			= "Alignement horizontal";
@@ -94,7 +80,6 @@ $GLOBALS['strShowCloseButton']			= "Montrer le bouton de fermeture";
 $GLOBALS['strBackgroundColor']			= "Couleur d'arrière-plan";
 $GLOBALS['strBorderColor']			= "Couleur de bordure";
 
-$GLOBALS['strDirection']			= "Direction";
 $GLOBALS['strLeftToRight']			= "De gauche à droite";
 $GLOBALS['strRightToLeft']			= "De droite à gauche";
 $GLOBALS['strLooping']				= "Nombre de passages";
@@ -113,8 +98,8 @@ $GLOBALS['strHideTransparancy']		= "Transparence de la bannière cachée";
 
 
 $GLOBALS['strAdLayerStyleName']	= array(
-	'geocities'		=> "Geocities",
-	'simple'		=> "Simple",
+	'geocities'		=> "",
+	'simple'		=> "",
 	'cursor'		=> "Curseur",
 	'floater'		=> "Flottant"
 );
@@ -126,26 +111,16 @@ $GLOBALS['str3rdPartyTrack']		 = "Supporter le suivi des clics par un serveur ti
 $GLOBALS['strCacheBuster']		    = "Insérer un code empêchant la mise en cache";
 
 // Non-Img creatives Warning for zone image-only invocation
-$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
-$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
 // unkown HTML tag type Warning for zone invocation
-$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
 
 // sql/web banner-type warning for clickonly zone invocation
-$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
-<br /> 1) Download the banner:";
-$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
-$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
 
 // IMG invocation selected for tracker with appended code
-$GLOBALS['strWarning'] = "Warning";
 $GLOBALS['strImgWithAppendWarning'] = "Ce suiveur contient du code ajouté qui fonctionnera <strong>uniquement</strong> avec des balises JavaScript";
 
 // Local Invocation
 $GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Attention :</strong> Le mode d'invocation local ne fonctionnera QUE si le site appelant le code est sur la même machine physique que le serveur publicitaire</span><br />Vérifiez que le MAX_PATH défini dans le code ci-dessous pointe vers le répertoire de base de votre installation MAX<br />et que vous avez un fichier de configuration pour le domaine du site affichant les publicités (dans MAX_PATH/var)";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

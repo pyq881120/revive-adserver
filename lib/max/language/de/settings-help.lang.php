@@ -173,13 +173,6 @@ $GLOBALS['phpAds_hlp_block_adconversions'] = "
 
 $GLOBALS['phpAds_hlp_geotracking_stats'] = "\\n		Geotargeting ist die Standortbestimmung des Besuchers. Wenn Sie eine Datenbank für\\n		Geotargeting einsetzen, werden als geographische Informationen gespeichert: <br /><br />\\nDas Herkunftsland des Besuchers und die Entwicklung der Banner nach Ländern. Die Option Geotargeting kann nur in Verbindung mit detaillierten Statistiken aktiviert werden.\\n		";
 
-$GLOBALS['phpAds_hlp_reverse_lookup'] = "
-		The hostname is usually determined by the web server, but in some cases this might be
-		turned off. If you want to use the visitors hostname inside delivery limitations and/or
-		keep statistics about this and the server doesn't provide this information you will need to
-		turn this option on. Determining the hostname of the visitor does take some time; it will
-		slow the delivery of banners down.
-		";
 
 $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		Some visitors are using a proxy server to access the internet. In that case ".MAX_PRODUCT_NAME." will
@@ -190,7 +183,6 @@ $GLOBALS['phpAds_hlp_proxy_lookup'] = "
 		because it will slow the delivery of banners down considerably.
 		";
 
-$GLOBALS['phpAds_hlp_obfuscate'] = "Nothing here....";
 
 $GLOBALS['phpAds_hlp_auto_clean_tables'] =
 $GLOBALS['phpAds_hlp_auto_clean_tables_interval'] = "\\n		Die aufgezeichneten Daten und erstellten Statistiken können nach einer bestimmten Zeit gelöscht werden. An dieser Stelle kann in Wochen eingegeben werden, nach welchem Zeitraum die Daten gelöscht werden sollen. Mindestens sind 3 Wochen einzugeben.\\n		";

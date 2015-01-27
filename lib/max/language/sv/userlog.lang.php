@@ -36,7 +36,6 @@ $GLOBALS['strCampaign']                     = "Kampanj";
 $GLOBALS['strZone']                         = "Zon";
 $GLOBALS['strType']                         = "Typ";
 $GLOBALS['strAction']                       = "Handling";
-$GLOBALS['strParameter']                    = "Parameter";
 $GLOBALS['strValue']                        = "Värde";
 $GLOBALS['strDetailedView']                 = "Detaljerad visning";
 $GLOBALS['strReturnAuditTrail']             = "Återvänd till Auditlista";

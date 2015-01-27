@@ -12,19 +12,13 @@
 
 // Installer translation strings
 $GLOBALS['strInstall']                      = "Namesti";
-$GLOBALS['strChooseInstallLanguage']        = "Choose language for the installation procedure";
 $GLOBALS['strLanguageSelection']            = "Izbira jezika";
 $GLOBALS['strDatabaseSettings']             = "Nastavitve podatkovne baze";
 $GLOBALS['strAdminSettings']                = "Administratorske nastavitve";
 $GLOBALS['strAdminAccount']                 = "Nadzorniški račun";
-$GLOBALS['strAdministrativeSettings']       = "Administrative Settings";
 $GLOBALS['strAdvancedSettings']             = "Napredne nastavitve";
-$GLOBALS['strOtherSettings']                = "Other settings";
 $GLOBALS['strSpecifySyncSettings']          = "Usklajevalne nastavitve";
-$GLOBALS['strLicenseInformation']           = "License information";
 $GLOBALS['strWarning']                      = "Opozorilo";
-$GLOBALS['strFatalError']                   = "A fatal error occurred";
-$GLOBALS['strUpdateError']                  = "An error occurred while updating";
 $GLOBALS['strBtnContinue']                  = "Nadaljuj »";
 $GLOBALS['strBtnRecover']                   = "Povrni »";
 $GLOBALS['strBtnStartAgain']                   = "Znova začni s posodobitvijo »";
@@ -34,33 +28,15 @@ $GLOBALS['strBtnDontAgree']                 = "« Ne strinjam se";
 $GLOBALS['strBtnRetry']                     = "Poizkusi znova";
 $GLOBALS['strUpdateDatabaseError']          = "Due to unknown reasons the update of the database structure wasn't succesful. The recommended way to proceed is to click <b>Retry updating</b> to try to correct these potential problems. If you are sure these errors won't affect the functionality of ".MAX_PRODUCT_NAME." you can click <b>Ignore errors</b> to continue. Ignoring these errors may cause serious problems and is not recommended!";
 $GLOBALS['strAlreadyInstalled']             = "" . PRODUCT_NAME." is already installed on this system. If you want to configure it go to the <a href='account-index.php'>settings interface</a>";
-$GLOBALS['strCouldNotConnectToDB']          = "Could not connect to database, please recheck the settings you specified";
-$GLOBALS['strCreateTableTestFailed']        = "The user you specified doesn't have permission to create or update the database structure, please contact the database administrator.";
-$GLOBALS['strUpdateTableTestFailed']        = "The user you specified doesn't have permission to update the database structure, please contact the database administrator.";
-$GLOBALS['strTablePrefixInvalid']           = "Table prefix contains invalid characters";
 $GLOBALS['strTableInUse']                   = "The database which you specified is already used for ".PRODUCT_NAME.", please use a different table prefix, or read the UPGRADE.txt file for upgrading instructions.";
-$GLOBALS['strNoVersionInfo']                = "Unable to select the database version";
-$GLOBALS['strInvalidVersionInfo']           = "Unable to determine the database version";
 $GLOBALS['strInvalidMySqlVersion']          = "" . PRODUCT_NAME." requires MySQL 4.0 or higher to function correctly. Please select a different database server.";
 $GLOBALS['strTableWrongType']               = "The table type you selected isn't supported by your installation of ".phpAds_dbmsname;
-$GLOBALS['strMayNotFunction']               = "Before you continue, please correct these potential problems:";
 $GLOBALS['strFixProblemsBefore']            = "The following item(s) need to be corrected before you can install ".MAX_PRODUCT_NAME.". If you have any questions about this error message, please read the <i>Administrator Guide</i>, which is part of the package you downloaded.";
 $GLOBALS['strFixProblemsAfter']             = "If you are not able to correct the problems listed above, please contact the administrator of the server you are trying to install ".MAX_PRODUCT_NAME." on. The administrator of the server may be able to help you.";
-$GLOBALS['strIgnoreWarnings']               = "Ignore warnings";
 $GLOBALS['strWarningDBavailable']           = "The version of PHP you are using doesn't have support for connecting to a ".phpAds_dbmsname." database server. You need to enable the PHP ".phpAds_dbmsname." extension before you can proceed.";
 $GLOBALS['strWarningPHPversion']            = "" . PRODUCT_NAME." requires PHP 5.1.4 or higher to function correctly. You are currently using {php_version}.";
-$GLOBALS['strWarningRegisterGlobals']       = "The PHP configuration variable register_globals needs to be turned on.";
 $GLOBALS['strWarningRegisterArgcArv']       = "PHP nastavitvena spremenljivka register_argc_argv mora biti omogočena za zagon vzdrževanja iz ukazne vrstice.";
-$GLOBALS['strWarningMagicQuotesGPC']        = "The PHP configuration variable magic_quotes_gpc needs to be turned on.";
-$GLOBALS['strWarningMagicQuotesRuntime']    = "The PHP configuration variable magic_quotes_runtime needs to be turned off.";
-$GLOBALS['strWarningFileUploads']           = "The PHP configuration variable file_uploads needs to be turned on.";
-$GLOBALS['strWarningTrackVars']             = "The PHP configuration variable track_vars needs to be turned on.";
-$GLOBALS['strWarningPREG']                  = "The version of PHP you are using doesn't have support for PERL compatible regular expressions. You need to enable the PREG extension before you can proceed.";
 $GLOBALS['strConfigLockedDetected']         = "" . PRODUCT_NAME." has detected that the <b>max.conf.php</b> file cannot be written by the web server. You can't proceed until you make the 'var' directory writable by the web server. Read the supplied documentation if you don't know how to do that.";
-$GLOBALS['strCantUpdateDB']                 = "It is currently not possible to update the database. If you decide to proceed, all existing banners, statistics and advertisers will be deleted.";
-$GLOBALS['strIgnoreErrors']                 = "Ignore errors";
-$GLOBALS['strRetryUpdate']                  = "Retry updating";
-$GLOBALS['strTableNames']                   = "Table Names";
 $GLOBALS['strTablesPrefix']                 = "Predpona tabelnih imen";
 $GLOBALS['strTablesType']                   = "Tip tabele";
 
@@ -72,9 +48,6 @@ $GLOBALS['strProductUpToDateTitle']     =  PRODUCT_NAME . " is up to date";
 $GLOBALS['strOaUpToDate']               = "Your " . PRODUCT_NAME . " database and file structure are both using the most recent version and therefore no upgrade is required at this time. Please click Continue to proceed to the administration panel.";
 $GLOBALS['strOaUpToDateCantRemove']     = "Opozorilo: Posodobitvena datoteka je še vedno v vaši mapi. Zaradi varnostnih razlogov je ne moremo odstraniti. Prosimo, datoteko izbrišite ročno.";
 $GLOBALS['strRemoveUpgradeFile']               = "Posodobitveno datoteko morate odstraniti iz vaše \"var\" mape.";
-$GLOBALS['strInstallSuccess']               = "Clicking 'Continue' will log you in to your ad server.
-<p><strong>What next?</strong></p>
-<div class='psub'>";
 $GLOBALS['strInstallSuccess2'] ="
   <p><b>Serving your first ad campaign</b><br>
     Use our <a href='".PRODUCT_DOCSURL."/user/quickStartGuide' target='_blank'>quick start guide to start serving your first ad campaign</a>.
@@ -98,18 +71,9 @@ $GLOBALS['strInstallNotSuccessful']         = "<b>The installation of ".MAX_PROD
                                                 please consult the supplied documentation.";
 $GLOBALS['strDbSuccessIntro']               = "The " . MAX_PRODUCT_NAME . " database has now been created. Please click the 'Continue' button to proceed with configuring " . MAX_PRODUCT_NAME . " Administrator and Delivery settings.";
 $GLOBALS['strDbSuccessIntroUpgrade']        = "Vaš sistem je bil uspešno nadgrajen. Naslednji koraki vam bodo pomagali pri posodobitvi konfiguracije vašega novega oglaševalskega strežnika.";
-$GLOBALS['strErrorOccured']                 = "The following error occurred:";
-$GLOBALS['strErrorInstallDatabase']         = "The database structure could not be created.";
-$GLOBALS['strErrorInstallPrefs']            = "The administrator user preferences could not be written to the database.";
 $GLOBALS['strErrorInstallVersion']          = "The " . MAX_PRODUCT_NAME . " version number could not be written to the database.";
-$GLOBALS['strErrorUpgrade']                 = 'The existing installation\'s database could not be upgraded.';
-$GLOBALS['strErrorInstallDbConnect']        = "It was not possible to open a connection to the database.";
 
 $GLOBALS['strErrorWritePermissions']        = "Prišlo je do napak pri dostopu do datotek. Pred nadaljevanjem jih morate odpraviti.<br />Pri odpravi teh napak v sistemu Linux vtipkajte naslednji ukazni niz:";
-$GLOBALS['strErrorFixPermissionsCommand']   = "<i>chmod a+w %s</i>";
-$GLOBALS['strErrorFixPermissionsRCommand']  = "<i>chmod -R a+w %s</i>";
-$GLOBALS['strNotWriteable']                 = "NOT writeable";
-$GLOBALS['strDirNotWriteableError']         = "Directory must be writeable";
 
 $GLOBALS['strErrorWritePermissionsWin']     = "Prišlo je do napak pri dostopu do datotek. Pred nadaljevanjem jih morate odpraviti.";
 $GLOBALS['strCheckDocumentation']           = "For more help, please see the <a href=\"".PRODUCT_DOCSURL."\">" . PRODUCT_NAME . " documentation</a>.";
@@ -121,14 +85,7 @@ $GLOBALS['strDeliveryUrlPrefixSSL']         = "URL (SSL) Dostavnega orodja";
 $GLOBALS['strImagesUrlPrefix']              = "URL Hrambe slik";
 $GLOBALS['strImagesUrlPrefixSSL']           = "URL (SSL) Hrambe slik";
 
-$GLOBALS['strInvalidUserPwd']               = "Invalid username or password";
 
-$GLOBALS['strUpgrade']                      = "Upgrade";
-$GLOBALS['strSystemUpToDate']               = "Your system is already up to date, no upgrade is needed at the moment. <br />Click on <b>Proceed</b> to go to home page.";
-$GLOBALS['strSystemNeedsUpgrade']           = "The database structure and configuration file need to be upgraded in order to function correctly. Click <b>Proceed</b> to start the upgrade process. <br /><br />Depending on which version you are upgrading from and how many statistics are already stored in the database, this process can cause high load on your database server. Please be patient, the upgrade can take up to a couple of minutes.";
-$GLOBALS['strSystemUpgradeBusy']            = "System upgrade in progress, please wait...";
-$GLOBALS['strSystemRebuildingCache']        = "Rebuilding cache, please wait...";
-$GLOBALS['strServiceUnavalable']            = "The service is temporarily unavailable. System upgrade in progress";
 
 /*-------------------------------------------------------*/
 /* Configuration translations                            */
@@ -150,7 +107,6 @@ $GLOBALS['strConfigurationSettings']                 = "Konfiguracijske nastavit
 
 // Administrator Settings
 $GLOBALS['strAdministratorSettings']                 = "Administratorske nastavitve";
-$GLOBALS['strAdministratorAccount']                  = "The System Administrator Account";
 $GLOBALS['strLoginCredentials']                      = "Prijavne poverilnice";
 $GLOBALS['strAdminUsername']                         = "Administrator  Uporabniško ime";
 $GLOBALS['strAdminPassword']                         = "Administrator  Geslo";
@@ -169,7 +125,6 @@ $GLOBALS['strAdminCheckMonthly']                     = "Mesečno";
 $GLOBALS['strAdminCheckNever']                       = "Nikoli";
 $GLOBALS['strNovice']                                = "Zaradi varnostnih razlogov potrebujejo postopki o izbrisu potrditev";
 $GLOBALS['strUserlogEmail']                          = "Beleži vsa odhodna e-poštna sporočila";
-$GLOBALS['strEnableDashboard']                       = "Enable dashboard";
 $GLOBALS['strEnableDashboardSyncNotice']             = "Prosimo, omogočite <a href='account-settings-update.php'>Preveri za posodobitve</a> , če bi želeli uporabljati Nadzorno ploščo.";
 $GLOBALS['strTimezone']                              = "Časovno področje";
 $GLOBALS['strTimezoneEstimated']                     = "Ocenjeno časovno področje";
@@ -209,7 +164,6 @@ $GLOBALS['strEmailAddresses']                        = "Naslov \"From\" e-pošte
 $GLOBALS['strEmailFromName']                         = "Ime \"From\" e-pošte";
 $GLOBALS['strEmailFromAddress']                      = "E-pošta \"From\" e-poštnega naslova";
 $GLOBALS['strEmailFromCompany']                      = "E-pošta \"From\" podjetja";
-$GLOBALS['strUseManagerDetails']                     = 'Use the owning account\'s Contact, Email and Name instead of the above Name, Email Address and Company when emailing reports to Advertiser or Website accounts.';
 $GLOBALS['strQmailPatch']                            = "qmail popravek";
 $GLOBALS['strEnableQmailPatch']                      = "Omogoči qmail popravek";
 $GLOBALS['strEmailHeader']                           = "Glava za e-pošto";
@@ -218,7 +172,6 @@ $GLOBALS['strEmailLog']                              = "Beležka za e-pošto";
 // Audit Trail Settings
 $GLOBALS['strAuditTrailSettings']                    = "Nastavitve za pregled poti (audit trail)";
 $GLOBALS['strEnableAudit']                           = "Omogoči pregled poti (audit trail)";
-$GLOBALS['strEnableAuditForZoneLinking']             = "Enable Audit Trail for Zone Linking screen (introduces huge performance penalty when linking large amounts of zones)";
 
 // Debug Logging Settings
 $GLOBALS['strDebug']                                 = "Nastavitve beleženja iskanja in odstranjevanja napak (debug)";
@@ -228,18 +181,12 @@ $GLOBALS['strDebugMethodNames']                      = "Vključi imena postopkov
 $GLOBALS['strDebugLineNumbers']                      = "Vključi številke nizov v \"debug\" beležko";
 $GLOBALS['strDebugType']                             = "Tip beležke za iskanje in odstranjevanje napak (debug)";
 $GLOBALS['strDebugTypeFile']                         = "Datoteka";
-$GLOBALS['strDebugTypeMcal']                         = "mCal";
 $GLOBALS['strDebugTypeSql']                          = "SQL podatkovna baza";
 $GLOBALS['strDebugTypeSyslog']                       = "Sistemska beležka (syslog)";
 $GLOBALS['strDebugName']                             = "Ime beležke, Kolendar, SQL Tabela,<br />ali Sistemska beležka";
 $GLOBALS['strDebugPriority']                         = "Prioritetni nivo iskanja in odstranjevanja napak";
 $GLOBALS['strPEAR_LOG_DEBUG']                        = "PEAR_LOG_DEBUG - Največ informacij";
 $GLOBALS['strPEAR_LOG_INFO']                         = "PEAR_LOG_INFO - Privzete informacije";
-$GLOBALS['strPEAR_LOG_NOTICE']                       = "PEAR_LOG_NOTICE";
-$GLOBALS['strPEAR_LOG_WARNING']                      = "PEAR_LOG_WARNING";
-$GLOBALS['strPEAR_LOG_ERR']                          = "PEAR_LOG_ERR";
-$GLOBALS['strPEAR_LOG_CRIT']                         = "PEAR_LOG_CRIT";
-$GLOBALS['strPEAR_LOG_ALERT']                        = "PEAR_LOG_ALERT";
 $GLOBALS['strPEAR_LOG_EMERG']                        = "PEAR_LOG_EMERG - Najmanj informacij";
 $GLOBALS['strDebugIdent']                            = "\"Debug\" identifikacijski niz";
 $GLOBALS['strDebugUsername']                         = "mCal, SQL Uporabniško ime strežnika";
@@ -288,8 +235,6 @@ $GLOBALS['strDeliveryFilenamesXMLRPC']               = "XML RPC Poziv";
 $GLOBALS['strDeliveryFilenamesLocal']                = "Lokalni poziv";
 $GLOBALS['strDeliveryFilenamesFrontController']      = "Sprednji preglednik";
 $GLOBALS['strDeliveryFilenamesFlash']                = "Vključujoč FLASH (lahko je poln URL)";
-$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
-$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "Nastavitve dostavnega pomnilnika pasice";
 $GLOBALS['strDeliveryCacheLimit']                    = "Čas med posodobitvami pomnilnika pasice (v sekundah)";
 $GLOBALS['strDeliveryCacheStore']                    = "Tip hrambe pomnilnika dostavljanja pasice ";
@@ -302,12 +247,10 @@ $GLOBALS['strOriginType']                            = "Tip izvornega strežnika
 $GLOBALS['strOriginHost']                            = "Gostiteljsko ime (hostname) za izvorni strežnik";
 $GLOBALS['strOriginPort']                            = "Številka vtiča (port number) za izvorno podatkovno bazo";
 $GLOBALS['strOriginScript']                          = "Skriptna datoteka za izvorno podatkovno bazo";
-$GLOBALS['strOriginTypeXMLRPC']                      = "XMLRPC";
 $GLOBALS['strOriginTimeout']                         = "Premor izvora (v sekundah)";
 $GLOBALS['strOriginProtocol']                        = "Protokol izvornega strežnika";
 
 $GLOBALS['strDeliveryAcls']                          = "Preračunaj omejitve dostave pasice med dostavo";
-$GLOBALS['strDeliveryAclsDirectSelection']           = "Evaluate banner delivery limitations for direct selected ads";
 $GLOBALS['strDeliveryObfuscate']                     = "Zmedi kanal pri dostavi oglasov";
 $GLOBALS['strDeliveryExecPhp']                       = "Dovoli izvedbo PHP kode v oglasih<br />(Opozorilo: Varnostno tveganje)";
 $GLOBALS['strDeliveryCtDelimiter']                   = "Omejitev zunanjih (3rd party) sledilnikov klikov";
@@ -356,7 +299,6 @@ $GLOBALS['strShowBannerPreview']                     = "Prikaži predogled pasic
 $GLOBALS['strHideInactive']                          = "Skrij neaktivne";
 $GLOBALS['strGUIShowMatchingBanners']                = "Prikaži ujemajoče pasice na strani <i>Pasica s povezavo</i>";
 $GLOBALS['strGUIShowParentCampaigns']                = "Prikaži izvorne kampanje na strani <i>Pasica s povezavo</i>";
-$GLOBALS['strShowEntityId']                          = "Show entity identifiers";
 $GLOBALS['strGUIAnonymousCampaignsByDefault']        = "Privzete kampanje spremeni v anonimne";
 $GLOBALS['strStatisticsDefaults']                    = "Statistika";
 $GLOBALS['strBeginOfWeek']                           = "Začetek tedna";
@@ -420,11 +362,6 @@ $GLOBALS['strEnforceUserAgents']                     = "<b>Samo</b> beleži stat
 $GLOBALS['strBannerStorage']                         = "Nastavitve hrambe pasic";
 
 // Campaign ECPM settings
-$GLOBALS['strEnableECPM']                            = "Use eCPM optimized priorities instead of remnant-weighted priorities";
-$GLOBALS['strEnableContractECPM']                    = "Use eCPM optimized priorities instead of standard contract priorities";
-$GLOBALS['strEnableECPMfromRemnant']                 = "(If you enable this feature all your remnant campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strEnableECPMfromECPM']                    = "(If you disable this feature some of your active eCPM campaigns will be deactivated, you will have to update them manually to reactivate them)";
-$GLOBALS['strInactivatedCampaigns']                  = "List of campaigns which became inactive due to the changes in preferences:";
 
 // Statistics & Maintenance Settings
 $GLOBALS['strMaintenanceSettings']                   = "Vzdrževalne nastavitve";
@@ -439,7 +376,6 @@ $GLOBALS['strMaintenanceOI']                         = "Presledek vzdrževalnega
 $GLOBALS['strMaintenanceOIError']                    = "Neveljaven presledek vzdrževalnega postopka - preglejte dokumentacijo za veljavne vrednosti";
 $GLOBALS['strPrioritySettings']                      = "Prednostne nastavitve";
 $GLOBALS['strPriorityInstantUpdate']                 = "Takoj posodobi oglasne prioritete po spremembi uporabniškega vmesnika (UI)";
-$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
 $GLOBALS['strDefaultImpConWindow']                   = "Privzeto okno povezave pri Učinkih oglasa (v sekundah)";
 $GLOBALS['strDefaultImpConWindowError']              = "Če omogočeno, mora biti privzeto okno povezave pri Učinkih oglasa pozitivna vrednost";
 $GLOBALS['strDefaultCliConWindow']                   = "Privzeto okno povezave pri Klikih na oglas (v sekundah)";
@@ -477,7 +413,6 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "Barva header-ja v ospred
 $GLOBALS['strGuiHeaderBackgroundColor']              = "Barva header-ja v ozadju";
 $GLOBALS['strGuiActiveTabColor']                     = "Barva aktivnega zaznamka";
 $GLOBALS['strGuiHeaderTextColor']                    = "Barva besedila v header-ju";
-$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "Prosimo, vnesite barve v formatu RGB, npr '0066CC'";
 
 $GLOBALS['strGzipContentCompression']                = "Uporabi GZIP za stiskanje vsebine";
@@ -491,35 +426,13 @@ $GLOBALS['strPublisherAgreementEnabled']             = "Omogoči prijavo za sple
 $GLOBALS['strPublisherAgreementText']                = "Prijavno besedilo (HTML zaznamki so dovoljeni)";
 
 // Regenerate Platfor Hash script
-$GLOBALS['strPlatformHashRegenerate']                = "Platform Hash Regenerate";
-$GLOBALS['strNewPlatformHash']                       = "Your new Platform Hash is:";
-$GLOBALS['strPlatformHashInsertingError']            = "Error inserting Platform Hash into database";
 
 // Plugin Settings
-$GLOBALS['strPluginSettings']                        = "Plugin Settings";
-$GLOBALS['strEnableNewPlugins']                      = "Enable newly installed plugins";
-$GLOBALS['strUseMergedFunctions']                    = "Use merged delivery functions file";
 
 /*-------------------------------------------------------*/
 /* Unknown (unused?) translations                        */
 /*-------------------------------------------------------*/
 
-$GLOBALS['strExperimental']                 = "Experimental";
-$GLOBALS['strKeywordRetrieval']             = "Keyword retrieval";
-$GLOBALS['strBannerRetrieval']              = "Banner retrieval method";
-$GLOBALS['strRetrieveRandom']               = "Random banner retrieval (default)";
-$GLOBALS['strRetrieveNormalSeq']            = "Normal sequental banner retrieval";
-$GLOBALS['strWeightSeq']                    = "Weight based sequential banner retrieval";
-$GLOBALS['strFullSeq']                      = "Full sequential banner retrieval";
-$GLOBALS['strUseKeywords']                  = "Use keywords to select banners";
-$GLOBALS['strUseConditionalKeys']           = "Allow logical operators when using direct selection";
-$GLOBALS['strUseMultipleKeys']              = "Allow multiple keywords when using direct selection";
 
-$GLOBALS['strTableBorderColor']             = "Table Border Color";
-$GLOBALS['strTableBackColor']               = "Table Back Color";
-$GLOBALS['strTableBackColorAlt']            = "Table Back Color (Alternative)";
-$GLOBALS['strMainBackColor']                = "Main Back Color";
-$GLOBALS['strOverrideGD']                   = "Override GD Imageformat";
-$GLOBALS['strTimeZone']                     = "Time Zone";
 
 ?>

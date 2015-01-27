@@ -22,7 +22,6 @@ $GLOBALS['strAbbrSeconds']                          = "sec";
 
 // Common Invocation Parameters
 $GLOBALS['strInvocationWhat']                       = "Selezione banner";
-$GLOBALS['strInvocationPreview']                    = "Banner preview";
 $GLOBALS['strInvocationClientID']                   = "Inserzionista o campagna";
 $GLOBALS['strInvocationCampaignID']                 = "Campagna";
 $GLOBALS['strInvocationTarget']                     = "Frame di destinazione";
@@ -64,8 +63,6 @@ $GLOBALS['strShowScrollbars']		= "Barre di scorrimento";
 
 // XML-RPC
 $GLOBALS['strXmlRpcLanguage']       = "Linguaggio utilizzato";
-$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
-$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -126,26 +123,16 @@ $GLOBALS['str3rdPartyTrack']		 = "Supporta server di tracciamento dei click di t
 $GLOBALS['strCacheBuster']		    = "Inserisci codice di Cache-Busting";
 
 // Non-Img creatives Warning for zone image-only invocation
-$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
-$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
 // unkown HTML tag type Warning for zone invocation
-$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
 
 // sql/web banner-type warning for clickonly zone invocation
-$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
-<br /> 1) Download the banner:";
-$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
-$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
 
 // IMG invocation selected for tracker with appended code
-$GLOBALS['strWarning'] = "Warning";
 $GLOBALS['strImgWithAppendWarning'] = "Questo tracker ha aggiunto il codice, il codice aggiunto funzionerà <strong>solo</strong> con tag JavaScript";
 
 // Local Invocation
 $GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Attenzione:</strong> L'invocazione in modalità locale funzionerà soltanto se il sito che richiama il codice è fisicamente posizionato sulla stessa macchina dell'ad server.</span><br />Controlla che il valore MAX_PATH definito nel codice sottostante indichi effettivamente la directory di base del prodotto<br /> e di avere un file di configurazione per il dominio che mostra i banner (nella directory MAX_PATH/var)";
 
-$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
-$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
 
 ?>

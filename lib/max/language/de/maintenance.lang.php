@@ -113,8 +113,6 @@ $GLOBALS['strStatisticsExplaination']		= "Sie haben in den Einstellungen die <i>
 // Product Updates
 $GLOBALS['strSearchingUpdates']			= "Suche nach neuen Updates. Bitte warten...";
 $GLOBALS['strAvailableUpdates']			= "Vorhandene Updates";
-$GLOBALS['strDownloadZip']			= "Download (.zip)";
-$GLOBALS['strDownloadGZip']			= "Download (.tar.gz)";
 
 $GLOBALS['strUpdateAlert']			= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nDo you want to get more information \\nabout this update?";
 $GLOBALS['strUpdateAlertSecurity']		= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nIt is highly recommended to upgrade \\nas soon as possible, because this \\nversion contains one or more security fixes.";
@@ -179,7 +177,6 @@ $GLOBALS['strAutoMaintenanceEnabled']  = "Der automatische Wartungslauf ist akti
 $GLOBALS['strScheduledMaintenance']         = "Der regelmäßige Wartungslauf scheint korrekt eingerichtet zu sein.";
 $GLOBALS['strScheduledMaintenanceNotRun']   = "Der regelmäßige Wartungslauf ist in der vergangenen Stunde nicht gelaufen, dies könnte bedeuten das Sie ihn noch nicht richtig eingerichtet haben.";
 $GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Der automatische Wartungslauf ist aktiviert, aber noch nicht ausgeführt worden. Bitte beachten Sie, das der automatische Wartungslauf nur durch die Auslieferung von Werbemitteln ausgeführt wird.";
-$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
 $GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Der automatische Wartungslauf ist aktiviert und wird den Wartungslauf jede Stunde einmal starten.";
 $GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
  set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
@@ -188,7 +185,6 @@ $GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenanc
  you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
 
 //  Deliver Limitations
-$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
 $GLOBALS['strAllBannerChannelCompiled'] = "Alle Auslieferungsbeschränkungen der Banner und Gruppen wurden neu übersetzt.";
 $GLOBALS['strBannerChannelResult']      = "Hier die Ergebnisse der Übersetzung und Überprüfung der Auslieferungsbeschränkungen der Banner und Gruppen";
 $GLOBALS['strChannelCompiledLimitationsValid']  = "Alle Auslieferungsbeschränkungen der Gruppen ist gültig.";
@@ -208,7 +204,6 @@ $GLOBALS['strAppendCodesResult']        = "Hier sind die Ergebnisse der Überpr�
 $GLOBALS['strAppendCodesValid']         = "Alle Tracker Code Anhänge sind korrekt";
 $GLOBALS['strRepairAppenedCodes']       = "Obige Inkonsistenzen wurden ermittelt. Sie können diese reparieren durch die Verwendung des unten stehenden Buttons. Hierbei wird das System die Code Anhänge jedes Trackers im System neu übersetzen.";
 
-$GLOBALS['strPlugins']                  = "Plugins";
 $GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
 $GLOBALS['strPluginsOk']                = "Keine Probleme gefunden";
 
