@@ -12,33 +12,51 @@
 
 // Set translation strings
 
-$GLOBALS['strDeliveryEngine']			= "Bezorger";
-$GLOBALS['strMaintenance']			= "Onderhoud";
-$GLOBALS['strAdministrator']			= "Beheerder";
+$GLOBALS['strDeliveryEngine']				= "Bezorger";
+$GLOBALS['strMaintenance']					= "Onderhoud";
+$GLOBALS['strAdministrator']				= "Beheerder";
 
+// Audit
+$GLOBALS['strLogging']                      = "Logging";
+$GLOBALS['strAudit']                        = "Audit Log";
+$GLOBALS['strDebugLog']                     = "Debug Log";
+$GLOBALS['strEvent']                        = "Event";
+$GLOBALS['strTimestamp']                    = "Timestamp";
+$GLOBALS['strDeleted']                      = "Verwijder";
+$GLOBALS['strInserted']                     = "inserted";
+$GLOBALS['strUpdated']                      = "Geupdate";
+$GLOBALS['strDelete']                       = "Delete";
+$GLOBALS['strInsert']                       = "voeg in";
+$GLOBALS['strUpdate']                       = "Update";
+$GLOBALS['strHas']                          = "has";
+$GLOBALS['strFilters']                      = "Filters";
+$GLOBALS['strAdvertiser']                   = "Adverteerder";
+$GLOBALS['strPublisher']                    = "Website";
+$GLOBALS['strCampaign']                     = "Campaign";
+$GLOBALS['strZone']                         = "Zone";
+$GLOBALS['strType']                         = "Type";
+$GLOBALS['strAction']                       = "Action";
+$GLOBALS['strParameter']                    = "parameter ";
+$GLOBALS['strValue']                        = "Waarde";
+$GLOBALS['strDetailedView']                 = "bekijk gedetailleerd ";
+$GLOBALS['strReturnAuditTrail']             = "Return to Audit Trail";
+$GLOBALS['strAuditTrail']                   = "Audit trail";
+$GLOBALS['strMaintenanceLog']               = "Maintenance log";
+$GLOBALS['strAuditResultsNotFound']         = "No events found matching the selected criteria";
+$GLOBALS['strCollectedAllEvents']           = "All events";
+$GLOBALS['strClear']                        = "Clear";
 
-$GLOBALS['strUserlog'][phpAds_actionAdvertiserReportMailed] = "Rapport voor adverteerder {id} verzonden per e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPublisherReportMailed] = "Rapport voor uitgever {id} verzonden per e-mail";
-$GLOBALS['strUserlog'][phpAds_actionWarningMailed] = "Deactivatie waarschuwing voor campagne {id} verzonden per e-mail";
-$GLOBALS['strUserlog'][phpAds_actionDeactivationMailed] = "Deactivatie bevestiging voor campagne {id} verzonden per e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPriorityCalculation] = "Prioriteit berekend";
-$GLOBALS['strUserlog'][phpAds_actionPriorityAutoTargeting] = "Campagne doelstellingen berekend";
-$GLOBALS['strUserlog'][phpAds_actionDeactiveCampaign] = "Campagne {id} gedeactiveerd";
-$GLOBALS['strUserlog'][phpAds_actionActiveCampaign] = "Campagne {id} geactiveerd";
-
-
-
-
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strAdvertiser'] = "Adverteerder";
-$GLOBALS['strPublisher'] = "Website";
-$GLOBALS['strDeleted'] = "Verwijder";
-$GLOBALS['strUpdated'] = "Geupdate";
-$GLOBALS['strInsert'] = "voeg in";
-$GLOBALS['strUpdate'] = "Update";
-$GLOBALS['strFilters'] = "Filters";
-$GLOBALS['strParameter'] = "parameter ";
-$GLOBALS['strValue'] = "Waarde";
-$GLOBALS['strDetailedView'] = "bekijk gedetailleerd ";
+$GLOBALS['strUserlog'] = array (
+	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",
+	phpAds_actionActiveCampaign				=> "Campaign {id} activated",
+	phpAds_actionAutoClean					=> "Auto clean of database",
+	phpAds_actionBatchStatistics			=> "Statistics compiled",
+	phpAds_actionDeactivationMailed			=> "Deactivation notification for campaign {id} send by email",
+	phpAds_actionDeactiveCampaign			=> "Campaign {id} deactivated",
+	phpAds_actionPriorityCalculation		=> "Priority recalculated",
+	phpAds_actionPublisherReportMailed 		=> "Report for website {id} send by email",
+	phpAds_actionWarningMailed				=> "Deactivation warning for campaign {id} send by email"
+);
 $GLOBALS['strUserlog'][phpAds_actionActivationMailed] = "Activatie bevestiging voor campagne {id} verzonden per e-mail";
+
 ?>

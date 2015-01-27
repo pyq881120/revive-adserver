@@ -10,42 +10,36 @@
 +---------------------------------------------------------------------------+
 */
 
-// Invocation Types
-$GLOBALS['strInvocationRemote']			= "Távhívás";
-$GLOBALS['strInvocationJS']					= "Távhívás JavaScripthez";
-$GLOBALS['strInvocationIframes']		= "Távhívás keretekhez";
-$GLOBALS['strInvocationXmlRpc']			= "Távhívás XML-RPC használatával";
-$GLOBALS['strInvocationCombined']		= "Kombinált távhívás";
-$GLOBALS['strInvocationPopUp']			= "Felbukkanó ablak";
-$GLOBALS['strInvocationAdLayer']		= "Interstíciós vagy Lebegő DHTML";
-$GLOBALS['strInvocationLocal']			= "Helyi mód";
-
-
 // Other
-$GLOBALS['strCopyToClipboard']			= "Vágólapra másolás";
-
+$GLOBALS['strCopyToClipboard']                      = "Vágólapra másolás";
+$GLOBALS['strCopy']                                 = "másolás";
+$GLOBALS['strChooseTypeOfInvocation']               = "Please choose the type of invocation";
+$GLOBALS['strChooseTypeOfBannerInvocation']         = "Please choose the type of banner invocation";
 
 // Measures
-$GLOBALS['strAbbrPixels']			= "px";
-$GLOBALS['strAbbrSeconds']			= "mp";
-
+$GLOBALS['strAbbrPixels']                           = "px";
+$GLOBALS['strAbbrSeconds']                          = "mp";
 
 // Common Invocation Parameters
-$GLOBALS['strInvocationWhat']			= "Banner választás";
-$GLOBALS['strInvocationClientID']		= "Hirdető vagy kampány";
-$GLOBALS['strInvocationTarget']			= "Cél keret";
-$GLOBALS['strInvocationSource']			= "Forrás";
-$GLOBALS['strInvocationWithText']		= "Szöveg megjelenítése a banner alatt";
-$GLOBALS['strInvocationDontShowAgain']		= "Ne mutasd újra a bannert ugyanazon az oldalon";
-$GLOBALS['strInvocationDontShowAgainCampaign']		= "Ne mutass bannert újra ugyanabból a kampányból ugyanazon az oldalon";
-$GLOBALS['strInvocationTemplate'] 		= "Banner tárolása változóban, hogy a mintában lehessen használni";
-
+$GLOBALS['strInvocationWhat']                       = "Banner választás";
+$GLOBALS['strInvocationPreview']                    = "Banner preview";
+$GLOBALS['strInvocationClientID']                   = "Hirdető vagy kampány";
+$GLOBALS['strInvocationCampaignID']                 = "Kampány";
+$GLOBALS['strInvocationTarget']                     = "Cél keret";
+$GLOBALS['strInvocationSource']                     = "Forrás";
+$GLOBALS['strInvocationWithText']                   = "Szöveg megjelenítése a banner alatt";
+$GLOBALS['strInvocationDontShowAgain']              = "Ne mutasd újra a bannert ugyanazon az oldalon";
+$GLOBALS['strInvocationDontShowAgainCampaign']      = "Ne mutass bannert újra ugyanabból a kampányból ugyanazon az oldalon";
+$GLOBALS['strInvocationTemplate']                   = "Banner tárolása változóban, hogy a mintában lehessen használni";
+$GLOBALS['strInvocationBannerID']                   = "Banner azonosító";
+$GLOBALS['strInvocationComments']                   = "Kommentek beágyazása";
 
 // Iframe
-$GLOBALS['strIFrameRefreshAfter']		= "Újratöltés ideje";
-$GLOBALS['strIframeResizeToBanner']		= "Iframe átméretezése a banner mérete után";
-$GLOBALS['strIframeMakeTransparent']		= "Átlátszó iframe";
-$GLOBALS['strIframeIncludeNetscape4']		= "Netscape 4 kompatibilis ilayer hozzáadása";
+$GLOBALS['strIFrameRefreshAfter']                   = "Újratöltés ideje";
+$GLOBALS['strIframeResizeToBanner']                 = "Iframe átméretezése a banner mérete után";
+$GLOBALS['strIframeMakeTransparent']                = "Átlátszó iframe";
+$GLOBALS['strIframeIncludeNetscape4']               = "Netscape 4 kompatibilis ilayer hozzáadása";
+$GLOBALS['strIframeGoogleClickTracking']            = "Include code to track Google AdSense clicks";
 
 
 // PopUp
@@ -69,7 +63,9 @@ $GLOBALS['strShowScrollbars']		= "Gördítősávok";
 
 
 // XML-RPC
-$GLOBALS['strXmlRpcLanguage']			= "Állomás nyelve";
+$GLOBALS['strXmlRpcLanguage']       = "Állomás nyelve";
+$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
+$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -116,20 +112,43 @@ $GLOBALS['strHideDelay']			= "A reklám elrejtésének késleltetése";
 $GLOBALS['strHideTransparancy']		= "Az elrejtett reklám átlátszósága";
 
 
-$GLOBALS['strAdLayerStyleName']['geocities'] = "Geocities";
-$GLOBALS['strAdLayerStyleName']['simple'] = "Egyszerű";
-$GLOBALS['strAdLayerStyleName']['cursor'] = "Kurzor";
-$GLOBALS['strAdLayerStyleName']['floater'] = "Lebegő";
+$GLOBALS['strAdLayerStyleName']	= array(
+	'geocities'		=> "Geocities",
+	'simple'		=> "Egyszerű",
+	'cursor'		=> "Kurzor",
+	'floater'		=> "Lebegő"
+);
 
+// Support for 3rd party server clicktracking
+$GLOBALS['str3rdPartyTrack']		 = "Harmadik fél által készített Kattintás követő szerver támogatása";
 
+// Support for cachebusting code
+$GLOBALS['strCacheBuster']		    = "Gyorsítótárazás elkerülését szolgáló kód hozzáadása";
 
+// Non-Img creatives Warning for zone image-only invocation
+$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
+$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strInvocationCampaignID'] = "Kampány";
-$GLOBALS['strCopy'] = "másolás";
-$GLOBALS['strInvocationBannerID'] = "Banner azonosító";
-$GLOBALS['strInvocationComments'] = "Kommentek beágyazása";
-$GLOBALS['str3rdPartyTrack'] = "Harmadik fél által készített Kattintás követő szerver támogatása";
-$GLOBALS['strCacheBuster'] = "Gyorsítótárazás elkerülését szolgáló kód hozzáadása";
+// unkown HTML tag type Warning for zone invocation
+$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
+
+// sql/web banner-type warning for clickonly zone invocation
+$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
+<br /> 1) Download the banner:";
+$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
+$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
+
+// IMG invocation selected for tracker with appended code
+$GLOBALS['strWarning'] = "Warning";
 $GLOBALS['strImgWithAppendWarning'] = "Ez a követő hozzáadott kóddal van ellátva, a hozzáadott kód <strong>csak</strong> JavaScript tagekkel fog működni";
+
+// Local Invocation
+$GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Warning:</strong> Local mode invocation will ONLY work if the site calling the code
+ is on the same physical machine as the adserver</span><br />
+Check that the MAX_PATH defined in the code below points to the base directory of your MAX installation<br />
+and that you have a config file for the domain of the site showing the ads (in MAX_PATH/var)";
+
+$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+
 ?>

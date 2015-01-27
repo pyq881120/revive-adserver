@@ -12,6 +12,41 @@
 
 // Main strings
 $GLOBALS['strChooseSection']			= "Szekció kiválasztása";
+$GLOBALS['strAppendCodes']              = "Append codes";
+
+// Maintenance
+$GLOBALS['strScheduledMaintenanceHasntRun']	   = "<b>Scheduled maintenance hasn't run in the past hour. This may mean that you have not set it up correctly.</b>";
+
+$GLOBALS['strAutoMantenaceEnabledAndHasntRun'] = "
+	Automatic maintenance is enabled, but it has not been triggered. Automatic maintenance is triggered only when ".MAX_PRODUCT_NAME." delivers banners.
+    For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strAutoMantenaceDisabledAndHasntRun'] = "
+	Automatic maintenance is currently disabled, so when ".MAX_PRODUCT_NAME." delivers banners, automatic maintenance will not be triggered.
+	For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+    However, if you are not going to set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>,
+    then you <i>must</i> <a href='account-settings-maintenance.php'>enable automatic maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.
+";
+
+$GLOBALS['strAutoMantenaceEnabledAndRunning']   = "
+	Automatic maintenance is enabled and will be triggered, as required, when ".MAX_PRODUCT_NAME." delivers banners.
+	However, for the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strAutoMantenaceDisabledAndRunning']  = "
+	However, automatic maintenance has recently been disabled. To ensure that ".MAX_PRODUCT_NAME." works correctly, you should
+	either set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a> or
+	<a href='account-settings-maintenance.php'>re-enable automatic maintenance</a>.
+	<br><br>
+	For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strScheduledMantenaceRunning']  		= "<b>Scheduled maintenance is running correctly.</b>";
+
+$GLOBALS['strAutomaticMaintenanceHasRun']  		= "<b>Automatic maintenance is running correctly.</b>";
+
+$GLOBALS['strAutoMantenaceEnabled']		= "However, automatic maintenance is still enabled. For the best performance, you should <a href='account-settings-maintenance.php'>disable automatic maintenance</a>.";
 
 
 // Priority
@@ -20,7 +55,7 @@ $GLOBALS['strHighPriorityCampaigns']		= "Magas prioritású kampány";
 $GLOBALS['strAdViewsAssigned']			= "Beosztott letöltés";
 $GLOBALS['strLowPriorityCampaigns']		= "Alacsony prioritású kampány";
 $GLOBALS['strPredictedAdViews']			= "Letöltések előrejelzése";
-$GLOBALS['strPriorityDaysRunning']		= "Jelenleg {days} napra vonatkozó statisztika áll rendelkezésre, melyből a ".MAX_PRODUCT_NAME." meg tudja állapítani a napi előrejelzést. ";
+$GLOBALS['strPriorityDaysRunning']		= "There are currently {days} days worth of statistics available from where ".MAX_PRODUCT_NAME." can base its daily prediction on. ";
 $GLOBALS['strPriorityBasedLastWeek']		= "Az előrejelzés az e heti és a múlt heti adatok alapján történik. ";
 $GLOBALS['strPriorityBasedLastDays']		= "Az előrejelzés az elmúlt néhány nap alapján történik. ";
 $GLOBALS['strPriorityBasedYesterday']		= "Az előrejelzés a tegnapi adatok alapján történik. ";
@@ -30,28 +65,49 @@ $GLOBALS['strPriorityNotEnoughAdViews']		= "Nem világos, hogy elegendő letölt
 
 
 // Banner cache
+$GLOBALS['strCheckBannerCache']		= "A banner gyorsítótár ellenőrzése";
 $GLOBALS['strRebuildBannerCache']		= "Reklám gyorsítótár újraépítése";
-$GLOBALS['strBannerCacheExplaination']		= "\n    Az adatbázis banner gyorsítótára a bannerek kiszolgálásának meggyorsítására szolgál<br />\n    Ez a gyorsítótár újraépítésre szorul amikor:\n    <ul>\n        <li>Az OpenX rendszer frissítésre kerül</li>\n        <li>Új szerverre kerül az OpenX rendszer</li>\n    </ul>\n";
-
+$GLOBALS['strBannerCacheErrorsFound'] = "Az adatbázis banner gyorsítótár hibát talált. A hibás bannerek nem lesznek elérhetőek amíg manuálisan helyre nem állítják őket.";
+$GLOBALS['strBannerCacheOK'] = "Az ellenőrzés nem talált hibát, az adatbázis banner gyorsítótár nem igényel frissítést.";
+$GLOBALS['strBannerCacheDifferencesFound'] = "Az adatbázis banner gyorsítótár elavult és újraépítést igényel. Kattintson ide az automatikus frissítéshez.";
+$GLOBALS['strBannerCacheFixed'] = "The database banner cache rebuild was successfully completed. Your database cache is now up to date.";
+$GLOBALS['strBannerCacheRebuildButton'] = "Újraépítés";
+$GLOBALS['strRebuildDeliveryCache']			= "Az adatbázis banner gyorsítótár újraépítése";
+$GLOBALS['strBannerCacheExplaination']		= "
+    The database banner cache is used to speed up delivery of banners during delivery<br />
+    This cache needs to be updated when:
+    <ul>
+        <li>You upgrade your version of ".MAX_PRODUCT_NAME."</li>
+        <li>You move your ".MAX_PRODUCT_NAME." installation to a different server</li>
+    </ul>
+";
 
 // Cache
 $GLOBALS['strCache']			= "Kiszolgáló gyorsítótár";
 $GLOBALS['strAge']				= "Kor";
-$GLOBALS['strRebuildDeliveryCache']			= "Az adatbázis banner gyorsítótár újraépítése";
-$GLOBALS['strDeliveryCacheExplaination']		= "\n	A továbbítás gyorsítótárral növelhető a reklámok továbbításának sebessége. A gyorsítótár tartalmazza mindazon\n	reklámok másolatát, melyek kapcsolva vannak ahhoz a zónához, amelyik menti az adatbázis lekérdezések számát,\n	mikor éppen továbbítja őket a felhasználónak. A gyorsítótár újraépítése minden olyan alkalommal megtörténik,\n	mikor változtatás történik a zónában vagy annak reklámaiban, s lehet, hogy a gyorsítótár elavulttá válik.\n	Emiatt a gyorsítótár újraépítése óránként automatikusan történik, de lehetőség van a kézi újraépítésre is.\n";
-$GLOBALS['strDeliveryCacheSharedMem']		= "\n	Jelenleg a megosztott memóriában tárolódik a kiszolgáló gyorsítótár.\n";
-$GLOBALS['strDeliveryCacheDatabase']		= "\n	Jelenleg az adatbázisban tárolódik a kiszolgáló gyorsítótár.\n";
-$GLOBALS['strDeliveryCacheFiles']		= "\n	Jelenleg a szerver több különböző fájljában tárolódik a kiszolgáló gyorsítótár.\n";
+$GLOBALS['strDeliveryCacheSharedMem']		= "\\n	Jelenleg a megosztott memóriában tárolódik a kiszolgáló gyorsítótár.\\n";
+$GLOBALS['strDeliveryCacheDatabase']		= "\\n	Jelenleg az adatbázisban tárolódik a kiszolgáló gyorsítótár.\\n";
+$GLOBALS['strDeliveryCacheFiles']		= "\\n	Jelenleg a szerver több különböző fájljában tárolódik a kiszolgáló gyorsítótár.\\n";
 
 
 // Storage
 $GLOBALS['strStorage']				= "Tárolás";
 $GLOBALS['strMoveToDirectory']			= "Mozgassa az adatbázisban tárolt képeket egy könyvtárba";
-$GLOBALS['strStorageExplaination']		= "\n	A helyi bannerek által használt képek az adatbázisban vagy helyi könyvtárban tárolódnak. Ha könyvtárban tárolja a képeket,\n	akkor csökken az adatbázis terhelése és gyorsulást eredményez a kiszolgálásban.\n";
+$GLOBALS['strStorageExplaination']		= "\\n	A helyi bannerek által használt képek az adatbázisban vagy helyi könyvtárban tárolódnak. Ha könyvtárban tárolja a képeket,\\n	akkor csökken az adatbázis terhelése és gyorsulást eredményez a kiszolgálásban.\\n";
+
+// Encoding
+$GLOBALS['strEncoding']                 = "Encoding";
+$GLOBALS['strEncodingExplaination']     = "" . MAX_PRODUCT_NAME ." now stores all data in the database in UTF-8 format.<br />
+    Where possible, your data will have been automatically converted to this encoding.<br />
+    If after upgrading you find corrupt characters, and you know the encoding used, you may use this tool to convert the data from that format to UTF-8";
+$GLOBALS['strEncodingConvertFrom']      = "Convert from this encoding:";
+$GLOBALS['strEncodingConvert']          = "Konvertál";
+$GLOBALS['strEncodingConvertTest']      = "Test conversion";
+$GLOBALS['strConvertThese']             = "The following data will be changed if you continue";
 
 
 // Storage
-$GLOBALS['strStatisticsExplaination']		= "\n	Ön engedélyezte a <i>tömör statisztikát</i>, viszont a régi statisztika még részletes formában\n	létezik. �?talakítja az új tömörített formátumba a részletes statisztikát?\n";
+$GLOBALS['strStatisticsExplaination']		= "\\n	Ön engedélyezte a <i>tömör statisztikát</i>, viszont a régi statisztika még részletes formában\\n	létezik. �?talakítja az új tömörített formátumba a részletes statisztikát?\\n";
 
 
 // Product Updates
@@ -60,20 +116,43 @@ $GLOBALS['strAvailableUpdates']			= "Elérhető frissítések";
 $GLOBALS['strDownloadZip']			= "Letöltés (.zip)";
 $GLOBALS['strDownloadGZip']			= "Letöltés (.tar.gz)";
 
-$GLOBALS['strUpdateAlert']			= "". MAX_PRODUCT_NAME ." egy új verziója elérhető.                      \n\nSzeretnél több információt kapni\nerről a frissítésről?";
-$GLOBALS['strUpdateAlertSecurity']		= "". MAX_PRODUCT_NAME ." egy új verziója elérhető.                 \n\nA frissítés mielőbbi végrehajtása erősen ajánlott, \nmert az új verzió egy vagy több biztonsági javítást is tartalmaz.";
+$GLOBALS['strUpdateAlert']			= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nDo you want to get more information \\nabout this update?";
+$GLOBALS['strUpdateAlertSecurity']		= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nIt is highly recommended to upgrade \\nas soon as possible, because this \\nversion contains one or more security fixes.";
 
 $GLOBALS['strUpdateServerDown']			= "Valamilyen ismertlen okból nem sikerült ellenőrizni<br>az elérhető frissítéseket. Kérjük próbálja újra később!";
 
-$GLOBALS['strNoNewVersionAvailable']		= "\n	". MAX_PRODUCT_NAME ." a legfrissebb verzióban fut. Jelenleg nincs elérhető frissítés.\n";
+$GLOBALS['strNoNewVersionAvailable']		= "
+	Your version of ".MAX_PRODUCT_NAME." is up-to-date. There are currently no updates available.
+";
 
-$GLOBALS['strNewVersionAvailable']		= "\n	<b>". MAX_PRODUCT_NAME ." egy újabb verziója már elérhető.</b><br /> Az új verzió telepítése erősen ajánlott,\n	mert kijavíthat néhány meglévő hibát és új funkciókat is tartalmaz. Ha több információt\n	szeretne a frissítésről, akkor kérjük olvassa el dokumentációt, amit megtalál az alábbi fájlok között.\n";
+$GLOBALS['strServerCommunicationError'] = "
+    <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
+    able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strSecurityUpdate']			= "\n	<b>Az új verzió mielőbbi telepítése erősen ajánlott, mert az tartalmaz néhány\n	biztonsági javítást.</b> Az ". MAX_PRODUCT_NAME ." Ön által használt verziója\n	bizonyos támadásokkal szemben védtelen lehet és ezért nem biztonságos.\n	Ha szeretne több információt a frissítésről, kérjük olvassa el a dokumentációt, amit megtalál az alábbi fájlok között.\n";
+$GLOBALS['strCheckForUpdatesDisabled'] = "
+    <b>Check for updates is disabled. Please enable via the
+    <a href='account-settings-update.php'>update settings</a> screen.</b>
+";
 
-$GLOBALS['strNotAbleToCheck']			= "\n	<b>Mivel az XML kiterjesztés nem elérhető a szerveren, az ". MAX_PRODUCT_NAME ." nem tudja\n   ellenőrizni, hogy elérhető-e újabb verzió.</b>\n";
+$GLOBALS['strNewVersionAvailable']		= "
+	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
+	because it may fix some currently existing problems and will add new features. For more information
+	about upgrading please read the documentation which is included in the files below.</b>
+";
 
-$GLOBALS['strForUpdatesLookOnWebsite']	= "\n	Ha szeretné megtudni, hogy van-e elérhető frissítés, kérjük látogassa meg a honlapunkat.\n";
+$GLOBALS['strSecurityUpdate']			= "
+	<b>It is highly recommended to install this update as soon as possible, because it contains a number
+	of security fixes.</b> The version of ".MAX_PRODUCT_NAME." which you are currently using might
+	be vulnerable to certain attacks and is probably not secure. For more information
+	about upgrading please read the documentation which is included in the files below.</b>
+";
+
+$GLOBALS['strNotAbleToCheck']			= "
+	<b>Because the XML extention isn't available on your server, ".MAX_PRODUCT_NAME." is not
+    able to check if a newer version is available.</b>
+";
+
+$GLOBALS['strForUpdatesLookOnWebsite']	= "\\n	Ha szeretné megtudni, hogy van-e elérhető frissítés, kérjük látogassa meg a honlapunkat.\\n";
 
 $GLOBALS['strClickToVisitWebsite']		= "Kattintson ide a honlapunk meglátogatásához!";
 $GLOBALS['strCurrentlyUsing'] 			= "A jelenleg következőt használja:";
@@ -87,23 +166,58 @@ $GLOBALS['strConvertingStats']			= "A statisztika konvertálása...";
 $GLOBALS['strConvertStats']			= "A statisztika konvertálása";
 $GLOBALS['strConvertAdViews']			= "Letöltések konvertálva";
 $GLOBALS['strConvertAdClicks']			= "Letöltések konvertálva...";
+$GLOBALS['strConvertAdConversions']			= "AdConversions converted...";
 $GLOBALS['strConvertNothing']			= "Nincs mit konvertálni...";
 $GLOBALS['strConvertFinished']			= "Befejezve...";
 
-$GLOBALS['strConvertExplaination']		= "\n	Ön jelenleg a statisztika tárolásának tömörített formátumát használja, de még van <br>\n	néhány részletes formátumú statisztika. Amíg nem alakítja át a részletes statisztikát <br>\n	tömör formátumba, addig nem használhatja ezeknek az oldalaknak a megtekintésekor. <br>\n	A statisztika konvertálása előtt készítsen biztonsági másolatot az adatbázisról! <br>\n	Kívánja a részletes statisztikát az új, tömör formátumba konvertálni? <br>\n";
+$GLOBALS['strConvertExplaination']		= "\\n	Ön jelenleg a statisztika tárolásának tömörített formátumát használja, de még van <br>\\n	néhány részletes formátumú statisztika. Amíg nem alakítja át a részletes statisztikát <br>\\n	tömör formátumba, addig nem használhatja ezeknek az oldalaknak a megtekintésekor. <br>\\n	A statisztika konvertálása előtt készítsen biztonsági másolatot az adatbázisról! <br>\\n	Kívánja a részletes statisztikát az új, tömör formátumba konvertálni? <br>\\n";
 
-$GLOBALS['strConvertingExplaination']		= "\n	Minden maradék részletes statisztika most átalakításra kerül az új, tömör formátumba. <br>\n	Attól függően, hogy hány lenyomat tárolása történik részletes formátumban, ez eltarthat <br>\n	pár percig. Más oldalak felkeresése előtt várja meg a konertálás befejezését. <br>\n	Alább megtekintheti az adatbázisban történt módosítások naplóját. <br>\n";
+$GLOBALS['strConvertingExplaination']		= "\\n	Minden maradék részletes statisztika most átalakításra kerül az új, tömör formátumba. <br>\\n	Attól függően, hogy hány lenyomat tárolása történik részletes formátumban, ez eltarthat <br>\\n	pár percig. Más oldalak felkeresése előtt várja meg a konertálás befejezését. <br>\\n	Alább megtekintheti az adatbázisban történt módosítások naplóját. <br>\\n";
 
-$GLOBALS['strConvertFinishedExplaination']  	= "\n	A maradék részletes statisztika konvertálása sikerült, és az adatok mostmár <br>\n	újra használhatóak. Alább megtekintheti az adatbázisban történt módosítások <br>\n	naplóját.<br>\n";
+$GLOBALS['strConvertFinishedExplaination']  	= "\\n	A maradék részletes statisztika konvertálása sikerült, és az adatok mostmár <br>\\n	újra használhatóak. Alább megtekintheti az adatbázisban történt módosítások <br>\\n	naplóját.<br>\\n";
+
+//  Maintenace
+$GLOBALS['strAutoMaintenanceDisabled'] = "Automatic maintenance is disabled.";
+$GLOBALS['strAutoMaintenanceEnabled']  = "Automatic maintenance is enabled. For best performance it is advised to <a href='settings-admin.php'>disable automatic maintenance</a>.";
+$GLOBALS['strScheduledMaintenance']         = "Scheduled maintenance seems to be correctly running.";
+$GLOBALS['strScheduledMaintenanceNotRun']   = "Scheduled maintenance hasn't run in the past hour. This may mean that you have not set it up correctly.";
+$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
+$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
+$GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Automatic maintenance is enabled and will trigger maintenance every hour.";
+$GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
+ set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
+$GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenance is disabled, so when ".MAX_PRODUCT_NAME." delivers banners, maintenance is not triggered.
+ If you do not plan to run <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>,
+ you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
+
+//  Deliver Limitations
+$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
+$GLOBALS['strAllBannerChannelCompiled'] = "All banner/channel compiled limitation values have been recompiled";
+$GLOBALS['strBannerChannelResult']      = "Here are the results of the banner/channel compiled limitation validation";
+$GLOBALS['strChannelCompiledLimitationsValid']  = "All channel compiled limitations are valid";
+$GLOBALS['strBannerCompiledLimitationsValid']   = "All banner compiled limitations are valid";
+$GLOBALS['strErrorsFound']              = "Errors found";
+$GLOBALS['strRepairCompiledLimitations']        = "Some inconsistancies were found above, you can repair these using the button below, this will recompile the compiled limitation for every banner/channel in the system<br />";
+$GLOBALS['strRecompile']                = "Recompile";
+$GLOBALS['strDeliveryEngineDisagreeNotice'] = "Under some circumstances the delivery engine can disagree with the stored ACLs for banners and channels, use the folowing link to validate the ACLs in the database";
+$GLOBALS['strCheckACLs'] = "Check ACLs";
 
 
+//  Append codes
+$GLOBALS['strAppendCodesDesc']          = "Under some circumstances the delivery engine can disagree with the stored append codes for trackers, use the folowing link to validate the append codes in the database";
+$GLOBALS['strCheckAppendCodes']         = "Check Append codes";
+$GLOBALS['strAppendCodesRecompiled']    = "All compiled append codes values have been recompiled";
+$GLOBALS['strAppendCodesResult']        = "Here are the results of the compiled append codes validation";
+$GLOBALS['strAppendCodesValid']         = "All tracker compiled appendcodes are valid";
+$GLOBALS['strRepairAppenedCodes']       = "Some inconsistancies were found above, you can repair these using the button below, this will recompile the append codes for every tracker in the system";
 
+$GLOBALS['strPlugins']                  = "Plugins";
+$GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
+$GLOBALS['strPluginsOk']                = "No problems found";
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strCheckBannerCache'] = "A banner gyorsítótár ellenőrzése";
-$GLOBALS['strBannerCacheErrorsFound'] = "Az adatbázis banner gyorsítótár hibát talált. A hibás bannerek nem lesznek elérhetőek amíg manuálisan helyre nem állítják őket.";
-$GLOBALS['strBannerCacheOK'] = "Az ellenőrzés nem talált hibát, az adatbázis banner gyorsítótár nem igényel frissítést.";
-$GLOBALS['strBannerCacheDifferencesFound'] = "Az adatbázis banner gyorsítótár elavult és újraépítést igényel. Kattintson ide az automatikus frissítéshez.";
-$GLOBALS['strBannerCacheRebuildButton'] = "Újraépítés";
-$GLOBALS['strEncodingConvert'] = "Konvertál";
+$GLOBALS['strMenus']                    = "Menus";
+$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
+$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
+$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
+
 ?>

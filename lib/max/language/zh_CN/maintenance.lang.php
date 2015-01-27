@@ -17,7 +17,10 @@ $GLOBALS['strAppendCodes']              = "附加代码";
 // Maintenance
 $GLOBALS['strScheduledMaintenanceHasntRun']	   = "<b>维护任务在过去 1 小时内没有执行。请检查系统设置。</b>";
 
-$GLOBALS['strAutoMantenaceEnabledAndHasntRun'] = "维护任务已经设置为自动运行，但是没有被触发。维护任务只有在 ".MAX_PRODUCT_NAME." 投放广告的时候才会被触发。出于性能的考虑，建议您设置<a href='" . PRODUCT_DOCSURL . "/maintenance' target='_blank'>定时执行维护任务</a>。";
+$GLOBALS['strAutoMantenaceEnabledAndHasntRun'] = "
+	Automatic maintenance is enabled, but it has not been triggered. Automatic maintenance is triggered only when ".MAX_PRODUCT_NAME." delivers banners.
+    For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
 
 $GLOBALS['strAutoMantenaceDisabledAndHasntRun'] = "
 	Automatic maintenance is currently disabled, so when ".MAX_PRODUCT_NAME." delivers banners, automatic maintenance will not be triggered.

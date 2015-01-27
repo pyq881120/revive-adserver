@@ -12,6 +12,41 @@
 
 // Main strings
 $GLOBALS['strChooseSection']			= "Vyberte sekci";
+$GLOBALS['strAppendCodes']              = "Append codes";
+
+// Maintenance
+$GLOBALS['strScheduledMaintenanceHasntRun']	   = "<b>Scheduled maintenance hasn't run in the past hour. This may mean that you have not set it up correctly.</b>";
+
+$GLOBALS['strAutoMantenaceEnabledAndHasntRun'] = "
+	Automatic maintenance is enabled, but it has not been triggered. Automatic maintenance is triggered only when ".MAX_PRODUCT_NAME." delivers banners.
+    For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strAutoMantenaceDisabledAndHasntRun'] = "
+	Automatic maintenance is currently disabled, so when ".MAX_PRODUCT_NAME." delivers banners, automatic maintenance will not be triggered.
+	For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+    However, if you are not going to set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>,
+    then you <i>must</i> <a href='account-settings-maintenance.php'>enable automatic maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.
+";
+
+$GLOBALS['strAutoMantenaceEnabledAndRunning']   = "
+	Automatic maintenance is enabled and will be triggered, as required, when ".MAX_PRODUCT_NAME." delivers banners.
+	However, for the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strAutoMantenaceDisabledAndRunning']  = "
+	However, automatic maintenance has recently been disabled. To ensure that ".MAX_PRODUCT_NAME." works correctly, you should
+	either set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a> or
+	<a href='account-settings-maintenance.php'>re-enable automatic maintenance</a>.
+	<br><br>
+	For the best performance, you should set up <a href='" . PRODUCT_DOCSURL . "/admin/maintenance' target='_blank'>scheduled maintenance</a>.
+";
+
+$GLOBALS['strScheduledMantenaceRunning']  		= "<b>Scheduled maintenance is running correctly.</b>";
+
+$GLOBALS['strAutomaticMaintenanceHasRun']  		= "<b>Automatic maintenance is running correctly.</b>";
+
+$GLOBALS['strAutoMantenaceEnabled']		= "However, automatic maintenance is still enabled. For the best performance, you should <a href='account-settings-maintenance.php'>disable automatic maintenance</a>.";
 
 
 // Priority
@@ -20,7 +55,7 @@ $GLOBALS['strHighPriorityCampaigns']		= "Kampaně s vysokou prioritou";
 $GLOBALS['strAdViewsAssigned']			= "Přidělěných zobrazení";
 $GLOBALS['strLowPriorityCampaigns']		= "Kampaně s nízkou prioritou";
 $GLOBALS['strPredictedAdViews']			= "Předpovězených zobrazení";
-$GLOBALS['strPriorityDaysRunning']		= "V tuto chvíli jsou k dispozici statistiky za {days} dní z čehož ".MAX_PRODUCT_NAME." může vytvořit denní předpověď. ";
+$GLOBALS['strPriorityDaysRunning']		= "There are currently {days} days worth of statistics available from where ".MAX_PRODUCT_NAME." can base its daily prediction on. ";
 $GLOBALS['strPriorityBasedLastWeek']		= "Předpověď je založena na údajích z tohoto a předchozího týdne. ";
 $GLOBALS['strPriorityBasedLastDays']		= "Předpověď je založena na údajích z předchozích několika dnů. ";
 $GLOBALS['strPriorityBasedYesterday']		= "Předpověď je založena na údajích ze včerejška. ";
@@ -30,28 +65,49 @@ $GLOBALS['strPriorityNotEnoughAdViews']		= "Není jisté že bude k dispozici do
 
 
 // Banner cache
+$GLOBALS['strCheckBannerCache']		= "Check banner cache";
 $GLOBALS['strRebuildBannerCache']		= "Aktualizovat cache bannerů";
-$GLOBALS['strBannerCacheExplaination']		= "\n	Cache bannerů obsahuje kopii HTML kódu který se používá pro zobrazení banneru. Použitím chache bannerů je možné docílit zrychlení\n	doručování bannerů protože se HTML kód nemusí generovat pokaždé když má být banner doručen. Protože cache bannerů obsahuje pevné\n	okdazy na URL kde je umístěno ".MAX_PRODUCT_NAME." a jeho bannery, cache musí být aktualizována pokaždé, když dojde k přesunu\n	".MAX_PRODUCT_NAME." do jiného umístění na webserveru.\n";
-
+$GLOBALS['strBannerCacheErrorsFound'] = "The database banner cache check has found some errors. These banners will not work until you manually fix them.";
+$GLOBALS['strBannerCacheOK'] = "There were no errors detected. Your database banner cache is up to date";
+$GLOBALS['strBannerCacheDifferencesFound'] = "The database banner cache check has found that your cache is not up to date and requires rebuilding. Click here to automatically  update your cache.";
+$GLOBALS['strBannerCacheFixed'] = "The database banner cache rebuild was successfully completed. Your database cache is now up to date.";
+$GLOBALS['strBannerCacheRebuildButton'] = "Rebuild";
+$GLOBALS['strRebuildDeliveryCache']			= "Aktualizovat cache doručování";
+$GLOBALS['strBannerCacheExplaination']		= "
+    The database banner cache is used to speed up delivery of banners during delivery<br />
+    This cache needs to be updated when:
+    <ul>
+        <li>You upgrade your version of ".MAX_PRODUCT_NAME."</li>
+        <li>You move your ".MAX_PRODUCT_NAME." installation to a different server</li>
+    </ul>
+";
 
 // Cache
 $GLOBALS['strCache']			= "Cache doručování";
 $GLOBALS['strAge']				= "Stáří";
-$GLOBALS['strRebuildDeliveryCache']			= "Aktualizovat cache doručování";
-$GLOBALS['strDeliveryCacheExplaination']		= "\n	Cache doručováné je používána pro urychlení doručování bannerů. Cache obsahuje kopii všech bannerů\n	které jsou připojené k zóně což ušetří několik databázových dotazů a bannery jsou přímo doručovány uživateli. Cache\n	je normálně znovu vytvářena při každé změně zóny nebo bannerů zóny a pokud je to možné je cache aktualizována. Z tohoto\n	důvodu se cache automaticky aktualizuje každou hodinu, ale je možné ji aktualizovat i ručně.\n";
-$GLOBALS['strDeliveryCacheSharedMem']		= "\n	V tuto chvíli se pro ukládání cache doručování využívá sdílená paměť.\n";
-$GLOBALS['strDeliveryCacheDatabase']		= "\n	V tuto chvíli se pro ukládání cache doručování využívá databáze.\n";
-$GLOBALS['strDeliveryCacheFiles']		= "\n	V tuto chvíli se pro ukládání cache doručování využívá vícero souborů na disku.\n";
+$GLOBALS['strDeliveryCacheSharedMem']		= "\\n	V tuto chvíli se pro ukládání cache doručování využívá sdílená paměť.\\n";
+$GLOBALS['strDeliveryCacheDatabase']		= "\\n	V tuto chvíli se pro ukládání cache doručování využívá databáze.\\n";
+$GLOBALS['strDeliveryCacheFiles']		= "\\n	V tuto chvíli se pro ukládání cache doručování využívá vícero souborů na disku.\\n";
 
 
 // Storage
 $GLOBALS['strStorage']				= "Ukládání";
 $GLOBALS['strMoveToDirectory']			= "Přesunout obrázky uložené v databázi do adresáře";
-$GLOBALS['strStorageExplaination']		= "\n	Obrázky lokálních bannerů jsou uloženy v databázi nebo v adresáři. Pokud uložíte soubory do adresáře\n	zátěž databáze výrazně poklesne a zvýší se rychlost doručování.\n";
+$GLOBALS['strStorageExplaination']		= "\\n	Obrázky lokálních bannerů jsou uloženy v databázi nebo v adresáři. Pokud uložíte soubory do adresáře\\n	zátěž databáze výrazně poklesne a zvýší se rychlost doručování.\\n";
+
+// Encoding
+$GLOBALS['strEncoding']                 = "Encoding";
+$GLOBALS['strEncodingExplaination']     = "" . MAX_PRODUCT_NAME ." now stores all data in the database in UTF-8 format.<br />
+    Where possible, your data will have been automatically converted to this encoding.<br />
+    If after upgrading you find corrupt characters, and you know the encoding used, you may use this tool to convert the data from that format to UTF-8";
+$GLOBALS['strEncodingConvertFrom']      = "Convert from this encoding:";
+$GLOBALS['strEncodingConvert']          = "Konvertovat";
+$GLOBALS['strEncodingConvertTest']      = "Test conversion";
+$GLOBALS['strConvertThese']             = "The following data will be changed if you continue";
 
 
 // Storage
-$GLOBALS['strStatisticsExplaination']		= "\n";
+$GLOBALS['strStatisticsExplaination']		= "\\n";
 
 
 // Product Updates
@@ -60,20 +116,43 @@ $GLOBALS['strAvailableUpdates']			= "Dostupné aktualizace";
 $GLOBALS['strDownloadZip']			= "Download (.zip)";
 $GLOBALS['strDownloadGZip']			= "Download (.tar.gz)";
 
-$GLOBALS['strUpdateAlert']			= "Je k dispozici nová verze ". MAX_PRODUCT_NAME ." .                 \n\nPřejete si více informací o tété \naktualizaci?";
-$GLOBALS['strUpdateAlertSecurity']		= "Je k dispozici nová verze ". MAX_PRODUCT_NAME ." .                 \n\nDůrazně doporučujeme provést aktualizaci \nco nejdříve, neboť tato verze obsahuje \njednu nebo více bezpečnostních oprav.";
+$GLOBALS['strUpdateAlert']			= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nDo you want to get more information \\nabout this update?";
+$GLOBALS['strUpdateAlertSecurity']		= "A new version of ".MAX_PRODUCT_NAME." is available.                 \\n\\nIt is highly recommended to upgrade \\nas soon as possible, because this \\nversion contains one or more security fixes.";
 
-$GLOBALS['strUpdateServerDown']			= "\n    Z neznámého důvodu nebylo možné získat <br>\n	informace o aktualizacích. Prosím zkuste to znovu později.\n";
+$GLOBALS['strUpdateServerDown']			= "\\n    Z neznámého důvodu nebylo možné získat <br>\\n	informace o aktualizacích. Prosím zkuste to znovu později.\\n";
 
-$GLOBALS['strNoNewVersionAvailable']		= "\n	Vaše verze ".MAX_PRODUCT_NAME." je aktuální. V tuto chvíli nejsou k dispozici žádné aktualizace.\n";
+$GLOBALS['strNoNewVersionAvailable']		= "
+	Your version of ".MAX_PRODUCT_NAME." is up-to-date. There are currently no updates available.
+";
 
-$GLOBALS['strNewVersionAvailable']		= "\n	<b>Novější verze ".MAX_PRODUCT_NAME." je k dispozici.</b><br> Doporučujeme nainstalovat tuto aktualizaci,\n	protože může obsahovat opravy některých chyb a obsahovat nové funkce. Pro více informací o tom jak provést\n	aktualizaci si prosím přečtěte dokumentaci která je v níže uvedených souborech.\n";
+$GLOBALS['strServerCommunicationError'] = "
+    <b>Communication with the update server timed out, so ".MAX_PRODUCT_NAME." is not
+    able to check if a newer version is available at this stage. Please try again later.</b>";
 
-$GLOBALS['strSecurityUpdate']			= "\n	<b>Důrazně doporučujeme nainstalovat tuto aktualizaci co nejdříve, protože obsahuje několik oprav\n	bezpečnostních chyb.</b> Verze ".MAX_PRODUCT_NAME." kterou používáte může být citlivá ná různé\n	druhy útoků a zřejmě není bezpečná. Pro více informací o tom jak provést aktualizaci si prosím\n	přečtěte dokumentaci která je v níže uvedených souborech.\n";
+$GLOBALS['strCheckForUpdatesDisabled'] = "
+    <b>Check for updates is disabled. Please enable via the
+    <a href='account-settings-update.php'>update settings</a> screen.</b>
+";
 
-$GLOBALS['strNotAbleToCheck']			= "\n	<b>Protože XML doplněk není instalován na vašem serveru, ".MAX_PRODUCT_NAME." není\n    schopen ověřit zda jsou k dispozici aktualizace.</b>\n";
+$GLOBALS['strNewVersionAvailable']		= "
+	<b>A new version of ".MAX_PRODUCT_NAME." is available.</b><br /> It is recommended to install this update,
+	because it may fix some currently existing problems and will add new features. For more information
+	about upgrading please read the documentation which is included in the files below.</b>
+";
 
-$GLOBALS['strForUpdatesLookOnWebsite']	= "\n	Pokud chcete vědět jestli je k dispozici novější verze tak navštivte naše stránky.\n";
+$GLOBALS['strSecurityUpdate']			= "
+	<b>It is highly recommended to install this update as soon as possible, because it contains a number
+	of security fixes.</b> The version of ".MAX_PRODUCT_NAME." which you are currently using might
+	be vulnerable to certain attacks and is probably not secure. For more information
+	about upgrading please read the documentation which is included in the files below.</b>
+";
+
+$GLOBALS['strNotAbleToCheck']			= "
+	<b>Because the XML extention isn't available on your server, ".MAX_PRODUCT_NAME." is not
+    able to check if a newer version is available.</b>
+";
+
+$GLOBALS['strForUpdatesLookOnWebsite']	= "\\n	Pokud chcete vědět jestli je k dispozici novější verze tak navštivte naše stránky.\\n";
 
 $GLOBALS['strClickToVisitWebsite']		= "Klikněte zde pro naše webové stránky";
 $GLOBALS['strCurrentlyUsing'] 			= "V tuto chvíli používáte";
@@ -91,15 +170,54 @@ $GLOBALS['strConvertAdConversions']			= "Převedených prodejů...";
 $GLOBALS['strConvertNothing']			= "Není nic k převodu...";
 $GLOBALS['strConvertFinished']			= "Dokončeno...";
 
-$GLOBALS['strConvertExplaination']		= "\n	V tuto chvíli používáte kompaktní formát statistik, ale stále máte některé statsitiky <br>\n	v datailním formátu. Dokud nebudou deatilní statistiky převedny do kompaktního formátu <br>\n	nebudou zobrazovány při prohlížení této stránky.  <br>\n	Před převodem statistiky si zazálohujte databázi!  <br>\n	Chcete převést deatilní statistiky do kompaktního formátu? <br>\n";
+$GLOBALS['strConvertExplaination']		= "\\n	V tuto chvíli používáte kompaktní formát statistik, ale stále máte některé statsitiky <br>\\n	v datailním formátu. Dokud nebudou deatilní statistiky převedny do kompaktního formátu <br>\\n	nebudou zobrazovány při prohlížení této stránky.  <br>\\n	Před převodem statistiky si zazálohujte databázi!  <br>\\n	Chcete převést deatilní statistiky do kompaktního formátu? <br>\\n";
 
-$GLOBALS['strConvertingExplaination']		= "\n	Všechny zbývající detailní statistiky jsou převáděny do kompaktního formátu. <br>\n	V závislosti na počtu impresí uložených v detailním formátu tato akce může trvat  <br>\n	až několik minut. Prosím vyčkejte na ukončení převodu než navšívíte jiné stráky. <br>\n	Níže máte seznam všech úprav provedených na databázi. <br>\n";
+$GLOBALS['strConvertingExplaination']		= "\\n	Všechny zbývající detailní statistiky jsou převáděny do kompaktního formátu. <br>\\n	V závislosti na počtu impresí uložených v detailním formátu tato akce může trvat  <br>\\n	až několik minut. Prosím vyčkejte na ukončení převodu než navšívíte jiné stráky. <br>\\n	Níže máte seznam všech úprav provedených na databázi. <br>\\n";
 
-$GLOBALS['strConvertFinishedExplaination']  	= "\n	Převod zbývajících detailních statistik byl úspěšný a data by nyní měla být <br>\n	znovu použitelná. Níže máte seznam všech úprav provedených na databázi. <br>\n";
+$GLOBALS['strConvertFinishedExplaination']  	= "\\n	Převod zbývajících detailních statistik byl úspěšný a data by nyní měla být <br>\\n	znovu použitelná. Níže máte seznam všech úprav provedených na databázi. <br>\\n";
+
+//  Maintenace
+$GLOBALS['strAutoMaintenanceDisabled'] = "Automatic maintenance is disabled.";
+$GLOBALS['strAutoMaintenanceEnabled']  = "Automatic maintenance is enabled. For best performance it is advised to <a href='settings-admin.php'>disable automatic maintenance</a>.";
+$GLOBALS['strScheduledMaintenance']         = "Scheduled maintenance seems to be correctly running.";
+$GLOBALS['strScheduledMaintenanceNotRun']   = "Scheduled maintenance hasn't run in the past hour. This may mean that you have not set it up correctly.";
+$GLOBALS['strAutoMaintenanceEnabledNotTriggered']  = "Automatic maintenance is enabled, but it has not been triggered. Note that automatic maintenance is triggered only when Openads delivers banners.";
+$GLOBALS['strAutoMaintenanceBestPerformance']      = "For best performance it is advised to set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>.";
+$GLOBALS['strAutoMaintenanceEnabledWilltTrigger']  = "Automatic maintenance is enabled and will trigger maintenance every hour.";
+$GLOBALS['strAutoMaintenanceDisabledMaintenanceRan'] = "Automatic maintenance is disabled too but a maintenance task has recently run. To make sure that ".MAX_PRODUCT_NAME." works correctly you should either
+ set up <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a> or <a href='settings-admin.php'>enable auto maintenance</a>. ";
+$GLOBALS['strAutoMaintenanceDisabledNotTriggered'] = "Also, automatic maintenance is disabled, so when ".MAX_PRODUCT_NAME." delivers banners, maintenance is not triggered.
+ If you do not plan to run <a href='http://docs.openads.org/openads-2.3-guide/maintenance.html' target='_blank'>scheduled maintenance</a>,
+ you must <a href='settings-admin.php'>enable auto maintenance</a> to ensure that ".MAX_PRODUCT_NAME." works correctly.";
+
+//  Deliver Limitations
+$GLOBALS['strDeliveryLimitations']      = "Delivery Limitations";
+$GLOBALS['strAllBannerChannelCompiled'] = "All banner/channel compiled limitation values have been recompiled";
+$GLOBALS['strBannerChannelResult']      = "Here are the results of the banner/channel compiled limitation validation";
+$GLOBALS['strChannelCompiledLimitationsValid']  = "All channel compiled limitations are valid";
+$GLOBALS['strBannerCompiledLimitationsValid']   = "All banner compiled limitations are valid";
+$GLOBALS['strErrorsFound']              = "Errors found";
+$GLOBALS['strRepairCompiledLimitations']        = "Some inconsistancies were found above, you can repair these using the button below, this will recompile the compiled limitation for every banner/channel in the system<br />";
+$GLOBALS['strRecompile']                = "Recompile";
+$GLOBALS['strDeliveryEngineDisagreeNotice'] = "Under some circumstances the delivery engine can disagree with the stored ACLs for banners and channels, use the folowing link to validate the ACLs in the database";
+$GLOBALS['strCheckACLs'] = "Check ACLs";
 
 
+//  Append codes
+$GLOBALS['strAppendCodesDesc']          = "Under some circumstances the delivery engine can disagree with the stored append codes for trackers, use the folowing link to validate the append codes in the database";
+$GLOBALS['strCheckAppendCodes']         = "Check Append codes";
+$GLOBALS['strAppendCodesRecompiled']    = "All compiled append codes values have been recompiled";
+$GLOBALS['strAppendCodesResult']        = "Here are the results of the compiled append codes validation";
+$GLOBALS['strAppendCodesValid']         = "All tracker compiled appendcodes are valid";
+$GLOBALS['strRepairAppenedCodes']       = "Some inconsistancies were found above, you can repair these using the button below, this will recompile the append codes for every tracker in the system";
 
+$GLOBALS['strPlugins']                  = "Plugins";
+$GLOBALS['strPluginsPrecis']            = "Diagnose and repair problems with " . PRODUCT_NAME . " plugins";
+$GLOBALS['strPluginsOk']                = "No problems found";
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strEncodingConvert'] = "Konvertovat";
+$GLOBALS['strMenus']                    = "Menus";
+$GLOBALS['strMenusPrecis']              = "Rebuild the menu cache";
+$GLOBALS['strMenusCachedOk']            = "Menu cache has been rebuilt";
+$GLOBALS['strMenusCachedErr']           = "Errors while rebuilding Menu cache";
+
 ?>

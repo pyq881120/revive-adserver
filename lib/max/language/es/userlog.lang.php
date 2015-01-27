@@ -16,49 +16,47 @@ $GLOBALS['strDeliveryEngine']				= "Motor de entrega";
 $GLOBALS['strMaintenance']					= "Mantenimiento";
 $GLOBALS['strAdministrator']				= "Administrador";
 
+// Audit
+$GLOBALS['strLogging']                      = "Grabando";
+$GLOBALS['strAudit']                        = "Auditar Registro";
+$GLOBALS['strDebugLog']                     = "Depurar Registro";
+$GLOBALS['strEvent']                        = "Evento";
+$GLOBALS['strTimestamp']                    = "Timestamp";
+$GLOBALS['strDeleted']                      = "borrado";
+$GLOBALS['strInserted']                     = "insertado";
+$GLOBALS['strUpdated']                      = "actualizado";
+$GLOBALS['strDelete']                       = "Delete";
+$GLOBALS['strInsert']                       = "Insertar";
+$GLOBALS['strUpdate']                       = "Actualizar";
+$GLOBALS['strHas']                          = "tiene";
+$GLOBALS['strFilters']                      = "Filtros";
+$GLOBALS['strAdvertiser']                   = "Anunciante";
+$GLOBALS['strPublisher']                    = "Página web";
+$GLOBALS['strCampaign']                     = "Campaign";
+$GLOBALS['strZone']                         = "Zone";
+$GLOBALS['strType']                         = "Tipo";
+$GLOBALS['strAction']                       = "Action";
+$GLOBALS['strParameter']                    = "Parámetro";
+$GLOBALS['strValue']                        = "Valor";
+$GLOBALS['strDetailedView']                 = "Vista detallada";
+$GLOBALS['strReturnAuditTrail']             = "Volver a Audit Trail";
+$GLOBALS['strAuditTrail']                   = "Audit Trail";
+$GLOBALS['strMaintenanceLog']               = "Registro de mantenimiento";
+$GLOBALS['strAuditResultsNotFound']         = "No hay eventos que concuerden con el criterio de selección";
+$GLOBALS['strCollectedAllEvents']           = "Todos los eventos";
+$GLOBALS['strClear']                        = "Limpiar";
 
-$GLOBALS['strUserlog'][phpAds_actionAdvertiserReportMailed] = "Informe para anunciante {id} enviado por e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPublisherReportMailed] = "Informe para página web {id} enviado por e-mail";
-$GLOBALS['strUserlog'][phpAds_actionWarningMailed] = "Aviso de desactivación de campaña {id} enviado vía e-mail";
-$GLOBALS['strUserlog'][phpAds_actionDeactivationMailed] = "Notificación de la desactivación de la campaña {id} enviada por e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPriorityCalculation] = "Prioridades recalculadas";
-$GLOBALS['strUserlog'][phpAds_actionPriorityAutoTargeting] = "Objetivos de Campaña recalculados";
-$GLOBALS['strUserlog'][phpAds_actionDeactiveCampaign] = "Campaña {id} desactivada";
-$GLOBALS['strUserlog'][phpAds_actionActiveCampaign] = "Campaña {id} activada";
-$GLOBALS['strUserlog'][phpAds_actionAutoClean] = "Autolimpieza de la base de datos";
-
-
-
-
-// Note: new translatiosn not found in original lang files but found in CSV
-$GLOBALS['strUserlog']['hpAds_actionBatchStatistic'] = "Estad&iacute;sticas compiladas";
-$GLOBALS['strAudit'] = "Auditar Registro";
-$GLOBALS['strLogging'] = "Grabando";
-$GLOBALS['strDebugLog'] = "Depurar Registro";
-$GLOBALS['strEvent'] = "Evento";
-$GLOBALS['strTimestamp'] = "Timestamp";
-$GLOBALS['strDeleted'] = "borrado";
-$GLOBALS['strInserted'] = "insertado";
-$GLOBALS['strUpdated'] = "actualizado";
-$GLOBALS['strInsert'] = "Insertar";
-$GLOBALS['strUpdate'] = "Actualizar";
-$GLOBALS['strHas'] = "tiene";
-$GLOBALS['strFilters'] = "Filtros";
-$GLOBALS['strAdvertiser'] = "Anunciante";
-$GLOBALS['strPublisher'] = "Página web";
-$GLOBALS['strType'] = "Tipo";
-$GLOBALS['strParameter'] = "Parámetro";
-$GLOBALS['strValue'] = "Valor";
-$GLOBALS['strDetailedView'] = "Vista detallada";
-$GLOBALS['strReturnAuditTrail'] = "Volver a Audit Trail";
-$GLOBALS['strAuditTrail'] = "Audit Trail";
-$GLOBALS['strMaintenanceLog'] = "Registro de mantenimiento";
-$GLOBALS['strAuditResultsNotFound'] = "No hay eventos que concuerden con el criterio de selección";
-$GLOBALS['strCollectedAllEvents'] = "Todos los eventos";
-$GLOBALS['strClear'] = "Limpiar";
-
-
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strUserlog'][phpAds_actionBatchStatistics] = "Estadísticas compiladas";
+$GLOBALS['strUserlog'] = array (
+	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",
+	phpAds_actionActiveCampaign				=> "Campaign {id} activated",
+	phpAds_actionAutoClean					=> "Auto clean of database",
+	phpAds_actionBatchStatistics			=> "Statistics compiled",
+	phpAds_actionDeactivationMailed			=> "Deactivation notification for campaign {id} send by email",
+	phpAds_actionDeactiveCampaign			=> "Campaign {id} deactivated",
+	phpAds_actionPriorityCalculation		=> "Priority recalculated",
+	phpAds_actionPublisherReportMailed 		=> "Report for website {id} send by email",
+	phpAds_actionWarningMailed				=> "Deactivation warning for campaign {id} send by email"
+);
 $GLOBALS['strUserlog'][phpAds_actionActivationMailed] = "Notificación de activación de la campaña {id} enviada por e-mail";
+
 ?>

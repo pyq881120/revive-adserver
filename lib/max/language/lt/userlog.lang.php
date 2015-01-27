@@ -10,44 +10,53 @@
 +---------------------------------------------------------------------------+
 */
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strMaintenance'] = "Aptarnavimas";
-$GLOBALS['strDelete'] = "Ištrinti";
-$GLOBALS['strAction'] = "Veiksmas";
-$GLOBALS['strAdvertiser'] = "Reklamos skelbėjas";
-$GLOBALS['strCampaign'] = "Kampanija";
-$GLOBALS['strPublisher'] = "Internetinis puslapis";
-$GLOBALS['strZone'] = "Zona";
-$GLOBALS['strType'] = "Tipas";
-$GLOBALS['strDeliveryEngine'] = "Pristatymo variklis";
-$GLOBALS['strAdministrator'] = "Administratorius";
-$GLOBALS['strUserlog'][phpAds_actionWarningMailed] = "Deaktyvacijos įspejimas kampanijai {id} išsiųstas el. paštu";
-$GLOBALS['strUserlog'][phpAds_actionAdvertiserReportMailed] = "Ataskaita reklamuotojui {id} išsiųsta el. paštu";
-$GLOBALS['strUserlog'][phpAds_actionActiveCampaign] = "Kampanija {id} aktyvuota";
-$GLOBALS['strUserlog'][phpAds_actionAutoClean] = "Automatinis duomenų bazės išvalymas";
-$GLOBALS['strUserlog'][phpAds_actionBatchStatistics] = "Kompiliuoti statistiką";
-$GLOBALS['strUserlog'][phpAds_actionDeactivationMailed] = "Deaktyvacijos pranešimas apie kampaniją {id} išsiųstas el. paštu";
-$GLOBALS['strUserlog'][phpAds_actionDeactiveCampaign] = "Kampanija {id} deaktyvuota";
-$GLOBALS['strUserlog'][phpAds_actionPriorityCalculation] = "Pirmenybės perskaičiuotos";
-$GLOBALS['strUserlog'][phpAds_actionPublisherReportMailed] = "Ataskaita internetiniam puslapiui {id} išsiųsta el. paštu";
-$GLOBALS['strLogging'] = "Prisijungiama";
-$GLOBALS['strAudit'] = "Patikrinimo registras";
-$GLOBALS['strEvent'] = "Įvykis";
-$GLOBALS['strDeleted'] = "ištrintas";
-$GLOBALS['strInserted'] = "įterptas";
-$GLOBALS['strUpdated'] = "atnaujintas";
-$GLOBALS['strInsert'] = "Įterpti";
-$GLOBALS['strUpdate'] = "Atnaujinti";
-$GLOBALS['strHas'] = "turi";
-$GLOBALS['strFilters'] = "Filtrai";
-$GLOBALS['strParameter'] = "Parametrai";
-$GLOBALS['strValue'] = "Vertė";
-$GLOBALS['strDetailedView'] = "Detalus vaizdas";
-$GLOBALS['strReturnAuditTrail'] = "Grįžti prie Audit Trail";
-$GLOBALS['strAuditTrail'] = "Audit trail";
-$GLOBALS['strMaintenanceLog'] = "techninio aptarnavimo registras";
-$GLOBALS['strAuditResultsNotFound'] = "Jokių įvykių pagal įvestus kriterijus nerasta";
-$GLOBALS['strCollectedAllEvents'] = "Visi įvykiai";
-$GLOBALS['strClear'] = "Ištrinti";
+// Set translation strings
+
+$GLOBALS['strDeliveryEngine']				= "Pristatymo variklis";
+$GLOBALS['strMaintenance']					= "Aptarnavimas";
+$GLOBALS['strAdministrator']				= "Administratorius";
+
+// Audit
+$GLOBALS['strLogging']                      = "Prisijungiama";
+$GLOBALS['strAudit']                        = "Patikrinimo registras";
+$GLOBALS['strDebugLog']                     = "Debug Log";
+$GLOBALS['strEvent']                        = "Įvykis";
+$GLOBALS['strTimestamp']                    = "Timestamp";
+$GLOBALS['strDeleted']                      = "ištrintas";
+$GLOBALS['strInserted']                     = "įterptas";
+$GLOBALS['strUpdated']                      = "atnaujintas";
+$GLOBALS['strDelete']                       = "Ištrinti";
+$GLOBALS['strInsert']                       = "Įterpti";
+$GLOBALS['strUpdate']                       = "Atnaujinti";
+$GLOBALS['strHas']                          = "turi";
+$GLOBALS['strFilters']                      = "Filtrai";
+$GLOBALS['strAdvertiser']                   = "Reklamos skelbėjas";
+$GLOBALS['strPublisher']                    = "Internetinis puslapis";
+$GLOBALS['strCampaign']                     = "Kampanija";
+$GLOBALS['strZone']                         = "Zona";
+$GLOBALS['strType']                         = "Tipas";
+$GLOBALS['strAction']                       = "Veiksmas";
+$GLOBALS['strParameter']                    = "Parametrai";
+$GLOBALS['strValue']                        = "Vertė";
+$GLOBALS['strDetailedView']                 = "Detalus vaizdas";
+$GLOBALS['strReturnAuditTrail']             = "Grįžti prie Audit Trail";
+$GLOBALS['strAuditTrail']                   = "Audit trail";
+$GLOBALS['strMaintenanceLog']               = "techninio aptarnavimo registras";
+$GLOBALS['strAuditResultsNotFound']         = "Jokių įvykių pagal įvestus kriterijus nerasta";
+$GLOBALS['strCollectedAllEvents']           = "Visi įvykiai";
+$GLOBALS['strClear']                        = "Ištrinti";
+
+$GLOBALS['strUserlog'] = array (
+	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",
+	phpAds_actionActiveCampaign				=> "Campaign {id} activated",
+	phpAds_actionAutoClean					=> "Auto clean of database",
+	phpAds_actionBatchStatistics			=> "Statistics compiled",
+	phpAds_actionDeactivationMailed			=> "Deactivation notification for campaign {id} send by email",
+	phpAds_actionDeactiveCampaign			=> "Campaign {id} deactivated",
+	phpAds_actionPriorityCalculation		=> "Priority recalculated",
+	phpAds_actionPublisherReportMailed 		=> "Report for website {id} send by email",
+	phpAds_actionWarningMailed				=> "Deactivation warning for campaign {id} send by email"
+);
 $GLOBALS['strUserlog'][phpAds_actionActivationMailed] = "Aktyvacijos pranešimas apie kampaniją {id} išsiųstas el. paštu";
+
 ?>

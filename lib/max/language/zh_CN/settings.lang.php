@@ -14,7 +14,7 @@
 $GLOBALS['strInstall']                      = "Install";
 $GLOBALS['strChooseInstallLanguage']        = "Choose language for the installation procedure";
 $GLOBALS['strLanguageSelection']            = "Language Selection";
-$GLOBALS['strDatabaseSettings']             = "Database Settings";
+$GLOBALS['strDatabaseSettings']             = "数据库";
 $GLOBALS['strAdminSettings']                = "Administrator Settings";
 $GLOBALS['strAdminAccount']                 = "Administrator Account";
 $GLOBALS['strAdministrativeSettings']       = "Administrative Settings";
@@ -136,9 +136,10 @@ $GLOBALS['strServiceUnavalable']            = "The service is temporarily unavai
 
 // Global
 $GLOBALS['strChooseSection']                         = "Choose Section";
-$GLOBALS['strEditConfigNotPossible']                 = "出于安全考虑，配置文件已经锁定。目前禁止更新任何系统设置。".
+$GLOBALS['strEditConfigNotPossible']                 = "It is not possible to edit all settings because the configuration file is locked for security reasons. ".
                                                        "If you want to make changes, you may need to unlock the configuration file for this installation first.";
-$GLOBALS['strEditConfigPossible']                    = "配置文件已经解除锁定，系统设置可以按您的需要进行更新。但是这可能会带来安全隐患。如果您希望提高安全性，请将配置文件设置为只读。";
+$GLOBALS['strEditConfigPossible']                    = "It is possible to edit all settings because the configuration file is not locked, but this could lead to security issues. ".
+                                                       "If you want to secure your system, you need to lock the configuration file for this installation.";
 $GLOBALS['strUnableToWriteConfig']                   = "Unable to write changes to the config file";
 $GLOBALS['strUnableToWritePrefs']                    = "Unable to commit preferences to the database";
 $GLOBALS['strImageDirLockedDetected']	             = "The supplied <b>Images Folder</b> is not writeable by the server. <br>You can't proceed until you either change permissions of the folder or create the folder.";
@@ -287,6 +288,8 @@ $GLOBALS['strDeliveryFilenamesXMLRPC']               = "XML RPC Invocation";
 $GLOBALS['strDeliveryFilenamesLocal']                = "Local Invocation";
 $GLOBALS['strDeliveryFilenamesFrontController']      = "Front Controller";
 $GLOBALS['strDeliveryFilenamesFlash']                = "Flash Include (Can be a full URL)";
+$GLOBALS['strDeliveryFilenamesSinglePageCall']       = "Single Page Call";
+$GLOBALS['strDeliveryFilenamesSinglePageCallJS']     = "Single Page Call (JavaScript)";
 $GLOBALS['strDeliveryCaching']                       = "素材缓存";
 $GLOBALS['strDeliveryCacheLimit']                    = "更新间隔（秒）";
 $GLOBALS['strDeliveryCacheStore']                    = "存储类型";
@@ -436,6 +439,7 @@ $GLOBALS['strMaintenanceOI']                         = "Maintenance Operation In
 $GLOBALS['strMaintenanceOIError']                    = "The Maintenace Operation Interval is not valid - see documentation for valid values";
 $GLOBALS['strPrioritySettings']                      = "Priority Settings";
 $GLOBALS['strPriorityInstantUpdate']                 = "Update advertisement priorities immediately when changes made in the UI";
+$GLOBALS['strPriorityIntentionalOverdelivery']       = "Intentionally over-deliver Contract Campaigns<br />(% over-delivery)";
 $GLOBALS['strDefaultImpConWindow']                   = "Default Ad Impression Connection Window (seconds)";
 $GLOBALS['strDefaultImpConWindowError']              = "If set, the Default Ad Impression Connection Window must be a positive integer";
 $GLOBALS['strDefaultCliConWindow']                   = "Default Ad Click Connection Window (seconds)";
@@ -473,6 +477,7 @@ $GLOBALS['strGuiHeaderForegroundColor']              = "页眉前景色";
 $GLOBALS['strGuiHeaderBackgroundColor']              = "页眉背景色";
 $GLOBALS['strGuiActiveTabColor']                     = "激活标签颜色";
 $GLOBALS['strGuiHeaderTextColor']                    = "页眉文本颜色";
+$GLOBALS['strGuiSupportLink']                        = "Custom URL for 'Support' link in header";
 $GLOBALS['strColorError']                            = "请按 RGB 格式输入，例如“0066CC”";
 
 $GLOBALS['strGzipContentCompression']                = "使用 GZIP 压缩";

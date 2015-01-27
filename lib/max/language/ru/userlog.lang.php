@@ -16,27 +16,47 @@ $GLOBALS['strDeliveryEngine']				= "Движок доставки";
 $GLOBALS['strMaintenance']					= "Обслуживание";
 $GLOBALS['strAdministrator']				= "Администратор";
 
+// Audit
+$GLOBALS['strLogging']                      = "Logging";
+$GLOBALS['strAudit']                        = "Audit Log";
+$GLOBALS['strDebugLog']                     = "Debug Log";
+$GLOBALS['strEvent']                        = "Event";
+$GLOBALS['strTimestamp']                    = "Timestamp";
+$GLOBALS['strDeleted']                      = "deleted";
+$GLOBALS['strInserted']                     = "inserted";
+$GLOBALS['strUpdated']                      = "updated";
+$GLOBALS['strDelete']                       = "Delete";
+$GLOBALS['strInsert']                       = "Insert";
+$GLOBALS['strUpdate']                       = "Update";
+$GLOBALS['strHas']                          = "содержит";
+$GLOBALS['strFilters']                      = "Filters";
+$GLOBALS['strAdvertiser']                   = "Advertiser";
+$GLOBALS['strPublisher']                    = "Вебсайт";
+$GLOBALS['strCampaign']                     = "Campaign";
+$GLOBALS['strZone']                         = "Zone";
+$GLOBALS['strType']                         = "Type";
+$GLOBALS['strAction']                       = "Action";
+$GLOBALS['strParameter']                    = "Parameter";
+$GLOBALS['strValue']                        = "Value";
+$GLOBALS['strDetailedView']                 = "Detailed View";
+$GLOBALS['strReturnAuditTrail']             = "Return to Audit Trail";
+$GLOBALS['strAuditTrail']                   = "Audit trail";
+$GLOBALS['strMaintenanceLog']               = "Maintenance log";
+$GLOBALS['strAuditResultsNotFound']         = "No events found matching the selected criteria";
+$GLOBALS['strCollectedAllEvents']           = "All events";
+$GLOBALS['strClear']                        = "Clear";
 
-$GLOBALS['strUserlog'][phpAds_actionAdvertiserReportMailed] = "Отчет для клиента {id} отправлен по e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPublisherReportMailed] = "Отчет для сайта {id} отправлен по e-mail";
-$GLOBALS['strUserlog'][phpAds_actionWarningMailed] = "Предупреждение о деактивации кампании {id} отослано по электронной почте";
-$GLOBALS['strUserlog'][phpAds_actionDeactivationMailed] = "Уведомление об остановке кампании {id} отправлено по e-mail";
-$GLOBALS['strUserlog'][phpAds_actionPriorityCalculation] = "Приоритеты пересчитаны";
-$GLOBALS['strUserlog'][phpAds_actionPriorityAutoTargeting] = "Цели кампании пересчитаны";
-$GLOBALS['strUserlog'][phpAds_actionDeactiveCampaign] = "Кампания {id} остановлена";
-$GLOBALS['strUserlog'][phpAds_actionActiveCampaign] = "Кампания {id} активирована";
-$GLOBALS['strUserlog'][phpAds_actionAutoClean] = "Авто-очистка БД";
-
-
-
-
-// Note: new translatiosn not found in original lang files but found in CSV
-$GLOBALS['strUserlog']['hpAds_actionBatchStatistic'] = "Статистика обработана";
-
-
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strPublisher'] = "Вебсайт";
-$GLOBALS['strUserlog'][phpAds_actionBatchStatistics] = "Статистика обработана";
-$GLOBALS['strHas'] = "содержит";
+$GLOBALS['strUserlog'] = array (
+	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",
+	phpAds_actionActiveCampaign				=> "Campaign {id} activated",
+	phpAds_actionAutoClean					=> "Auto clean of database",
+	phpAds_actionBatchStatistics			=> "Statistics compiled",
+	phpAds_actionDeactivationMailed			=> "Deactivation notification for campaign {id} send by email",
+	phpAds_actionDeactiveCampaign			=> "Campaign {id} deactivated",
+	phpAds_actionPriorityCalculation		=> "Priority recalculated",
+	phpAds_actionPublisherReportMailed 		=> "Report for website {id} send by email",
+	phpAds_actionWarningMailed				=> "Deactivation warning for campaign {id} send by email"
+);
 $GLOBALS['strUserlog'][phpAds_actionActivationMailed] = "Уведомление активации кампании {id} отправлено по e-mail";
+
 ?>

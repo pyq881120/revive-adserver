@@ -10,41 +10,36 @@
 +---------------------------------------------------------------------------+
 */
 
-// Invocation Types
-$GLOBALS['strInvocationRemote']			= "Uzak Yardım";
-$GLOBALS['strInvocationJS']			= "Javascript için uzak yardım";
-$GLOBALS['strInvocationIframes']		= "Frameler için uzak yardım";
-$GLOBALS['strInvocationXmlRpc']			= "XML-RPC kullanan uzak yardım";
-$GLOBALS['strInvocationCombined']		= "Birleştirilmiş uzak yardım";
-$GLOBALS['strInvocationPopUp']			= "Pop-up";
-$GLOBALS['strInvocationAdLayer']		= "Yüzen DHTML";
-$GLOBALS['strInvocationLocal']			= "Yerel kip";
-
-
 // Other
-$GLOBALS['strCopyToClipboard']			= "Panoya kopyala";
-
+$GLOBALS['strCopyToClipboard']                      = "Panoya kopyala";
+$GLOBALS['strCopy']                                 = "kopyala";
+$GLOBALS['strChooseTypeOfInvocation']               = "Lütfen banner çağırma tipini seçiniz";
+$GLOBALS['strChooseTypeOfBannerInvocation']         = "Lütfen banner çağırma tipini seçiniz";
 
 // Measures
-$GLOBALS['strAbbrPixels']			= "px";
-$GLOBALS['strAbbrSeconds']			= "sec";
-
+$GLOBALS['strAbbrPixels']                           = "px";
+$GLOBALS['strAbbrSeconds']                          = "sec";
 
 // Common Invocation Parameters
-$GLOBALS['strInvocationWhat']			= "Banner seçimi";
-$GLOBALS['strInvocationClientID']		= "Reklamcılar veya Kampanyalar";
-$GLOBALS['strInvocationTarget']			= "Hedef çerçeve";
-$GLOBALS['strInvocationSource']			= "Kaynak";
-$GLOBALS['strInvocationWithText']		= "Banner altında yazı göster";
-$GLOBALS['strInvocationDontShowAgain']		= "Aynı sayfada bannerı tekrar gösterme";
-$GLOBALS['strInvocationTemplate'] 		= "Şablon içerisinde kullanım için bannerı bir değişken içinde sakla.";
-
+$GLOBALS['strInvocationWhat']                       = "Banner seçimi";
+$GLOBALS['strInvocationPreview']                    = "Banner preview";
+$GLOBALS['strInvocationClientID']                   = "Reklamcılar veya Kampanyalar";
+$GLOBALS['strInvocationCampaignID']                 = "Kampanya";
+$GLOBALS['strInvocationTarget']                     = "Hedef çerçeve";
+$GLOBALS['strInvocationSource']                     = "Kaynak";
+$GLOBALS['strInvocationWithText']                   = "Banner altında yazı göster";
+$GLOBALS['strInvocationDontShowAgain']              = "Aynı sayfada bannerı tekrar gösterme";
+$GLOBALS['strInvocationDontShowAgainCampaign']      = "Aynı sayfada aynı kampanyadan başka bir banner gösterme";
+$GLOBALS['strInvocationTemplate']                   = "Şablon içerisinde kullanım için bannerı bir değişken içinde sakla.";
+$GLOBALS['strInvocationBannerID']                   = "Banner ID";
+$GLOBALS['strInvocationComments']                   = "Yorumlarla birlikte";
 
 // Iframe
-$GLOBALS['strIFrameRefreshAfter']		= "Şu zaman sonunda yenile";
-$GLOBALS['strIframeResizeToBanner']		= "Çerçeveyi banner ölçüsüne göre yeniden boyutlandır";
-$GLOBALS['strIframeMakeTransparent']		= "Çerçeveyi şeffaf yap";
-$GLOBALS['strIframeIncludeNetscape4']		= "Netscape 4 uyumlu ilayer kullan";
+$GLOBALS['strIFrameRefreshAfter']                   = "Şu zaman sonunda yenile";
+$GLOBALS['strIframeResizeToBanner']                 = "Çerçeveyi banner ölçüsüne göre yeniden boyutlandır";
+$GLOBALS['strIframeMakeTransparent']                = "Çerçeveyi şeffaf yap";
+$GLOBALS['strIframeIncludeNetscape4']               = "Netscape 4 uyumlu ilayer kullan";
+$GLOBALS['strIframeGoogleClickTracking']            = "Include code to track Google AdSense clicks";
 
 
 // PopUp
@@ -58,10 +53,19 @@ $GLOBALS['strPopUpAfterSec']			= "Sonra";
 $GLOBALS['strAutoCloseAfter']			= "Süre sonra otomatik kapat";
 $GLOBALS['strPopUpTop']				= "Başlangıç konumu (üst)";
 $GLOBALS['strPopUpLeft']			= "Başlangıç konumu (sol)";
+$GLOBALS['strWindowOptions']		= "Window options";
+$GLOBALS['strShowToolbars']			= "Toolbars";
+$GLOBALS['strShowLocation']			= "Location";
+$GLOBALS['strShowMenubar']			= "Menubar";
+$GLOBALS['strShowStatus']			= "Status";
+$GLOBALS['strWindowResizable']		= "Resizable";
+$GLOBALS['strShowScrollbars']		= "Scrollbars";
 
 
 // XML-RPC
-$GLOBALS['strXmlRpcLanguage']			= "Sunucu Dili";
+$GLOBALS['strXmlRpcLanguage']       = "Sunucu Dili";
+$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
+$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -102,21 +106,49 @@ $GLOBALS['strLeftMargin']			= "Left margin";
 $GLOBALS['strRightMargin']			= "Right margin";
 $GLOBALS['strTransparentBackground']		= "Transparan zemin";
 
-
-$GLOBALS['strAdLayerStyleName']['geocities'] = "GeocitiesBasitGelişigüzelYüzen";
-$GLOBALS['strAdLayerStyleName']['simple'] = "Basit";
-$GLOBALS['strAdLayerStyleName']['cursor'] = "Gelişigüzel";
-$GLOBALS['strAdLayerStyleName']['floater'] = "Yüzen";
-
+$GLOBALS['strSmoothMovement']		= "Smooth movement";
+$GLOBALS['strHideNotMoving']		= "Hide the banner when the cursor is not moving";
+$GLOBALS['strHideDelay']			= "Delay before banner is hidden";
+$GLOBALS['strHideTransparancy']		= "Transparancy of the hidden banner";
 
 
+$GLOBALS['strAdLayerStyleName']	= array(
+	'geocities'		=> "GeocitiesBasitGelişigüzelYüzen",
+	'simple'		=> "Basit",
+	'cursor'		=> "Gelişigüzel",
+	'floater'		=> "Yüzen"
+);
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strInvocationCampaignID'] = "Kampanya";
-$GLOBALS['strCopy'] = "kopyala";
-$GLOBALS['strInvocationDontShowAgainCampaign'] = "Aynı sayfada aynı kampanyadan başka bir banner gösterme";
-$GLOBALS['strInvocationBannerID'] = "Banner ID";
-$GLOBALS['strInvocationComments'] = "Yorumlarla birlikte";
-$GLOBALS['strChooseTypeOfInvocation'] = "Lütfen banner çağırma tipini seçiniz";
-$GLOBALS['strChooseTypeOfBannerInvocation'] = "Lütfen banner çağırma tipini seçiniz";
+// Support for 3rd party server clicktracking
+$GLOBALS['str3rdPartyTrack']		 = "Support 3rd Party Server Clicktracking";
+
+// Support for cachebusting code
+$GLOBALS['strCacheBuster']		    = "Insert Cache-Busting code";
+
+// Non-Img creatives Warning for zone image-only invocation
+$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
+$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
+
+// unkown HTML tag type Warning for zone invocation
+$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
+
+// sql/web banner-type warning for clickonly zone invocation
+$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
+<br /> 1) Download the banner:";
+$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
+$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
+
+// IMG invocation selected for tracker with appended code
+$GLOBALS['strWarning'] = "Warning";
+$GLOBALS['strImgWithAppendWarning'] = "This tracker has appended code, appended code will <strong>only</strong> work with JavaScript tags";
+
+// Local Invocation
+$GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Warning:</strong> Local mode invocation will ONLY work if the site calling the code
+ is on the same physical machine as the adserver</span><br />
+Check that the MAX_PATH defined in the code below points to the base directory of your MAX installation<br />
+and that you have a config file for the domain of the site showing the ads (in MAX_PATH/var)";
+
+$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+
 ?>

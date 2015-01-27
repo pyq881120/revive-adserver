@@ -10,45 +10,36 @@
 +---------------------------------------------------------------------------+
 */
 
-// Invocation Types
-$GLOBALS['strInvocationRemote']			= "Vzdálené volání";
-$GLOBALS['strInvocationRemoteNoCookies']	= "Vzdálené volání - bez cookies";
-$GLOBALS['strInvocationJS']			= "Vzdálené volání Javascriptem";
-$GLOBALS['strInvocationIframes']		= "Vzdálené volání pomocí Frames";
-$GLOBALS['strInvocationXmlRpc']			= "Vzdálené volání pomocí XML-RPC";
-$GLOBALS['strInvocationCombined']		= "Kombinované vzdálené volání";
-$GLOBALS['strInvocationPopUp']			= "Pop-up";
-$GLOBALS['strInvocationAdLayer']		= "Interstitial nebo plovoucí DHTML";
-$GLOBALS['strInvocationLocal']			= "Lokální mód";
-
-
 // Other
-$GLOBALS['strCopyToClipboard']			= "Kopírovat do schránky";
-
+$GLOBALS['strCopyToClipboard']                      = "Kopírovat do schránky";
+$GLOBALS['strCopy']                                 = "copy";
+$GLOBALS['strChooseTypeOfInvocation']               = "Prosím zvolte typ volání banneru";
+$GLOBALS['strChooseTypeOfBannerInvocation']         = "Prosím zvolte typ volání banneru";
 
 // Measures
-$GLOBALS['strAbbrPixels']			= "px";
-$GLOBALS['strAbbrSeconds']			= "vteřin";
-
+$GLOBALS['strAbbrPixels']                           = "px";
+$GLOBALS['strAbbrSeconds']                          = "vteřin";
 
 // Common Invocation Parameters
-$GLOBALS['strInvocationWhat']			= "Volba banneru";
-$GLOBALS['strInvocationClientID']		= "Inzerent";
-$GLOBALS['strInvocationCampaignID']			= "Skrytá kampaň";
-$GLOBALS['strInvocationTarget']			= "Cílový frame";
-$GLOBALS['strInvocationSource']			= "Zdroj";
-$GLOBALS['strInvocationWithText']		= "Zobrazit text pod bannerem";
-$GLOBALS['strInvocationDontShowAgain']		= "Nezobrazovat banner znova na stejné stránce";
-$GLOBALS['strInvocationDontShowAgainCampaign']		= "Nezobrazovat banner ze stejné kampaně znova na stejné stránce";
-$GLOBALS['strInvocationTemplate'] 		= "Uložit banner v proměnné aby mohl být použit v šabloně";
-$GLOBALS['strInvocationBannerID']					= "ID banneru";
-
+$GLOBALS['strInvocationWhat']                       = "Volba banneru";
+$GLOBALS['strInvocationPreview']                    = "Banner preview";
+$GLOBALS['strInvocationClientID']                   = "Inzerent";
+$GLOBALS['strInvocationCampaignID']                 = "Skrytá kampaň";
+$GLOBALS['strInvocationTarget']                     = "Cílový frame";
+$GLOBALS['strInvocationSource']                     = "Zdroj";
+$GLOBALS['strInvocationWithText']                   = "Zobrazit text pod bannerem";
+$GLOBALS['strInvocationDontShowAgain']              = "Nezobrazovat banner znova na stejné stránce";
+$GLOBALS['strInvocationDontShowAgainCampaign']      = "Nezobrazovat banner ze stejné kampaně znova na stejné stránce";
+$GLOBALS['strInvocationTemplate']                   = "Uložit banner v proměnné aby mohl být použit v šabloně";
+$GLOBALS['strInvocationBannerID']                   = "ID banneru";
+$GLOBALS['strInvocationComments']                   = "Include comments";
 
 // Iframe
-$GLOBALS['strIFrameRefreshAfter']		= "Obnovit po";
-$GLOBALS['strIframeResizeToBanner']		= "Zmenit velikost iframe podle banneru";
-$GLOBALS['strIframeMakeTransparent']		= "Udělat iframe průhledný";
-$GLOBALS['strIframeIncludeNetscape4']		= "Vložit Nestcape 4 kompatibilní ilayer";
+$GLOBALS['strIFrameRefreshAfter']                   = "Obnovit po";
+$GLOBALS['strIframeResizeToBanner']                 = "Zmenit velikost iframe podle banneru";
+$GLOBALS['strIframeMakeTransparent']                = "Udělat iframe průhledný";
+$GLOBALS['strIframeIncludeNetscape4']               = "Vložit Nestcape 4 kompatibilní ilayer";
+$GLOBALS['strIframeGoogleClickTracking']            = "Include code to track Google AdSense clicks";
 
 
 // PopUp
@@ -72,7 +63,9 @@ $GLOBALS['strShowScrollbars']		= "Skrolovatelný";
 
 
 // XML-RPC
-$GLOBALS['strXmlRpcLanguage']			= "Jazyk hostitele";
+$GLOBALS['strXmlRpcLanguage']       = "Jazyk hostitele";
+$GLOBALS['strXmlRpcProtocol']       = "Use HTTPS to contact XML-RPC Server";
+$GLOBALS['strXmlRpcTimeout']        = "XML-RPC Timeout (Seconds)";
 
 
 // AdLayer
@@ -119,18 +112,43 @@ $GLOBALS['strHideDelay']			= "Prodleva před skrytím banneru";
 $GLOBALS['strHideTransparancy']		= "Průhlednost skrytého banneru";
 
 
-$GLOBALS['strAdLayerStyleName']['geocities'] = "GeocitiesJednoduchýKursorPlovoucí";
-$GLOBALS['strAdLayerStyleName']['simple'] = "Jednoduchý";
-$GLOBALS['strAdLayerStyleName']['cursor'] = "Kursor";
-$GLOBALS['strAdLayerStyleName']['floater'] = "Plovoucí";
-
+$GLOBALS['strAdLayerStyleName']	= array(
+	'geocities'		=> "GeocitiesJednoduchýKursorPlovoucí",
+	'simple'		=> "Jednoduchý",
+	'cursor'		=> "Kursor",
+	'floater'		=> "Plovoucí"
+);
 
 // Support for 3rd party server clicktracking
-$GLOBALS['str3rdPartyTrack']		= "Podpora pro sledování kliknutí serverů 3tích stran";
+$GLOBALS['str3rdPartyTrack']		 = "Podpora pro sledování kliknutí serverů 3tích stran";
 
+// Support for cachebusting code
+$GLOBALS['strCacheBuster']		    = "Insert Cache-Busting code";
 
+// Non-Img creatives Warning for zone image-only invocation
+$GLOBALS['strNonImgWarningZone']	= "Warning: There are banners attached to this zone which are not images. These banners will not be rotated using this tag.";
+$GLOBALS['strNonImgWarning']        = "Warning: This tag will not work because this banner is not an image.";
 
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strChooseTypeOfInvocation'] = "Prosím zvolte typ volání banneru";
-$GLOBALS['strChooseTypeOfBannerInvocation'] = "Prosím zvolte typ volání banneru";
+// unkown HTML tag type Warning for zone invocation
+$GLOBALS['strUnknHtmlWarning']      = "Warning: This banner is an unkown HTML ad format.";
+
+// sql/web banner-type warning for clickonly zone invocation
+$GLOBALS['strWebBannerWarning']     = "Warning: This banner must be downloaded and you must notify us the correct URL for the banner.
+<br /> 1) Download the banner:";
+$GLOBALS['strDwnldWebBanner']       = "Right-click here and choose Save Target As";
+$GLOBALS['strWebBannerWarning2']    = "<br /> 2) Upload the banner to your webserver and write its location here: ";
+
+// IMG invocation selected for tracker with appended code
+$GLOBALS['strWarning'] = "Warning";
+$GLOBALS['strImgWithAppendWarning'] = "This tracker has appended code, appended code will <strong>only</strong> work with JavaScript tags";
+
+// Local Invocation
+$GLOBALS['strWarningLocalInvocation'] = "<span class='tab-s'><strong>Warning:</strong> Local mode invocation will ONLY work if the site calling the code
+ is on the same physical machine as the adserver</span><br />
+Check that the MAX_PATH defined in the code below points to the base directory of your MAX installation<br />
+and that you have a config file for the domain of the site showing the ads (in MAX_PATH/var)";
+
+$GLOBALS['strIABNoteLocalInvocation'] = "<b>Note:</b> Impression data generated from using Local Mode invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+$GLOBALS['strIABNoteXMLRPCInvocation'] = "<b>Note:</b> Impression data generated from using XML-RPC invocation tags are not compliant with IAB guidelines for ad impression measurements.";
+
 ?>

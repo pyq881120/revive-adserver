@@ -13,47 +13,50 @@
 // Set translation strings
 
 $GLOBALS['strDeliveryEngine']				= "Dostarczanie";
-$GLOBALS['strMaintenance']				= "Utrzymanie";
+$GLOBALS['strMaintenance']					= "Utrzymanie";
 $GLOBALS['strAdministrator']				= "Administrator";
 
+// Audit
+$GLOBALS['strLogging']                      = "Protokołowanie";
+$GLOBALS['strAudit']                        = "Log Audytu";
+$GLOBALS['strDebugLog']                     = "Log debugowania";
+$GLOBALS['strEvent']                        = "Zdarzenie";
+$GLOBALS['strTimestamp']                    = "Znacznik czasowy";
+$GLOBALS['strDeleted']                      = "usunięto";
+$GLOBALS['strInserted']                     = "dodano";
+$GLOBALS['strUpdated']                      = "aktualizowano";
+$GLOBALS['strDelete']                       = "Delete";
+$GLOBALS['strInsert']                       = "Dodaj";
+$GLOBALS['strUpdate']                       = "Aktualizuj";
+$GLOBALS['strHas']                          = "has";
+$GLOBALS['strFilters']                      = "Filtry";
+$GLOBALS['strAdvertiser']                   = "Reklamodawca";
+$GLOBALS['strPublisher']                    = "Strona";
+$GLOBALS['strCampaign']                     = "Campaign";
+$GLOBALS['strZone']                         = "Zone";
+$GLOBALS['strType']                         = "Typ";
+$GLOBALS['strAction']                       = "Action";
+$GLOBALS['strParameter']                    = "Parametr";
+$GLOBALS['strValue']                        = "Wartość";
+$GLOBALS['strDetailedView']                 = "Szczegóły";
+$GLOBALS['strReturnAuditTrail']             = "Powrót do Audytu";
+$GLOBALS['strAuditTrail']                   = "Audyt";
+$GLOBALS['strMaintenanceLog']               = "Log konserwacji";
+$GLOBALS['strAuditResultsNotFound']         = "Brak wyników dla wybranych kryteriów.";
+$GLOBALS['strCollectedAllEvents']           = "Wszystkie wyniki";
+$GLOBALS['strClear']                        = "Wyczyść";
 
-$GLOBALS['strUserlog'][phpAds_actionAdvertiserReportMailed] = "Raport dla reklamodawcy {id} został wysłany e-mailem";
-$GLOBALS['strUserlog'][phpAds_actionPublisherReportMailed] = "Raport dla wydawcy {id} wysłany e-mailem";
-$GLOBALS['strUserlog'][phpAds_actionWarningMailed] = "Ostrzeżenie o deaktywacji kampanii {id} zostało wysłane emailem";
-$GLOBALS['strUserlog'][phpAds_actionDeactivationMailed] = "Informacja o dezaktywacji kampanii {id} została wysłana e-mailem";
-$GLOBALS['strUserlog'][phpAds_actionPriorityCalculation] = "Priorytety przeliczone";
-$GLOBALS['strUserlog'][phpAds_actionPriorityAutoTargeting] = "Cele kampanii przeliczone";
-$GLOBALS['strUserlog'][phpAds_actionDeactiveCampaign] = "Kampania {id} została dezaktywowana";
-$GLOBALS['strUserlog'][phpAds_actionActiveCampaign] = "Kampania {id} została aktywowana";
-$GLOBALS['strUserlog'][phpAds_actionAutoClean] = "Automatyczne czyszczenie bazy danych";
-
-
-
-
-// Note: New translations not found in original lang files but found in CSV
-$GLOBALS['strAdvertiser'] = "Reklamodawca";
-$GLOBALS['strPublisher'] = "Strona";
-$GLOBALS['strType'] = "Typ";
-$GLOBALS['strUserlog'][phpAds_actionBatchStatistics] = "Zestwienie statystyk";
-$GLOBALS['strLogging'] = "Protokołowanie";
-$GLOBALS['strAudit'] = "Log Audytu";
-$GLOBALS['strDebugLog'] = "Log debugowania";
-$GLOBALS['strEvent'] = "Zdarzenie";
-$GLOBALS['strTimestamp'] = "Znacznik czasowy";
-$GLOBALS['strDeleted'] = "usunięto";
-$GLOBALS['strInserted'] = "dodano";
-$GLOBALS['strUpdated'] = "aktualizowano";
-$GLOBALS['strInsert'] = "Dodaj";
-$GLOBALS['strUpdate'] = "Aktualizuj";
-$GLOBALS['strFilters'] = "Filtry";
-$GLOBALS['strParameter'] = "Parametr";
-$GLOBALS['strValue'] = "Wartość";
-$GLOBALS['strDetailedView'] = "Szczegóły";
-$GLOBALS['strReturnAuditTrail'] = "Powrót do Audytu";
-$GLOBALS['strAuditTrail'] = "Audyt";
-$GLOBALS['strMaintenanceLog'] = "Log konserwacji";
-$GLOBALS['strAuditResultsNotFound'] = "Brak wyników dla wybranych kryteriów.";
-$GLOBALS['strCollectedAllEvents'] = "Wszystkie wyniki";
-$GLOBALS['strClear'] = "Wyczyść";
+$GLOBALS['strUserlog'] = array (
+	phpAds_actionAdvertiserReportMailed 	=> "Report for advertiser {id} send by email",
+	phpAds_actionActiveCampaign				=> "Campaign {id} activated",
+	phpAds_actionAutoClean					=> "Auto clean of database",
+	phpAds_actionBatchStatistics			=> "Statistics compiled",
+	phpAds_actionDeactivationMailed			=> "Deactivation notification for campaign {id} send by email",
+	phpAds_actionDeactiveCampaign			=> "Campaign {id} deactivated",
+	phpAds_actionPriorityCalculation		=> "Priority recalculated",
+	phpAds_actionPublisherReportMailed 		=> "Report for website {id} send by email",
+	phpAds_actionWarningMailed				=> "Deactivation warning for campaign {id} send by email"
+);
 $GLOBALS['strUserlog'][phpAds_actionActivationMailed] = "Informacja o aktywacji kampanii {id} została wysłana e-mailem";
+
 ?>

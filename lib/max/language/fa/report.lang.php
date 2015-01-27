@@ -10,13 +10,6 @@
 +---------------------------------------------------------------------------+
 */
 
-/**
- * A file for holding the "reports" English translation information.
- *
- * @package    MaxUI
- * @subpackage Languages
- */
-
 $GLOBALS['strAdvertiserCampaignHistoryReport'] = 'Campaign History Report';
 $GLOBALS['strAdvertiserCampaignHistoryDescription'] = 'A daily breakdown of all activity for a specific campaign';
 $GLOBALS['strAdvertiserHistoryReport'] = 'History Report';
@@ -76,5 +69,8 @@ $GLOBALS['strCampaignPredictedFullDeliveryMessage']  = 'On track';
 
 $GLOBALS['strStatsAnalysisReport']  = 'Stats Analysis Report';
 
+// Error messages
+$GLOBALS['strReportErrorMissingSheets'] = "No worksheet was selected for report";
+$GLOBALS['strReportErrorUnknownCode']   = "Unknown error code #";
 
 ?>
